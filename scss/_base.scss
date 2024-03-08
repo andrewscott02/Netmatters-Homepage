@@ -9,7 +9,7 @@
 
 body
 {
-    background-color: white;
+    background-color: $color-primary;
     font-size: 1.4em;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
@@ -27,22 +27,22 @@ body
 
 #Welcome
 {
-    background-color: #3f8abf;
+    background-color: $color-secondary;
 }
 
 #SignUp
 {
-    background-color: #fbaea8;
+    background-color: $color-form;
 }
 
 #FooterInfo
 {
-    background-color: #aad2ed;  
+    background-color: $color-footer-info;
 }
 
-FooterBottom
+#FooterBottom
 {
-    background-color: #6ad78a; 
+    background-color: $color-footer-bottom;
 }
 
 /* ===================================== 

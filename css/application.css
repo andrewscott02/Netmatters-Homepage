@@ -1,6 +1,9 @@
 /* ========================================================== */
 /* Global Imports */
 /* ========================================================== */
+/* ========================================================== */
+/* Variables */
+/* ========================================================== */
 /* ===================================== 
    Page Styles
 ======================================== */
@@ -9,7 +12,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-size: 1.4em;
   font-family: "Varela Round", sans-serif;
   font-weight: bold;
@@ -25,19 +28,19 @@ body {
 }
 
 #Welcome {
-  background-color: #3f8abf;
+  background-color: #333645;
 }
 
 #SignUp {
-  background-color: #fbaea8;
+  background-color: #ddd;
 }
 
 #FooterInfo {
-  background-color: #aad2ed;
+  background-color: #323544;
 }
 
-FooterBottom {
-  background-color: #6ad78a;
+#FooterBottom {
+  background-color: #212330;
 }
 
 /* ===================================== 
