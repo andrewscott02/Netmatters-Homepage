@@ -42,6 +42,8 @@ body
 
 	h2
 	{
+		font-size: 2.25rem;
+		font-weight: 600;
 		color: $color-text-light;
 	}
 }
@@ -110,6 +112,11 @@ h2
 a
 {
 	color: inherit;
+}
+
+p {
+    line-height: 1.875rem;
+    margin-bottom: 25px;
 }
 
 /* ===================================== 
