@@ -4,25 +4,28 @@
 
 .search
 {
-    margin-top: 11px;
+    margin-top: 5px;
     height: 47px;
-
 
     form
     {
         background-color: $color-search-mobile;
         border: 2px solid $color-search-mobile;
+        border-radius: 2px;
         width: 100%;
         height: 100%;
     }
 
     input
     {
+        font-family: Poppins, sans-serif;
         background-color: $transparent;
         padding: 5px 15px;
         border: none;
         width: 80%;
         height: 100%;
+
+        font-size: 14px;
     }
 
     .flex-container
