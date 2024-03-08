@@ -9,30 +9,51 @@
 <body>
 
     <header>
-        <div class="grid-container">
-            <div class="grid-item">Icon</div>
-            <div class="grid-item">netmatters</div>
-            <div class="grid-item">Phone</div>
-            <div class="grid-item">N-Drop</div>
-            <div class="grid-item">Search</div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <a href="#"><img src="Images/netmatterslogo.webp"></a>
+            </div>
+            <div class="flex-item mobile-only">
+                <a href="#" class="link-phone"><img src="Images/phone.svg"></a>
+            </div>
+            <div class="flex-item mobile-only">
+                <!-- Make icon, but don't make menu yet --> 
+                <a href="#" class="btn-block"><img src="Images/paragraph-justify.svg"></a>
+            </div>
+
+            <!-- Wide Viewport only -->
+            <!--
+            <div class="flex-item">SUPPORT</div>
+            <div class="flex-item">CONTACT</div>
+            <div class="flex-item">Search...(PC)</div>
+            -->
+        </div>
+
+        <div class="search mobile-only">
+            <form action="index.html" method="post">
+                <label for="search" class="search-mobile">Search...</label>
+                <input type="text" id="search" name="request_search">
+            </form>
         </div>
     </header>
 
-    <div #HeroImage>
+    <div id="HeroImage">
         <!-- Hero image, cycles through multiple images with different text, colours and backgrounds -->
-        <h1>The East Of England's Leading Technology Company</h1>
-        <p>Performance-driven digital and technological services with complete transparency</p>
-        <a class="btn" href="#">WHY CHOOSE US?</a>
+        <div class="HeroElements">
+            <h1>The East Of England's Leading Technology Company</h1>
+            <p>Performance-driven digital and technological services with complete transparency</p>
+            <a class="btn arw-after" href="#">WHY CHOOSE US?</a>
+        </div>
     </div>
 
-    <div #Content>
+    <div id="Content">
         <main>
             <div id="Services">
                 <h2>Our Services</h2>
                 <ul>
                     <li>
                         <div class="img-container">
-                            <img class="icon">
+                            <img class="img-icon">
                         </div>
                         <h3>Bespoke Software</h3>
                         <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
@@ -99,7 +120,7 @@
                         <a class="btn" href="#">READ MORE</a>
                         <div class="post-details">
                             <div>
-                                <img class="icon">
+                                <img class="img-icon">
                             </div>
                             <div>
                                 <p>Posted by Netmatters</p>
@@ -160,10 +181,10 @@
 
             <ul class="grid-container">
                 <li>
-                    <a href="#"><img class="icon-social"></a>
-                    <a href="#"><img class="icon-social"></a>
-                    <a href="#"><img class="icon-social"></a>
-                    <a href="#"><img class="icon-social"></a>
+                    <a href="#"><img class="img-icon-social"></a>
+                    <a href="#"><img class="img-icon-social"></a>
+                    <a href="#"><img class="img-icon-social"></a>
+                    <a href="#"><img class="img-icon-social"></a>
                 </li>>
             </ul>
 
