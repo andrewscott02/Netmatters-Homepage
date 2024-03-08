@@ -1,0 +1,23 @@
+/* ===================================== 
+   Links Styles
+======================================== */
+
+.lnk-container
+{
+    justify-content: center;
+    text-align: center;
+}
+
+a.lnk
+{
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.625rem;
+    text-decoration: none;
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
+}

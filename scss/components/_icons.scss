@@ -2,11 +2,30 @@
    Icon Styles
 ======================================== */
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
+.icon
+{
+   // display: inline-block;
+   width: 1em;
+   height: 1em;
+   stroke-width: 0;
+   stroke: currentColor;
+   fill: currentColor;
+}
+
+.icon-services
+{
+   margin: 0 auto 17px;
+   height: 65px;
+   width: 65px;
+   background-color: $color-purple;
+   border-radius: 50%;
+
+   img
+   {
+      position: relative;
+      vertical-align: middle;
+      margin: auto;
+      width: 50%;
+      height: 50%;
+   }
+}

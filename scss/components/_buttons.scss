@@ -4,20 +4,17 @@
 
 .btn
 {
-    width:200px;
+    height: auto;
 
-    max-width: 200px;
-    background-color: #926fb1;
+    background-color: $color-purple;
     border-radius: 3px;
 
-    padding: 5px 20px;
+    padding: 10px 20px;
 
     color: $color-text-light;
     text-decoration: none;
 
-    height: auto;
     line-height: 35px;
-    padding: 5px 15px;
     text-transform: uppercase;
     font-size: 1.063rem;
     white-space: normal;
