@@ -27,27 +27,6 @@ body
     border: solid 1px rgba(110,133,156,0.15);
 }
 
-#HeroImage
-{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/heroimage.webp") no-repeat;
-    height: 500px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    .HeroElements
-    {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $color-text-light;
-    }
-}
-
 #Welcome
 {
     background-color: $color-secondary;
@@ -59,34 +38,26 @@ body
     background-color: $color-form;
 }
 
-#FooterInfo
-{
-    background-color: $color-footer-info;
-    color: $color-text-light;
-}
-
-#FooterBottom
-{
-    background-color: $color-footer-bottom;
-    color: $color-text-light;
-}
-
-.flex-container
-{
-    display: flex;
-}
-
 .link-phone
 {
-    width:50px;
-    height: 50px;
+    width:32px;
+    height: 32px;
 
     img
     {
-        width:50px;
-        height:50px;
+        width:32px;
+        height:32px;
     }
 }
+
+// .link-phone::after
+// {
+// 	content: "\E902";
+
+//     font-size:32px;
+
+// 	display: inline-block;
+// }
 
 .arw-after::after
 {
@@ -101,6 +72,11 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hidden
+{
+	display: none;
 }
 
 /* ===================================== 

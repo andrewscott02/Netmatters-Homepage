@@ -1,7 +1,8 @@
 /* ========================================================== */
-/* Global Imports */
+/* Component Imports */
 /* ========================================================== */
 
-@import "base/index",
-        "layout/index",
-        "components/index";
+@import "flexbox",
+        "buttons",
+        "searchbar",
+        "icons";

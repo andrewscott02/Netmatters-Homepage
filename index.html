@@ -9,31 +9,39 @@
 <body>
 
     <header>
-        <div class="flex-container">
-            <div class="flex-item">
-                <a href="#"><img src="Images/netmatterslogo.webp"></a>
-            </div>
-            <div class="flex-item mobile-only">
-                <a href="#" class="link-phone"><img src="Images/phone.svg"></a>
-            </div>
-            <div class="flex-item mobile-only">
-                <!-- Make icon, but don't make menu yet --> 
-                <a href="#" class="btn-block"><img src="Images/paragraph-justify.svg"></a>
-            </div>
+        <div id="Header">
+            <div class="header-container">
+                <div class="flex-container">
+                    <div class="flex-item flex-grow flex-shrink last-on-left">
+                        <a href="#" class="header-title"><img class="header-title" src="Images/netmatterslogo.webp"></a>
+                    </div>
+                    <div class="flex-item mobile-only">
+                        <a href="#" class="link-phone"><img src="Images/phone.svg"></a>
+                    </div>
+                    <div class="flex-item mobile-only">
+                        <!-- Make icon, but don't make menu yet --> 
+                        <!-- Placeholder icon, make icon with borders, last treehouse tutorial -->
+                        <a href="#" class="btn-block"><img src="Images/paragraph-justify.svg"></a>
+                    </div>
 
-            <!-- Wide Viewport only -->
-            <!--
-            <div class="flex-item">SUPPORT</div>
-            <div class="flex-item">CONTACT</div>
-            <div class="flex-item">Search...(PC)</div>
-            -->
-        </div>
+                    <!-- Wide Viewport only -->
+                    <!--
+                    <div class="flex-item">SUPPORT</div>
+                    <div class="flex-item">CONTACT</div>
+                    <div class="flex-item">Search...(PC)</div>
+                    -->
+                </div>
 
-        <div class="search mobile-only">
-            <form action="index.html" method="post">
-                <label for="search" class="search-mobile">Search...</label>
-                <input type="text" id="search" name="request_search">
-            </form>
+                <div class="search mobile-only">
+                    <form action="index.html" method="post">
+                        <label for="search" class="search-mobile hidden">Search...</label>
+                        <div class="flex-container">
+                            <input type="text" id="search" placeholder="Search..." name="request_search">
+                            <a href="#" class="search-sbmt"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
 

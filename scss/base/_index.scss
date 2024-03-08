@@ -1,7 +1,6 @@
 /* ========================================================== */
-/* Global Imports */
+/* Base Imports */
 /* ========================================================== */
 
-@import "base/index",
-        "layout/index",
-        "components/index";
+@import "variables",
+        "base";
