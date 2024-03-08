@@ -3,38 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/application.css">
     <title>Assessment - Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
 </head>
 <body>
 
     <header>
-        <div class="gridcontainer">
-            <div class="griditem">Icon</div>
-            <div class="griditem">netmatters</div>
-            <div class="griditem">Phone</div>
-            <div class="griditem">N-Drop</div>
-            <div class="griditem">Search</div>
+        <div class="grid-container">
+            <div class="grid-item">Icon</div>
+            <div class="grid-item">netmatters</div>
+            <div class="grid-item">Phone</div>
+            <div class="grid-item">N-Drop</div>
+            <div class="grid-item">Search</div>
         </div>
     </header>
 
     <div #HeroImage>
         <!-- Hero image, cycles through multiple images with different text, colours and backgrounds -->
+        <h1>The East Of England's Leading Technology Company</h1>
+        <p>Performance-driven digital and technological services with complete transparency</p>
+        <a class="btn" href="#">WHY CHOOSE US?</a>
     </div>
 
     <div #Content>
         <main>
-            <!-- Our services section -->
-            <!-- Welcome to netmatters -->
+            <div id="Services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img class="icon">
+                        </div>
+                        <h3>Bespoke Software</h3>
+                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                        <a class="btn" href="#">READ MORE</a>
+                    </li>
+
+                    <!-- More items when class is implemented -->
+                </ul>
+                <a class="lnk arw-after" href="#">View Our Work</a>
+            </div>
+
+            <div class="partners">
+                <ul>
+                    <!-- Partners scroll - implement as image, not scroll yet -->
+                    <li>
+                        <h3>Partners</h3>
+                        <!-- <img></img> -->
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Welcome">
+                <div>
+                    <h2>Welcome To Netmatters</h2>
+                    <p>
+                        Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.
+                        <br>
+                        We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
+                        <br>
+                        We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.
+                    </p>
+                    <a class="btn arw-after" href="#">WHY CHOOSE US?</a>
+                    <a class="btn arw-after" href="#">OUR CULTURE</a>
+                </div>
+
+                <div>
+                    <h2>What Our Clients Think</h2>
+                    <div class="5star">
+                    <p>
+                        <span class="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span>
+                    </p>
+                    <p>
+                        <span class="author">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></span>
+                    </p>
+                    <a class="btn arw-after blue" href="#">GOOGLE REVIEWS</a>
+                    <a class="btn arw-after green" href="#">TRUSTPILOT REVIEWS</a>
+                </div>
+            </div>
         </main>
     
         <aside>
-            <!-- Latest news -->
-            <!-- Email sign-up -->
+            <div it="#LatestNews">
+                <h2>Latest News</h2>
+
+                <li>
+                    <div class="img-container">
+                        <img class="news">
+                    </div>
+                    <div class="news-block">
+                        <h3>
+                            <a href="#">February Notables 2024 - Celebrating Our Team</a>
+                        </h3>
+                        <p>Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each...</p>
+                        <a class="btn" href="#">READ MORE</a>
+                        <div class="post-details">
+                            <div>
+                                <img class="icon">
+                            </div>
+                            <div>
+                                <p>Posted by Netmatters</p>
+                                <p>6th March 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <a class="lnk arw-after" href="#">View All</a>
+
+            </div>
+
+            <div class="partners">
+                <ul>
+                    <!-- Partners scroll - implement as image, not scroll yet -->
+                    <li>
+                        <h3>Partners</h3>
+                        <!-- <img></img> -->
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="SignUp" class="form">
+                <form action="index.html" method="post">
+                    
+                    <h2>Email Newsletter Sign-Up</h2>
+        
+                    <fieldset>
+                        <label for="name" class="required">Your Name</label>
+                        <input type="text" id="name" name="user_name">
+        
+                        <label for="email" class="required">Your Email</label>
+                        <input type="email" id="email" name="user_email">
+        
+                        <div>
+                            <input type = "checkbox">
+                                <p>	Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                            </label>
+                        </div>
+
+                        <button type="subscribe">Subscribe</button>
+        
+                    </fieldset>
+                    
+                </form>
+            </div>
+
         </aside>
     </div>
 
     <footer>
-        <!-- Socials -->
+        <div id="FooterInfo">
+            <div class="grid-container">
+                <div class="grid-item">Icon</div>
+                <div class="grid-item">netmatters</div>
+            </div>
+
+            <ul class="grid-container">
+                <li>
+                    <a href="#"><img class="icon-social"></a>
+                    <a href="#"><img class="icon-social"></a>
+                    <a href="#"><img class="icon-social"></a>
+                    <a href="#"><img class="icon-social"></a>
+                </li>>
+            </ul>
+
+            <div>
+                <h3>ABOUT NETMATTERS</h3>
+                <ul>
+                    <li><a href="#">News</a></li>
+                </ul>
+
+                <h3>OUR SERVICES</h3>
+                <ul>
+                    <li><a href="#">Bespoke Software</a></li>
+                </ul>
+
+                <h3>OUR INDUSTRIES</h3>
+                <ul>
+                    <li><a href="#">Financial Services</a></li>
+                </ul>
+
+                <h3>LOCATIONS</h3>
+                <ul>
+                    <li><a href="#">London Office</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="FooterBottom">
+            <p>&copy Copyright Netmatters 2024.</p>
+            <p>All rights reserved.</p>
+            <p>Sitemap</p>
+        </div>
     </footer>
 
 </body>
