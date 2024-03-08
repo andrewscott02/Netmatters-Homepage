@@ -276,6 +276,8 @@ footer {
 }
 
 .card {
+  top: 0px;
+  transition: 0.5s ease;
   padding: 30px;
   text-decoration: none;
   margin-top: 30px;
@@ -298,6 +300,10 @@ footer {
   line-height: 1.375rem;
   margin-bottom: 13px;
   font-weight: 400;
+}
+.card:hover {
+  top: -10px;
+  transition: 0.5s ease;
 }
 
 .last-on-left {
