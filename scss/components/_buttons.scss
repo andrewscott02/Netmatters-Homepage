@@ -47,6 +47,50 @@
     font-size: 1.063rem;
 }
 
+.btn-social
+{
+    @include btnstyles($colour-btn-social-base, $colour-btn-fb-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
+.facebook
+{
+    &:hover
+    {
+        background-color: $colour-btn-fb-hover;
+        text-decoration: none;
+    }
+}
+
+.linkedin
+{
+    &:hover
+    {
+        background-color: $colour-btn-li-hover;
+        text-decoration: none;
+    }
+}
+
+.twitter
+{
+    &:hover
+    {
+        background-color: $colour-btn-tw-hover;
+        text-decoration: none;
+    }
+}
+
+.instagram
+{
+    &:hover
+    {
+        background-color: $colour-btn-ig-hover;
+        text-decoration: none;
+    }
+}
+
 .btn-block
 {
     width:50px;
