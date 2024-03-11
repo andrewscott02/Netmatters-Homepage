@@ -1,0 +1,88 @@
+/* ========================================================== */
+/* Form Styles */
+/* ========================================================== */
+
+#SignUp
+{
+    background-color: $color-form;
+}
+
+.required::after
+{
+    color: red;
+    content: " *"
+}
+
+.form
+{
+    justify-content: space-between;
+    border: none;
+    text-align: left;
+
+    &.vertical .flex-item:first-child
+    {
+        margin: 0;
+    }
+
+    &.vertical .flex-item
+    {
+        margin: 0;
+    }
+
+    input
+    {
+        width: 100%;
+    }
+}
+
+.checkbox-field
+{
+    @include flexproperties;
+    justify-content: space-between;
+    text-align: left;
+
+    margin-top: 10px;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+
+    .checkbox-item:first-child
+    {
+        margin-right: 20px;
+        margin-bottom: auto;
+    }
+
+    .checkbox-item
+    {
+        position: relative;
+        vertical-align: middle;
+    }
+
+    input
+    {
+        width: 32px;
+        height: 32px;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-bottom: auto;
+    }
+
+    p
+    {
+        width: 88%;
+        vertical-align: top;
+        line-height: 32px;
+        font-weight: 600;
+
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    p:hover
+    {
+        cursor: pointer;
+    }
+}
