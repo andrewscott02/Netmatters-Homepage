@@ -2,11 +2,11 @@
    Button Styles
 ======================================== */
 
-.btn
+@mixin btnstyles($bkgrndColour)
 {
     height: auto;
 
-    background-color: $color-purple;
+    background-color: $bkgrndColour;
     border-radius: 3px;
 
     padding: 10px 20px;
@@ -29,7 +29,17 @@
     {
         color: $color-text-light;
     }
+}
 
+.btn
+{
+    @include btnstyles($color-purple);
+}
+
+.btn-subscribe
+{
+    @include btnstyles($color-secondary);
+    border: 3px solid transparent;
 }
 
 .btn-block
