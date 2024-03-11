@@ -21,3 +21,21 @@ a.lnk
         text-decoration: underline;
     }
 }
+
+.link-phone
+{
+    width: 28px;
+
+    img
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+    margin: auto;
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
+}

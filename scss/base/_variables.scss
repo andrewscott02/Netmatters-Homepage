@@ -9,12 +9,34 @@ $darkgrey       : rgb(49, 49, 49);
 $white          : #fff;
 $transparent    : rgba(0, 0, 0, 0);
 
+//Additional Colours for Buttons and Icons: Replace with list
+$color-purple       : #926fb1;
+
 //Default Page Colours
 $color-primary              : $white;
 $color-secondary            : #333645;
 $color-form                 : #ddd;
 $color-footer-info          : #323544;
 $color-footer-bottom        : #212330;
+
+//Button Colours
+$colour-btn-primary-base        :$color-purple;
+$colour-btn-primary-hover       :$color-purple;
+
+$colour-btn-dark-base           :#272936;
+$colour-btn-dark-hover          :#121318;
+
+$colour-btn-purple-base        :$color-purple;
+$colour-btn-purple-hover       :#7e57a0;
+
+$colour-btn-blue-base           :#4387f6;
+$colour-btn-blue-hover          :#166af4;
+
+$colour-btn-green-base           :#00b67b;
+$colour-btn-green-hover          :#009b69;
+
+$colour-btn-sub-base            :$color-secondary;
+$colour-btn-sub-hover           :#22242e;
 
 //Text Colours
 $color-text-light       : $white;
@@ -23,6 +45,3 @@ $color-text-dark        : #666;
 //Searchbar Colours
 $color-search           : rgba(0, 0, 0, .1);
 $color-search-mobile    : rgba(0, 0, 0, .1);
-
-//Additional Colours for Buttons and Icons: Replace with list
-$color-purple       : #926fb1

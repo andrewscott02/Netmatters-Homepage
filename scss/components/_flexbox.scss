@@ -7,17 +7,25 @@
     @include flexproperties;
 }
 
+.flex-item-center
+{
+    display:flex;
+    align-items: center;
+}
+
 .vertical
 {
     flex-direction: column;
 
-    .flex-item
+    .flex-item,
+    .flex-item-center
     {
         margin: auto;
         margin-bottom: 13px;
     }
 
-    .flex-item:first-child
+    .flex-item:first-child,
+    .flex-item-center:first-child
     {
         margin: 0 auto 13px;
     }

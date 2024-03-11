@@ -10,11 +10,17 @@
 
     padding: 5px 15px;
     // margin-left: 20px;
-    background-color: $color-secondary;
+    background-color: $colour-btn-sub-base;
     border-radius: 3px;
+
+    &:hover
+    {
+        background-color: $colour-btn-sub-hover;
+    }
 }
 
-.flex-item:has(> .btn-nav-container)
+.flex-item:has(> .btn-nav-container),
+.flex-item-center:has(> .btn-nav-container)
 {
     margin-left: 0;
     margin-right: 0;

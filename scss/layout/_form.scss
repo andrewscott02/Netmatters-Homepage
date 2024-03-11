@@ -26,12 +26,14 @@
     border: none;
     text-align: left;
 
-    &.vertical .flex-item:first-child
+    &.vertical .flex-item:first-child,
+    &.vertical .flex-item-center:first-child
     {
         margin: 0;
     }
 
-    &.vertical .flex-item
+    &.vertical .flex-item,
+    &.vertical .flex-item-center
     {
         margin: 0;
     }

@@ -2,44 +2,49 @@
    Button Styles
 ======================================== */
 
-@mixin btnstyles($bkgrndColour)
-{
-    height: auto;
-
-    background-color: $bkgrndColour;
-    border-radius: 3px;
-
-    padding: 10px 20px;
-
-    color: $color-text-light;
-    text-decoration: none;
-
-    line-height: 35px;
-    text-transform: uppercase;
-    font-size: 1.063rem;
-    white-space: normal;
-
-    img
-    {
-        width:50px;
-        height:50px;
-    }
-
-    .arw-after::after
-    {
-        color: $color-text-light;
-    }
-}
-
 .btn
 {
-    @include btnstyles($color-purple);
+    @include btnstyles($colour-btn-primary-base, $colour-btn-primary-hover);
+}
+
+.btn-welcome
+{
+    @include btnstyles($colour-btn-dark-base, $colour-btn-dark-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
+.btn-purple
+{
+    @include btnstyles($colour-btn-purple-base, $colour-btn-purple-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
+.btn-blue
+{
+    @include btnstyles($colour-btn-blue-base, $colour-btn-blue-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
+.btn-green
+{
+    @include btnstyles($colour-btn-green-base, $colour-btn-green-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
 }
 
 .btn-subscribe
 {
-    @include btnstyles($color-secondary);
+    @include btnstyles($colour-btn-sub-base, $colour-btn-sub-hover);
     border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
 }
 
 .btn-block
