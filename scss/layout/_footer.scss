@@ -9,6 +9,11 @@
     background-color: $color-footer-info;
     color: $color-text-light;
 
+    ul
+    {
+        list-style: none;
+    }
+
     .footer-title
     {
         margin: auto;
@@ -21,12 +26,6 @@
         height: auto;
     }
 
-    ul
-    {
-        list-style: none;
-        margin: 0;
-    }
-
     h3
     {
         font-size: 1rem;
@@ -36,6 +35,12 @@
 
 .footerinfo
 {
+    ul
+    {
+        list-style: none;
+        margin: 0;
+    }
+
     a
     {
         text-decoration: none;

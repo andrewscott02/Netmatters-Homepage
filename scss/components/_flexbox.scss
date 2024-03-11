@@ -31,6 +31,11 @@
     }
 }
 
+.last-on-left
+{
+    margin-right: auto;
+}
+
 .card
 {
     @include cardstyles;
@@ -43,97 +48,11 @@
     }
 }
 
-.news
-{
-    @include cardstyles;
-    border-radius: 0 0 3px 3px;
-    text-align: left;
-
-    h3
-    {
-        font-size: 1rem;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 15px;
-        font-weight: 600;
-    }
-
-    & > p 
-    {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .btn
-    {
-        margin: 30px;
-    }
-
-    img
-    {
-        width: 100%;
-        height: auto;
-    }
-
-    .icon
-    {
-        width: 47px;
-        height: 47px;
-    }
-}
-
-.news-poster-container
-{
-    margin: 30px;
-}
-
-.news-poster
+.socials
 {
     @include flexproperties;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 30px;
 
-    border-top: 1px solid #ccc;
-
-    div
-    {
-        margin-top: 0px;
-        margin-left: 20px;
-        margin-right: auto;
-
-        p
-        {
-            margin-top: 0px;
-            font-size: .875rem;
-            line-height: 1.375rem;
-        }
-    }
-}
-
-.news-popup
-{
-    position: absolute;
-    top: 10px;
-    right: 0;
-
-    padding-left: 10px;
-    padding-right: 10px;
-
-    background-color: #67809f;
-
-    p
-    {
-        color: $white;
-        font-size: 0.75rem;
-        line-height: 1.438rem;
-        font-weight: 600;
-
-        margin: 0;
-    }
-}
-
-.last-on-left
-{
-    margin-right: auto;
+    align-items: flex-start;
+    width: max-content;
+    margin: 30px auto 30px 0;
 }
