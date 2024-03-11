@@ -41,5 +41,8 @@ a.lnk
     &:hover
     {
         text-decoration: underline;
+
+        //TODO - Temporary, remove later
+        border-bottom: 1px solid $color-secondary;
     }
 }
