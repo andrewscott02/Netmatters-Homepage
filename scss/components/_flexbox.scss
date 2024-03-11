@@ -55,4 +55,10 @@
     align-items: flex-start;
     width: max-content;
     margin: 30px auto 30px 0;
+    
+    .flex-item,
+    .flex-item-center
+    {
+        margin-right: 10px;
+    }
 }
