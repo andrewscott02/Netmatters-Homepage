@@ -27,10 +27,13 @@ a.lnk
     content: " ";
     width: 28px;
 
-    img
+    svg
     {
-        width: 28px;
-        height: 28px;
+        fill: $color-secondary;
+        width:28px;
+        height:28px;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 
     margin: auto;

@@ -20,12 +20,15 @@
    background-color: $color-purple;
    border-radius: 50%;
 
-   img
+   padding-top: 10px;
+
+   svg
    {
+      fill: $white;
       position: relative;
       vertical-align: middle;
       margin: auto;
-      width: 50%;
-      height: 50%;
+      width: 65%;
+      height: auto;
    }
 }

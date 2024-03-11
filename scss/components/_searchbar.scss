@@ -39,18 +39,20 @@
 	width: auto;
     height: 100%;
 
-    img
+    svg
     {
-        width:32px;
-        height:32px;
+        width:20px;
+        height:24px;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }
 
-.search-sbmt::after
-{
-	content: "\E003";
+// .search-sbmt::after
+// {
+// 	content: "\E003";
 
-    font-size:20px;
+//     font-size:20px;
 
-	display: inline-block;
-}
+// 	display: inline-block;
+// }
