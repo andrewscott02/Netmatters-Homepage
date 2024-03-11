@@ -1,0 +1,81 @@
+/* ========================================================== */
+/* Services Styles */
+/* ========================================================== */
+
+#Welcome
+{
+    background-color: $color-secondary;
+    color: $color-text-light;
+
+	h2
+	{
+		font-size: 2.25rem;
+		font-weight: 600;
+		color: $color-text-light;
+	}
+
+    h2:nth-child(1)
+    {
+        margin-bottom: 0;
+    }
+
+    & > div:first-child
+    {
+        margin-bottom: 50px;
+    }
+
+    strong
+    {
+        font-weight: 600;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        text-decoration: underline;
+    }
+}
+
+.fivestar
+{
+    @include flexproperties;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 75px;
+
+    @for $i from 1 through 5
+    {
+        & div
+        {
+            top: 0;
+            margin: 0;
+        }
+
+        & div::before
+        {
+            top: 0;
+            color: orange;
+            font-size: 6rem;
+            content: "*"
+        }
+    }
+}
+
+.quote
+{
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.author
+{
+    font-weight: 600;
+    color: #a3a8ac;
+    font-size: 1.1rem;
+    line-height: 1.875rem;
+}

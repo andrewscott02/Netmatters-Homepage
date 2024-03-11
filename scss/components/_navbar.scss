@@ -14,36 +14,42 @@
     border-radius: 3px;
 }
 
-.btn-nav:before
+.flex-item:has(> .btn-nav-container)
 {
-    display: block;
-    content: '';
-    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .btn-nav
 {
     display: block;
     width: 33px;
-    height: 25px;
+    height: 24px;
 
     margin: auto;
 
     border-top: solid 4px $white;
     border-bottom: solid 4px $white;
     position: relative;
+
+    line-height: 0;
+    cursor: pointer;
 }
 
 .btn-nav:before
 {
+    display: block;
+    content: '';
+    position: absolute;
+
     width: 33px;
     height: 4px;
     background: $white;
-    top: 6.5px;
+    top: 40%;
+    justify-content: center;
 }
 
-.btn-nav
-{
-    line-height: 0;
-    cursor: pointer;
-}
+// .btn-nav:after
+// {
+//     bottom: 0;
+// }
