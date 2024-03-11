@@ -1,0 +1,79 @@
+/* ===================================== 
+   Mixins
+======================================== */
+
+@mixin btnstyle
+{
+
+}
+
+@mixin flexproperties
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .flex-item
+    {
+        margin: auto;
+        position: relative;
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .flex-item:first-child
+    {
+        margin-left: 0;
+    }
+
+    .flex-grow
+    {
+        flex: 1;
+    }
+
+    .flex-shrink
+    {
+        flex-shrink: 2;
+        max-width: 100%;
+    }
+}
+
+@mixin cardstyles
+{
+    top: 0px;
+    transition: 0.5s ease;
+    
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+
+    color:$color-text-dark;
+    text-align: center;
+
+    h3
+    {
+        font-size: 1.3rem;
+        position: relative;
+        font-weight: 400;
+    }
+
+    p
+    {
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+        margin-bottom: 13px;
+        font-weight: 400;
+    }
+
+    &:hover
+    {
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}

@@ -21,7 +21,9 @@
                     <div class="flex-item mobile-only">
                         <!-- Make icon, but don't make menu yet --> 
                         <!-- Placeholder icon, make icon with borders, last treehouse tutorial -->
-                        <a href="#" class="btn-block"><img src="Images/paragraph-justify.svg"></a>
+                        <a href="#" class="btn-nav-container">
+                            <div class="btn-nav"></div>
+                        </a>
                     </div>
 
                     <!-- Wide Viewport only -->
@@ -124,17 +126,26 @@
                     <li class="flex-container vertical">
                         <a href="#" class="news">
                             <div class="flex-item img-container img-news">
+                                <div class="news-popup">
+                                    <p>NEWS</p>
+                                </div>
                                 <img src="images/news/february-notables-2024-LJ3h.webp">
                             </div>
                             <span><h3 class="flex-item">February Notables 2024 - Celebrating Our Team</h3></span>
                             <p class="flex-item">Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each...</p>
                             <span class="flex-item btn" href="#">READ MORE</span>
-                            <!-- TODO: Change styling for dividing line -->
-                            <!-- <hr> -->
-                            <div class="news-poster">
-                                <!-- TODO - Netmatters logo here -->
-                                <p>Posted by Netmatters</p>
-                                <p>6th March 2024</p>
+                            
+                            <div class="news-poster-container">
+                                <div class="news-poster">
+                                    <img class="icon" src="Images/netmatterslogoicon.webp">
+                                    <div>
+                                        <p>
+                                        <strong>Posted by Netmatters</strong>
+                                        <br>
+                                        6th March 2024
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </a>
                     </li>

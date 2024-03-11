@@ -1,0 +1,49 @@
+/* ===================================== 
+   Navbar Styles
+======================================== */
+
+.btn-nav-container
+{
+    display: flex;
+    width: 63px;
+    height: 56px;
+
+    padding: 5px 15px;
+    // margin-left: 20px;
+    background-color: $color-secondary;
+    border-radius: 3px;
+}
+
+.btn-nav:before
+{
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+.btn-nav
+{
+    display: block;
+    width: 33px;
+    height: 25px;
+
+    margin: auto;
+
+    border-top: solid 4px $white;
+    border-bottom: solid 4px $white;
+    position: relative;
+}
+
+.btn-nav:before
+{
+    width: 33px;
+    height: 4px;
+    background: $white;
+    top: 6.5px;
+}
+
+.btn-nav
+{
+    line-height: 0;
+    cursor: pointer;
+}
