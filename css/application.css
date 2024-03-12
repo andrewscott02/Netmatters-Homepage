@@ -1159,8 +1159,14 @@ footer {
 .checkbox-hide:checked ~ .checkbox-custom {
   background-color: #333645;
 }
+.checkbox-hide:checked ~ .checkbox-custom svg {
+  fill: #fff;
+}
 .checkbox-hide:not(checked) ~ .checkbox-custom {
   background-color: rgba(0, 0, 0, 0);
+}
+.checkbox-hide:not(checked) ~ .checkbox-custom svg {
+  fill: rgba(0, 0, 0, 0);
 }
 
 .checkbox-custom {
@@ -1171,6 +1177,13 @@ footer {
   margin-top: 3px;
   margin-left: -52px;
   margin-right: 20px;
+}
+.checkbox-custom svg {
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 70%;
+  height: auto;
+  fill: #fff;
 }
 
 /* ===================================== 

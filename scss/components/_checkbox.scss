@@ -20,6 +20,11 @@
         {
             background-color: $color-secondary;
         }
+
+        & ~ .checkbox-custom svg
+        {
+            fill: $white;
+        }
     }
 
     &:not(checked)
@@ -27,6 +32,11 @@
         & ~ .checkbox-custom
         {
             background-color: $transparent;
+        }
+
+        & ~ .checkbox-custom svg
+        {
+            fill: $transparent;
         }
     }
 }
@@ -41,4 +51,13 @@
     margin-top: 3px;
     margin-left: -52px;
     margin-right: 20px;
+
+    svg
+    {
+        margin-left: 4px;
+        margin-top: 4px;
+        width: 70%;
+        height: auto;
+        fill: $white;
+    }
 }
