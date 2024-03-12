@@ -539,6 +539,11 @@ footer {
   align-items: center;
   filter: grayscale(1);
 }
+.btn-partner img {
+  max-height: 70px;
+  width: auto;
+  max-width: 200px;
+}
 .btn-partner:hover {
   filter: grayscale(0);
 }
@@ -552,7 +557,11 @@ footer {
   display: flex;
   align-items: center;
   filter: grayscale(1);
-  overflow: visible;
+}
+.btn-case img {
+  max-height: 70px;
+  width: auto;
+  max-width: 200px;
 }
 .btn-case:hover {
   filter: grayscale(0);
