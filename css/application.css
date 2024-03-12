@@ -1145,6 +1145,35 @@ footer {
 }
 
 /* ===================================== 
+   Checkbox Styles
+======================================== */
+.checkbox-hide {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  z-index: 1;
+  opacity: 0;
+}
+.checkbox-hide:hover {
+  cursor: pointer;
+}
+.checkbox-hide:checked ~ .checkbox-custom {
+  background-color: #333645;
+}
+.checkbox-hide:not(checked) ~ .checkbox-custom {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.checkbox-custom {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  margin-left: -52px;
+  margin-right: 20px;
+}
+
+/* ===================================== 
    Flexbox Styles
 ======================================== */
 .flex-container {
