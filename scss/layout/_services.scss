@@ -7,3 +7,106 @@
 //     padding-top: 50px;
 //     padding-bottom: 50px;
 // }
+
+.card
+{
+    @include cardstyles;
+    padding: 30px;
+
+    h3
+    {
+        padding-bottom: 10px;
+        margin: 0 0 11px;
+    }
+}
+
+.icon-services
+{
+   margin: 0 auto 17px;
+   height: 65px;
+   width: 65px;
+   background-color: $color-purple;
+   border-radius: 50%;
+
+   padding-top: 15px;
+
+   svg
+   {
+      fill: $white;
+      position: relative;
+      vertical-align: middle;
+      margin: auto;
+      width: 55%;
+      height: auto;
+   }
+}
+
+.invert-blue-desat
+{
+    @include cardColour($white, $colour-card-blue-desat, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-blue-desat, $white, $white);
+    }
+}
+
+.invert-blue-sat
+{
+    @include cardColour($white, $colour-card-blue-sat, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-blue-sat, $white, $white);
+    }
+}
+
+.invert-green
+{
+    @include cardColour($white, $colour-card-green, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-green, $white, $white);
+    }
+}
+
+.invert-red
+{
+    @include cardColour($white, $colour-card-red, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-red, $white, $white);
+    }
+}
+
+.invert-purple
+{
+    @include cardColour($white, $colour-card-purple, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-purple, $white, $white);
+    }
+}
+
+.invert-pink
+{
+    @include cardColour($white, $colour-card-pink, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-pink, $white, $white);
+    }
+}
+
+.invert-orange
+{
+    @include cardColour($white, $colour-card-orange, $color-secondary);
+
+    &:hover
+    {
+        @include cardColour($colour-card-orange, $white, $white);
+    }
+}

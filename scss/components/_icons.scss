@@ -11,24 +11,3 @@
    stroke: currentColor;
    fill: currentColor;
 }
-
-.icon-services
-{
-   margin: 0 auto 17px;
-   height: 65px;
-   width: 65px;
-   background-color: $color-purple;
-   border-radius: 50%;
-
-   padding-top: 10px;
-
-   svg
-   {
-      fill: $white;
-      position: relative;
-      vertical-align: middle;
-      margin: auto;
-      width: 65%;
-      height: auto;
-   }
-}

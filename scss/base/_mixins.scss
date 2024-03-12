@@ -108,3 +108,29 @@
         transition: 0.5s ease;
     }
 }
+
+@mixin cardColour($col1, $col2, $textCol)
+{
+    background-color: $col1;
+
+    .icon-services
+    {
+        background-color: $col2;
+
+        svg
+        {
+            fill: $col1;
+        }
+    }
+
+    h3, p
+    {
+        color: $textCol;
+    }
+
+    .btn
+    {
+        color: $col1;
+        background-color: $col2;
+    }
+}
