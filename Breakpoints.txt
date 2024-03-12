@@ -1,67 +1,36 @@
 Breakpoints - Header and Navigation
 
-    768px
-    Mobile search goes and new searchbar appears
-    Phone button vanishes
+992px
+Searchbar input vanished, but button stays
+Support and contact buttons appear
+Navigation bar appears
 
-    992px
-    Searchbar input vanished, but button stays
-    Support and contact buttons appear
-    Navigation bar appears
-
-    1260px
-    Searchbar input reappears
-
-Breakpoints - Services
-
-    768px
-    View our work button appears at top of services section
-    Software, support and digital marketing appear in single column
-    Telecoms, web, security and training services appear in 2 columns
-
-    992px
-    Software, support and digital marketing appear in a single row (3 columns)
-
-    1260px
-    Telecoms, web, security and training services appear in a single row (4 columns)
+1260px
+Searchbar input reappears
 
 Breakpoints - Welcome
 
-    992px
-    Welcome and client reviews appear on the same row (2 columns)
-    Buttons appear in 2 rows
+992px
+Welcome and client reviews appear on the same row (2 columns)
+Buttons appear in 2 rows
 
-    1260px
-    Buttons appear in a single row (2 columns per section)
+1260px
+Buttons appear in a single row (2 columns per section)
 
-Breakpoints - Services
+Breakpoints - News
 
-    768px
-    News splits into 2 columns
-    1st item appears slightly smaller
-    3rd news card vanishes
-
-    992px
-    News cards grow to larger size (they are never supposed to grow with the viewport)
-
-    1260px
-    News splits into 3 columns
-    3rd news card reappears
-
-Breakpoints - Signup
-
-    992px
-    Name and email fields appear in single rown (2 columns)
+768px
+1st item appears slightly smaller
 
 Breakpoints - Footer
 
-    768px
-    Footer links appear in 2 columns
-    Footer rights appear in single row
-    - appears before sitemap
+768px
+Footer links appear in 2 columns
+Footer rights appear in single row
+- appears before sitemap
 
-    992px
-    Footer links appear in 4 columns
+992px
+Footer links appear in 4 columns
 
-    1260px
-    Netmatters logo and socials appear in same row as links (5 columns)
+1260px
+Netmatters logo and socials appear in same row as links (5 columns)
