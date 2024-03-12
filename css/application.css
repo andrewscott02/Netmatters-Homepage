@@ -101,6 +101,15 @@ footer {
   grid-area: footer;
 }
 
+/* ===================================== 
+  Generic Media Queries
+======================================== */
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 /* ========================================================== */
 /* Layout Imports */
 /* ========================================================== */
@@ -328,6 +337,7 @@ footer {
   text-align: center;
   border-radius: 0 0 3px 3px;
   text-align: left;
+  max-width: 720px;
 }
 .news h3 {
   font-size: 1.3rem;
@@ -1241,6 +1251,11 @@ footer {
 .flex-item-center {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .flex-item-center.mobile-only {
+    display: none;
+  }
 }
 
 .vertical {

@@ -11,6 +11,14 @@
 {
     display:flex;
     align-items: center;
+
+    &.mobile-only
+    {
+        @media #{$break-narrow}
+        {
+            display: none;
+        }
+    }
 }
 
 .vertical

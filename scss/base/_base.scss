@@ -85,7 +85,8 @@ a
 	color: inherit;
 }
 
-p {
+p
+{
     line-height: 1.875rem;
     margin-bottom: 25px;
 }
@@ -106,24 +107,36 @@ p {
         "main"
         "aside" 
         "footer";
-  }
+}
   
-  header
-  {
+header
+{
     grid-area: header;
-  }
+}
   
-  main
-  {
+main
+{
     grid-area: main;
-  }
+}
   
-  aside
-  {
+aside
+{
     grid-area: aside;
-  }
+}
   
-  footer
-  {
+footer
+{
     grid-area: footer;
-  }
+}
+
+/* ===================================== 
+  Generic Media Queries
+======================================== */
+
+.mobile-only
+{
+	@media #{$break-narrow}
+	{
+		display: none;
+	}
+}
