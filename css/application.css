@@ -382,7 +382,7 @@ footer {
   border-radius: 0 0 3px 3px;
   text-align: left;
   max-width: 720px;
-  margin-top: 30px;
+  height: 100%;
 }
 .news h3 {
   font-size: 1.3rem;
@@ -1483,6 +1483,15 @@ footer {
   }
   #LatestNews .grid-container li:nth-child(3) {
     display: inherit;
+  }
+}
+
+#SignUp .grid-container {
+  grid-gap: 30px;
+}
+@media screen and (min-width: 992px) {
+  #SignUp .grid-container {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   }
 }
 

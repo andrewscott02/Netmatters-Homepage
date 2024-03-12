@@ -128,3 +128,16 @@
         }
     }
 }
+
+#SignUp
+{
+    .grid-container
+    {
+        grid-gap: 30px;
+
+        @media #{$break-wide}
+        {
+            grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        }
+    }
+}
