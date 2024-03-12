@@ -64,6 +64,14 @@
     .flex-grow
     {
         flex: 1;
+
+        &.stopgrow-narrow
+        {
+            @media #{$break-narrow}
+            {
+                flex: inherit;
+            }
+        }
     }
 
     .flex-shrink

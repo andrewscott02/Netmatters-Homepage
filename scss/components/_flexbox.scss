@@ -5,6 +5,14 @@
 .flex-container
 {
     @include flexproperties;
+
+    &.wide-center
+    {
+        @media #{$break-narrow}
+        {
+            justify-content: center;
+        }
+    }
 }
 
 .flex-item-center

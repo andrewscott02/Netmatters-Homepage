@@ -8,13 +8,18 @@
 
     .header-title
     {
-        margin: auto;
+        margin-right: auto;
         position: relative;
         text-align: center;
 
         width: 100%;
         max-width: 400px;
         height: auto;
+
+        @media #{$break-narrow}
+        {
+            margin: auto;
+        }
     }
 }
 

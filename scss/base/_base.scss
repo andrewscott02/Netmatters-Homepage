@@ -140,3 +140,12 @@ footer
 		display: none;
 	}
 }
+
+.wide-only
+{
+	display: none;
+	@media #{$break-narrow}
+	{
+		display: inherit;
+	}
+}

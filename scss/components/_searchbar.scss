@@ -48,6 +48,46 @@
     }
 }
 
+.search.wide-only
+{
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-right: 20px;
+    height: 56px;
+
+    form
+    {
+        background-color: $white;
+        border: 2px solid $color-search-mobile;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        width: 174px;
+    }
+
+    input
+    {
+        width: 174px;
+    }
+
+    .search-sbmt
+    {
+        width: 63px;
+        height: 56px;
+        padding: 5px 20px 3px;
+        border-radius: 0 3px 3px 0;
+
+        background-color: $color-btn-search;
+
+        svg
+        {
+            width:25px;
+            height:30px;
+            fill: $white;
+        }
+    }
+}
+
 // .search-sbmt::after
 // {
 // 	content: "\E003";
