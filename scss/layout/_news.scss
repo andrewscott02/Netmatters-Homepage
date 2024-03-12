@@ -91,3 +91,45 @@
         margin: 0;
     }
 }
+
+.news-purple
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-purple;
+    }
+}
+
+.news-blue
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-blue-desat;
+    }
+}
+
+.news-red
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-red;
+    }
+}
+
+.read-time
+{
+    display: inline;
+    color: rgba(51, 54, 69, .5);
+    font-size: .85rem;
+    vertical-align: middle;
+
+    span
+    {
+        display: block;
+        margin-top: -10px;
+        padding-left: 30px;
+    }
+}

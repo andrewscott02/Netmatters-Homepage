@@ -207,7 +207,6 @@ footer {
   text-align: left;
   margin-top: 10px;
 }
-.checkbox-field .flex-item,
 .checkbox-field .flex-item-center {
   position: relative;
   vertical-align: middle;
@@ -383,7 +382,6 @@ footer {
   padding-top: 30px;
   border-top: 1px solid #ccc;
 }
-.news-poster .flex-item,
 .news-poster .flex-item-center {
   position: relative;
   vertical-align: middle;
@@ -426,6 +424,33 @@ footer {
   line-height: 1.438rem;
   font-weight: 600;
   margin: 0;
+}
+
+.news-purple .btn,
+.news-purple .news-popup {
+  background-color: #926fb1;
+}
+
+.news-blue .btn,
+.news-blue .news-popup {
+  background-color: #67809f;
+}
+
+.news-red .btn,
+.news-red .news-popup {
+  background-color: #d64541;
+}
+
+.read-time {
+  display: inline;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+.read-time span {
+  display: block;
+  margin-top: -10px;
+  padding-left: 30px;
 }
 
 /* ===================================== 
@@ -828,7 +853,6 @@ footer {
   height: 75px;
   margin-bottom: 25px;
 }
-.fivestar .flex-item,
 .fivestar .flex-item-center {
   position: relative;
   vertical-align: middle;
@@ -1196,7 +1220,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.flex-container .flex-item,
 .flex-container .flex-item-center {
   position: relative;
   vertical-align: middle;
@@ -1223,7 +1246,6 @@ footer {
 .vertical {
   flex-direction: column;
 }
-.vertical .flex-item,
 .vertical .flex-item-center {
   margin: auto;
   margin-bottom: 13px;
@@ -1247,7 +1269,6 @@ footer {
   width: max-content;
   margin: 30px auto 30px 0;
 }
-.socials .flex-item,
 .socials .flex-item-center {
   position: relative;
   vertical-align: middle;
