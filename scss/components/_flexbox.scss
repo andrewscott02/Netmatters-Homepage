@@ -11,8 +11,19 @@
         @media #{$break-narrow}
         {
             justify-content: center;
+            align-items: flex-end;
         }
     }
+}
+
+.space-between
+{
+    justify-content: space-between;
+}
+
+.align-center
+{
+    align-items: center;
 }
 
 .flex-item-center

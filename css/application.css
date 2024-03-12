@@ -38,6 +38,22 @@ body {
 
 .section {
   padding: 50px 15px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .section {
+    width: 1200px;
+  }
 }
 
 .arw-after::after {
@@ -126,9 +142,12 @@ footer {
 /* Footer Styles */
 /* ========================================================== */
 #FooterInfo {
-  padding: 27px 15px 30px;
   background-color: #323544;
   color: #fff;
+}
+#FooterInfo .section {
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 #FooterInfo ul {
   list-style: none;
@@ -149,6 +168,8 @@ footer {
 .footerinfo ul {
   list-style: none;
   margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
 }
 .footerinfo a {
   text-decoration: none;
@@ -160,9 +181,12 @@ footer {
 }
 
 #FooterBottom {
-  padding: 10px 15px;
   background-color: #212330;
   color: #fff;
+}
+#FooterBottom .section {
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 #FooterBottom p {
   display: flex;
@@ -297,6 +321,8 @@ footer {
 @media screen and (min-width: 768px) {
   #Header .header-title {
     margin: auto;
+    margin-right: 40px;
+    max-width: 345px;
   }
 }
 
@@ -494,6 +520,7 @@ footer {
   margin-bottom: 50px;
 }
 .partners .flex-container {
+  overflow: hidden;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
@@ -525,6 +552,7 @@ footer {
   display: flex;
   align-items: center;
   filter: grayscale(1);
+  overflow: visible;
 }
 .btn-case:hover {
   filter: grayscale(0);
@@ -863,7 +891,7 @@ footer {
 #Welcome h2:nth-child(1) {
   margin-bottom: 0;
 }
-#Welcome > div:first-child {
+#Welcome div > div:first-child {
   margin-bottom: 50px;
 }
 #Welcome strong {
@@ -1284,7 +1312,16 @@ footer {
 @media screen and (min-width: 768px) {
   .flex-container.wide-center {
     justify-content: center;
+    align-items: flex-end;
   }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .flex-item-center {

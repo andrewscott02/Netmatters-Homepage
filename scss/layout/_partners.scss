@@ -8,7 +8,7 @@
 
     .flex-container
     {
-        //overflow-x: hidden;
+        overflow: hidden;
         flex-wrap: nowrap;
         justify-content: flex-start;
     }
@@ -28,6 +28,8 @@
 .btn-case
 {
     @include partnerbtn();
+
+    overflow: visible;
 
     ~.hoverdisplay
     {  

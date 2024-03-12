@@ -19,6 +19,8 @@
         @media #{$break-narrow}
         {
             margin: auto;
+            margin-right: 40px;
+            max-width: 345px;
         }
     }
 }

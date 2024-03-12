@@ -4,7 +4,11 @@
 
 #FooterInfo
 {
-    padding: 27px 15px 30px;
+    .section
+    {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
 
     background-color: $color-footer-info;
     color: $color-text-light;
@@ -39,6 +43,8 @@
     {
         list-style: none;
         margin: 0;
+        font-size: .8125rem;
+        line-height: 1.375rem;
     }
 
     a
@@ -56,8 +62,12 @@
 
 #FooterBottom
 {
-    padding: 10px 15px;
-
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    
     background-color: $color-footer-bottom;
     color: $color-text-light;
 
