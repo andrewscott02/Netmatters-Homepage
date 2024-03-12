@@ -19,6 +19,8 @@
     font-size: 1.063rem;
     white-space: normal;
 
+    overflow: hidden;
+
     &:hover
     {
         background-color: $bkgrndHoverColour;
@@ -132,5 +134,23 @@
     {
         color: $col1;
         background-color: $col2;
+    }
+}
+
+@mixin partnerbtn
+{
+    vertical-align: middle;
+    padding: 0 20px;
+    max-height: 70px;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    filter: grayscale(1);
+
+    &:hover
+    {
+        filter: grayscale(0);
     }
 }

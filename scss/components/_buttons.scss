@@ -31,6 +31,14 @@
     font-size: 1.063rem;
 }
 
+.btn-blue
+{
+    @include btnstyles($colour-btn-blue-desat-base, $colour-btn-blue-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
 .btn-green
 {
     @include btnstyles($colour-btn-green-base, $colour-btn-green-hover);
