@@ -53,6 +53,10 @@
         vertical-align: middle;
         margin-left: 15px;
         margin-right: 15px;
+        &.last-on-left
+        {
+            margin-right: auto;
+        }
     }
 
     .flex-item:first-child,

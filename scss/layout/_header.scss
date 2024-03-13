@@ -22,6 +22,11 @@
             margin-right: 40px;
             max-width: 345px;
         }
+
+        @media #{$break-wide}
+        {
+            max-width: 374.156px;
+        }
     }
 
     .section

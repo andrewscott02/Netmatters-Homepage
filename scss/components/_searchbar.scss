@@ -94,7 +94,7 @@
 	}
 	@media #{$break-wide}
 	{
-        padding-right: 0;
+        //padding-right: 0;
         .search-sbmt
         {
             border-radius: 3px;
@@ -106,7 +106,7 @@
 	}
 	@media #{$break-full}
 	{
-        padding-right: 10px;
+        //padding-right: 10px;
         .search-sbmt
         {
             border-radius: 0 3px 3px 0;
