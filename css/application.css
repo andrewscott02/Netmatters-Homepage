@@ -415,6 +415,12 @@ footer {
 #HeroImage .HeroElements .btn {
   max-width: 50%;
 }
+@media screen and (min-width: 992px) {
+  #HeroImage {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../images/heroimage.webp") no-repeat;
+    background-position: 80% 35%;
+  }
+}
 
 /* ===================================== 
    News Styles
@@ -1410,6 +1416,9 @@ footer {
   font-size: 1.125rem;
   line-height: 1px;
 }
+.btn-navbar-blue-desat > a h3 {
+  font-weight: 400;
+}
 .btn-navbar-blue-desat > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
@@ -1485,6 +1494,9 @@ footer {
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
+}
+.btn-navbar-blue > a h3 {
+  font-weight: 400;
 }
 .btn-navbar-blue > a p {
   margin-bottom: 14px;
@@ -1562,6 +1574,9 @@ footer {
   font-size: 1.125rem;
   line-height: 1px;
 }
+.btn-navbar-green > a h3 {
+  font-weight: 400;
+}
 .btn-navbar-green > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
@@ -1637,6 +1652,9 @@ footer {
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
+}
+.btn-navbar-red > a h3 {
+  font-weight: 400;
 }
 .btn-navbar-red > a p {
   margin-bottom: 14px;
@@ -1714,6 +1732,9 @@ footer {
   font-size: 1.125rem;
   line-height: 1px;
 }
+.btn-navbar-purple > a h3 {
+  font-weight: 400;
+}
 .btn-navbar-purple > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
@@ -1790,6 +1811,9 @@ footer {
   font-size: 1.125rem;
   line-height: 1px;
 }
+.btn-navbar-pink > a h3 {
+  font-weight: 400;
+}
 .btn-navbar-pink > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
@@ -1865,6 +1889,9 @@ footer {
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
+}
+.btn-navbar-orange > a h3 {
+  font-weight: 400;
 }
 .btn-navbar-orange > a p {
   margin-bottom: 14px;
