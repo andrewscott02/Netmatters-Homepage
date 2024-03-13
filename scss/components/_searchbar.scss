@@ -58,7 +58,7 @@
     form
     {
         background-color: $white;
-        border: 2px solid $color-search-mobile;
+        border: 1px solid $color-search;
         border-radius: 0;
         width: 100%;
         height: 100%;
@@ -94,13 +94,26 @@
 	}
 	@media #{$break-wide}
 	{
-		display: none;
+        padding-right: 0;
+        .search-sbmt
+        {
+            border-radius: 3px;
+        }
+		form
+        {
+            display: none;
+        }
 	}
 	@media #{$break-full}
 	{
-		display: inherit;
+        padding-right: 10px;
+        .search-sbmt
+        {
+            border-radius: 0 3px 3px 0;
+        }
         form
         {
+            display: inherit;
             width: 240px;
         }
 	}

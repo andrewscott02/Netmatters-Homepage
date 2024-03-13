@@ -253,7 +253,6 @@ footer {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   justify-content: space-between;
   text-align: left;
   margin-top: 10px;
@@ -394,7 +393,6 @@ footer {
   border-radius: 0 0 3px 3px;
   text-align: left;
   max-width: 720px;
-  height: 100%;
 }
 .news h3 {
   font-size: 1.3rem;
@@ -443,7 +441,6 @@ footer {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   width: 100%;
   justify-content: space-between;
   padding-top: 30px;
@@ -930,7 +927,6 @@ footer {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: flex-start;
   justify-content: flex-start;
   height: 75px;
@@ -1177,6 +1173,20 @@ footer {
   color: #fff;
 }
 
+.btn-support {
+  height: 56px;
+  padding-top: 7px;
+}
+.btn-support svg {
+  float: left;
+  margin: auto;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  width: 30px;
+  height: 36px;
+  fill: #fff;
+}
+
 .btn-subscribe {
   height: auto;
   background-color: #333645;
@@ -1334,7 +1344,6 @@ footer {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .flex-container .flex-item-center {
   position: relative;
@@ -1418,7 +1427,6 @@ footer {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: flex-start;
   width: max-content;
   margin: 30px auto 30px 0;
@@ -1696,7 +1704,7 @@ a.lnk:hover {
 }
 .search-main form {
   background-color: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
   border-radius: 0;
   width: 100%;
   height: 100%;
@@ -1745,14 +1753,24 @@ a.lnk:hover {
 }
 @media screen and (min-width: 992px) {
   .search-main {
+    padding-right: 0;
+  }
+  .search-main .search-sbmt {
+    border-radius: 3px;
+  }
+  .search-main form {
     display: none;
   }
 }
 @media screen and (min-width: 1260px) {
   .search-main {
-    display: inherit;
+    padding-right: 10px;
+  }
+  .search-main .search-sbmt {
+    border-radius: 0 3px 3px 0;
   }
   .search-main form {
+    display: inherit;
     width: 240px;
   }
 }

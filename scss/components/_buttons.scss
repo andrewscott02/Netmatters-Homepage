@@ -55,6 +55,26 @@
     font-size: 1.063rem;
 }
 
+//Styles for specific buttons
+
+.btn-support
+{
+    height: 56px;
+    padding-top: 7px;
+    
+    svg
+    {
+        float: left;
+        margin: auto;
+        padding-right: 5px;
+        padding-bottom: 2px;
+
+        width:30px;
+        height:36px;
+        fill: $white;
+    }
+}
+
 .btn-subscribe
 {
     @include btnstyles($colour-btn-sub-base, $colour-btn-sub-hover);
