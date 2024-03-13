@@ -119,14 +119,21 @@ p
     {
         overflow: visible;
         position: relative;
-        bottom: -66%;
+        bottom: -65%;
         content: "";
         width: 0px;
+        $width: width;
         height: 0px;
         border-style: solid;
         border-width: 35px 68px 0;
         border-color: #FFFFFF transparent transparent transparent;
         transform: rotate(0deg);
+
+        @media #{$break-full}
+        {
+            bottom: -66%;
+            border-width: 35px 83.5px 0;
+        }
     }
 }
 

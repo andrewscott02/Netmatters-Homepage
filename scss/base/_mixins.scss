@@ -45,7 +45,7 @@
     {
         background-color: $buttonHoverColour;
 
-        .a
+        & > a
         {
             background-color: $buttonHoverColour;
         }
@@ -58,6 +58,11 @@
         .triangle-under
         {
             display:inherit;
+        }
+
+        .triangle-under::after
+        {
+            border-color: $buttonHoverColour transparent transparent
         }
     }
 

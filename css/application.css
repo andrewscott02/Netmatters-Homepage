@@ -99,7 +99,7 @@ p {
 .triangle-under::after {
   overflow: visible;
   position: relative;
-  bottom: -66%;
+  bottom: -65%;
   content: "";
   width: 0px;
   height: 0px;
@@ -107,6 +107,12 @@ p {
   border-width: 35px 68px 0;
   border-color: #FFFFFF transparent transparent transparent;
   transform: rotate(0deg);
+}
+@media screen and (min-width: 1260px) {
+  .triangle-under::after {
+    bottom: -66%;
+    border-width: 35px 83.5px 0;
+  }
 }
 
 /* ===================================== 
@@ -1337,7 +1343,7 @@ footer {
 .btn-navbar-blue-desat:hover {
   background-color: #67809f;
 }
-.btn-navbar-blue-desat:hover .a {
+.btn-navbar-blue-desat:hover > a {
   background-color: #67809f;
 }
 .btn-navbar-blue-desat:hover .navbar-panel {
@@ -1345,6 +1351,9 @@ footer {
 }
 .btn-navbar-blue-desat:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-blue-desat:hover .triangle-under::after {
+  border-color: #67809f transparent transparent;
 }
 .btn-navbar-blue-desat .triangle-under {
   display: none;
@@ -1407,7 +1416,7 @@ footer {
 .btn-navbar-blue:hover {
   background-color: #4183d7;
 }
-.btn-navbar-blue:hover .a {
+.btn-navbar-blue:hover > a {
   background-color: #4183d7;
 }
 .btn-navbar-blue:hover .navbar-panel {
@@ -1415,6 +1424,9 @@ footer {
 }
 .btn-navbar-blue:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-blue:hover .triangle-under::after {
+  border-color: #4183d7 transparent transparent;
 }
 .btn-navbar-blue .triangle-under {
   display: none;
@@ -1477,7 +1489,7 @@ footer {
 .btn-navbar-green:hover {
   background-color: #2ecc71;
 }
-.btn-navbar-green:hover .a {
+.btn-navbar-green:hover > a {
   background-color: #2ecc71;
 }
 .btn-navbar-green:hover .navbar-panel {
@@ -1485,6 +1497,9 @@ footer {
 }
 .btn-navbar-green:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-green:hover .triangle-under::after {
+  border-color: #2ecc71 transparent transparent;
 }
 .btn-navbar-green .triangle-under {
   display: none;
@@ -1547,7 +1562,7 @@ footer {
 .btn-navbar-red:hover {
   background-color: #d64541;
 }
-.btn-navbar-red:hover .a {
+.btn-navbar-red:hover > a {
   background-color: #d64541;
 }
 .btn-navbar-red:hover .navbar-panel {
@@ -1555,6 +1570,9 @@ footer {
 }
 .btn-navbar-red:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-red:hover .triangle-under::after {
+  border-color: #d64541 transparent transparent;
 }
 .btn-navbar-red .triangle-under {
   display: none;
@@ -1617,7 +1635,7 @@ footer {
 .btn-navbar-purple:hover {
   background-color: #926fb1;
 }
-.btn-navbar-purple:hover .a {
+.btn-navbar-purple:hover > a {
   background-color: #926fb1;
 }
 .btn-navbar-purple:hover .navbar-panel {
@@ -1625,6 +1643,9 @@ footer {
 }
 .btn-navbar-purple:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-purple:hover .triangle-under::after {
+  border-color: #926fb1 transparent transparent;
 }
 .btn-navbar-purple .triangle-under {
   display: none;
@@ -1687,7 +1708,7 @@ footer {
 .btn-navbar-pink:hover {
   background-color: #f62459;
 }
-.btn-navbar-pink:hover .a {
+.btn-navbar-pink:hover > a {
   background-color: #f62459;
 }
 .btn-navbar-pink:hover .navbar-panel {
@@ -1695,6 +1716,9 @@ footer {
 }
 .btn-navbar-pink:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-pink:hover .triangle-under::after {
+  border-color: #f62459 transparent transparent;
 }
 .btn-navbar-pink .triangle-under {
   display: none;
@@ -1757,7 +1781,7 @@ footer {
 .btn-navbar-orange:hover {
   background-color: #ce4125;
 }
-.btn-navbar-orange:hover .a {
+.btn-navbar-orange:hover > a {
   background-color: #ce4125;
 }
 .btn-navbar-orange:hover .navbar-panel {
@@ -1765,6 +1789,9 @@ footer {
 }
 .btn-navbar-orange:hover .triangle-under {
   display: inherit;
+}
+.btn-navbar-orange:hover .triangle-under::after {
+  border-color: #ce4125 transparent transparent;
 }
 .btn-navbar-orange .triangle-under {
   display: none;
@@ -2153,6 +2180,7 @@ a.lnk:hover {
    Navbar Styles
 ======================================== */
 .navbar {
+  display: none;
   margin: 0;
   height: 99.016px;
   width: 100%;
@@ -2175,6 +2203,11 @@ a.lnk:hover {
 }
 .navbar li {
   list-style: none;
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    display: inherit;
+  }
 }
 
 .navbar-panel {

@@ -6,6 +6,7 @@
 
 .navbar
 {
+    display: none;
     margin: 0;
     height: 99.016px;
     width: 100%;
@@ -39,6 +40,11 @@
     li
     {
         list-style: none;
+    }
+
+    @media #{$break-wide}
+    {
+        display: inherit;
     }
 }
 
