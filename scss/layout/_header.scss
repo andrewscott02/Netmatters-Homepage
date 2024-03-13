@@ -27,6 +27,11 @@
         {
             max-width: 374.156px;
         }
+
+        @media #{$break-full}
+        {
+            max-width: 370px;
+        }
     }
 
     .section

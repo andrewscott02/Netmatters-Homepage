@@ -171,3 +171,52 @@
         height:50px;
     }
 }
+
+.btn-navbar-blue-desat
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-blue-desat,
+                            $colour-nav-panel-blue-desat);
+}
+
+.btn-navbar-blue
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-blue-sat,
+                            $colour-nav-panel-blue-sat);
+}
+
+.btn-navbar-green
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-green,
+                            $colour-nav-panel-green);
+}
+
+.btn-navbar-red
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-red,
+                            $colour-nav-panel-red);
+}
+
+.btn-navbar-purple
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-purple,
+                            $colour-nav-panel-purple);
+}
+
+.btn-navbar-pink
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-pink,
+                            $colour-nav-panel-pink);
+}
+
+.btn-navbar-orange
+{
+    @include btnstyles-nav($colour-nav-base,
+                            $colour-card-orange,
+                            $colour-nav-panel-orange);
+}
