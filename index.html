@@ -10,62 +10,38 @@
 
     <header>
         <div id="Header">
-            <div class="header-container">
-                <div class="flex-container wide-center">
-                    <!-- Logo -->
-                    <div class="flex-item-center flex-grow stopgrow-narrow flex-shrink last-on-left">
-                        <a href="#" class="header-title"><img class="header-title" src="Images/nm-logo-black.webp"></a>
-                    </div>
-                    <!-- Phone button (Mobile Only) -->
-                    <div class="flex-item-center mobile-only">
-                        <a href="#" class="link-phone">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-                                <title>paragraph-justify</title>
-                                <g id="icomoon-ignore">
-                                </g>
-                                <path d="M352 320c-32 32-32 64-64 64s-64-32-96-64-64-64-64-96 32-32 64-64-64-128-96-128-96 96-96 96c0 64 65.75 193.75 128 256s192 128 256 128c0 0 96-64 96-96s-96-128-128-96z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- Searchbar (Wide) -->
-                    <div class="search wide-only">
-                        <form action="index.html" method="post">
-                            <label for="search" class="search-mobile hidden">Search...</label>
-                            <div class="flex-container">
-                                <input type="text" id="search" placeholder="Search..." name="request_search">
-                            </div>
-                        </form>
-                        <a href="#" class="search-sbmt">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-                                <title>linkedin2</title>
-                                <g id="icomoon-ignore">
-                                </g>
-                                <path d="M496.131 435.698l-121.276-103.147c-12.537-11.283-25.945-16.463-36.776-15.963 28.628-33.534 45.921-77.039 45.921-124.588 0-106.039-85.961-192-192-192s-192 85.961-192 192 85.961 192 192 192c47.549 0 91.054-17.293 124.588-45.922-0.5 10.831 4.68 24.239 15.963 36.776l103.147 121.276c17.661 19.623 46.511 21.277 64.11 3.678s15.946-46.449-3.677-64.11zM192 320c-70.692 0-128-57.308-128-128s57.308-128 128-128 128 57.308 128 128-57.307 128-128 128z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- Navigation Button -->
-                    <div class="flex-item-center">
-                        <!-- Make icon, but don't make menu yet --> 
-                        <a href="#" class="btn-nav-container">
-                            <div class="btn-nav"></div>
-                        </a>
-                    </div>
-
-                    <!-- Wide Viewport only -->
-                    <!--
-                    <div class="flex-item">SUPPORT</div>
-                    <div class="flex-item">CONTACT</div>
-                    <div class="flex-item">Search...(PC)</div>
-                    -->
-                </div>
-
-                <!-- Searchbar (Mobile Only) -->
-                <div class="search mobile-only">
-                    <form action="index.html" method="post">
-                        <label for="search" class="search-mobile hidden">Search...</label>
-                        <div class="flex-container">
-                            <input type="text" id="search" placeholder="Search..." name="request_search">
+            <div class="section">
+                <div class="header-container">
+                    <div class="flex-container wide-center">
+                        <!-- Logo -->
+                        <div class="flex-item-center flex-grow stopgrow-narrow flex-shrink last-on-left">
+                            <a href="#" class="header-title"><img class="header-title" src="Images/nm-logo-black.webp"></a>
+                        </div>
+                        <!-- Phone button (Mobile Only) -->
+                        <div class="flex-item-center mobile-only">
+                            <a href="#" class="link-phone">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                                    <title>paragraph-justify</title>
+                                    <g id="icomoon-ignore">
+                                    </g>
+                                    <path d="M352 320c-32 32-32 64-64 64s-64-32-96-64-64-64-64-96 32-32 64-64-64-128-96-128-96 96-96 96c0 64 65.75 193.75 128 256s192 128 256 128c0 0 96-64 96-96s-96-128-128-96z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex-item-center wide-only">
+                            <a class="btn-blue" href="#">Support</a>
+                        </div>
+                        <div class="flex-item-center wide-only">
+                            <a class="btn-grey" href="#">Contact</a>
+                        </div>
+                        <!-- Searchbar (Wide) -->
+                        <div class="search search-main">
+                            <form action="index.html" method="post">
+                                <label for="search" class="search-mobile hidden">Search...</label>
+                                <div class="flex-container">
+                                    <input type="text" id="search" placeholder="Search..." name="request_search">
+                                </div>
+                            </form>
                             <a href="#" class="search-sbmt">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                                     <title>linkedin2</title>
@@ -75,7 +51,39 @@
                                 </svg>
                             </a>
                         </div>
-                    </form>
+                        <!-- Navigation Button -->
+                        <div class="flex-item-center">
+                            <!-- Make icon, but don't make menu yet --> 
+                            <a href="#" class="btn-nav-container">
+                                <div class="btn-nav"></div>
+                            </a>
+                        </div>
+
+                        <!-- Wide Viewport only -->
+                        <!--
+                        <div class="flex-item">SUPPORT</div>
+                        <div class="flex-item">CONTACT</div>
+                        <div class="flex-item">Search...(PC)</div>
+                        -->
+                    </div>
+
+                    <!-- Searchbar (Mobile Only) -->
+                    <div class="search mobile-only">
+                        <form action="index.html" method="post">
+                            <label for="search" class="search-mobile hidden">Search...</label>
+                            <div class="flex-container">
+                                <input type="text" id="search" placeholder="Search..." name="request_search">
+                                <a href="#" class="search-sbmt">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                                        <title>linkedin2</title>
+                                        <g id="icomoon-ignore">
+                                        </g>
+                                        <path d="M496.131 435.698l-121.276-103.147c-12.537-11.283-25.945-16.463-36.776-15.963 28.628-33.534 45.921-77.039 45.921-124.588 0-106.039-85.961-192-192-192s-192 85.961-192 192 85.961 192 192 192c47.549 0 91.054-17.293 124.588-45.922-0.5 10.831 4.68 24.239 15.963 36.776l103.147 121.276c17.661 19.623 46.511 21.277 64.11 3.678s15.946-46.449-3.677-64.11zM192 320c-70.692 0-128-57.308-128-128s57.308-128 128-128 128 57.308 128 128-57.307 128-128 128z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +107,7 @@
             <div id="Services" class="section">
                 <div class="flex-container space-between align-center">
                     <h2>Our Services</h2>
-                    <div class="lnk-container wide-only">
+                    <div class="lnk-container narrow-only">
                         <a class="lnk arw-after" href="#">View Our Work</a>
                     </div>
                 </div>
@@ -332,7 +340,7 @@
             <div id="LatestNews" class="section">
                 <div class="flex-container space-between align-center">
                     <h2>Latest News</h2>
-                    <div class="lnk-container wide-only">
+                    <div class="lnk-container narrow-only">
                         <a class="lnk arw-after" href="#">View All</a>
                     </div>
                 </div>

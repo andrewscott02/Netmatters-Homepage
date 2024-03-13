@@ -157,10 +157,19 @@ footer
 	}
 }
 
-.wide-only
+.narrow-only
 {
 	display: none;
 	@media #{$break-narrow}
+	{
+		display: inherit;
+	}
+}
+
+.wide-only
+{
+	display: none;
+	@media #{$break-wide}
 	{
 		display: inherit;
 	}

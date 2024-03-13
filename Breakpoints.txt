@@ -8,6 +8,11 @@ Navigation bar appears
 1260px
 Searchbar input reappears
 
+Breakpoints - Hero Image
+
+992px
+Hero image text aligns left
+
 Breakpoints - Welcome
 
 992px

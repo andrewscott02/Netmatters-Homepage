@@ -16,7 +16,6 @@ $transparent    : rgba(0, 0, 0, 0);
 
 //Additional Colours for Buttons and Icons: Replace with list
 $color-purple       : #926fb1;
-$color-btn-search   : #999aa2;
 
 //Default Page Colours
 $color-primary              : $white;
@@ -28,6 +27,9 @@ $color-footer-bottom        : #212330;
 //Button Colours
 $colour-btn-primary-base        :$color-purple;
 $colour-btn-primary-hover       :$color-purple;
+
+$colour-btn-grey-base           : #999aa2;
+$colour-btn-grey-hover          : #84858f;
 
 $colour-btn-dark-base           :#272936;
 $colour-btn-dark-hover          :#121318;

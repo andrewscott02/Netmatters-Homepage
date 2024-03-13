@@ -23,6 +23,14 @@
     font-size: 1.063rem;
 }
 
+.btn-grey
+{
+    @include btnstyles($colour-btn-grey-base, $colour-btn-grey-hover);
+    border: 3px solid transparent;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
 .btn-blue
 {
     @include btnstyles($colour-btn-blue-base, $colour-btn-blue-hover);
@@ -31,7 +39,7 @@
     font-size: 1.063rem;
 }
 
-.btn-blue
+.btn-blue-desat
 {
     @include btnstyles($colour-btn-blue-desat-base, $colour-btn-blue-hover);
     border: 3px solid transparent;

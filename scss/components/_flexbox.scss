@@ -8,11 +8,8 @@
 
     &.wide-center
     {
-        @media #{$break-narrow}
-        {
-            justify-content: center;
-            align-items: flex-end;
-        }
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -36,6 +33,24 @@
         @media #{$break-narrow}
         {
             display: none;
+        }
+    }
+
+    &.narrow-only
+    {
+        display: none;
+        @media #{$break-narrow}
+        {
+            display: inherit;
+        }
+    }
+    
+    &.wide-only
+    {
+        display: none;
+        @media #{$break-wide}
+        {
+            display: inherit;
         }
     }
 }
