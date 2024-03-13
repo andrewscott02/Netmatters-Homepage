@@ -89,6 +89,26 @@ p {
   margin-bottom: 25px;
 }
 
+.triangle-under {
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  height: 160%;
+  z-index: 10;
+}
+.triangle-under::after {
+  overflow: visible;
+  position: relative;
+  bottom: -66%;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 68px 0;
+  border-color: #FFFFFF transparent transparent transparent;
+  transform: rotate(0deg);
+}
+
 /* ===================================== 
    Grid Layout
 ======================================== */
@@ -545,7 +565,7 @@ footer {
   margin-bottom: 50px;
 }
 .partners .flex-container {
-  overflow: hidden;
+  overflow-x: clip;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
@@ -1317,10 +1337,22 @@ footer {
 .btn-navbar-blue-desat:hover {
   background-color: #67809f;
 }
+.btn-navbar-blue-desat:hover .a {
+  background-color: #67809f;
+}
 .btn-navbar-blue-desat:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-blue-desat a {
+.btn-navbar-blue-desat:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-blue-desat .triangle-under {
+  display: none;
+}
+.btn-navbar-blue-desat .navbar-panel {
+  background-color: #526781;
+}
+.btn-navbar-blue-desat > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1338,34 +1370,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-blue-desat a:hover {
+.btn-navbar-blue-desat > a:hover {
   background-color: #67809f;
   text-decoration: none;
 }
-.btn-navbar-blue-desat a img {
+.btn-navbar-blue-desat > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-blue-desat a .arw-after::after {
+.btn-navbar-blue-desat > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue-desat a svg {
+.btn-navbar-blue-desat > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-blue-desat a h3, .btn-navbar-blue-desat a p {
+.btn-navbar-blue-desat > a h3, .btn-navbar-blue-desat > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-blue-desat a p {
+.btn-navbar-blue-desat > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1374,10 +1407,22 @@ footer {
 .btn-navbar-blue:hover {
   background-color: #4183d7;
 }
+.btn-navbar-blue:hover .a {
+  background-color: #4183d7;
+}
 .btn-navbar-blue:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-blue a {
+.btn-navbar-blue:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-blue .triangle-under {
+  display: none;
+}
+.btn-navbar-blue .navbar-panel {
+  background-color: #286abd;
+}
+.btn-navbar-blue > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1395,34 +1440,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-blue a:hover {
+.btn-navbar-blue > a:hover {
   background-color: #4183d7;
   text-decoration: none;
 }
-.btn-navbar-blue a img {
+.btn-navbar-blue > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-blue a .arw-after::after {
+.btn-navbar-blue > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue a svg {
+.btn-navbar-blue > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-blue a h3, .btn-navbar-blue a p {
+.btn-navbar-blue > a h3, .btn-navbar-blue > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-blue a p {
+.btn-navbar-blue > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1431,10 +1477,22 @@ footer {
 .btn-navbar-green:hover {
   background-color: #2ecc71;
 }
+.btn-navbar-green:hover .a {
+  background-color: #2ecc71;
+}
 .btn-navbar-green:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-green a {
+.btn-navbar-green:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-green .triangle-under {
+  display: none;
+}
+.btn-navbar-green .navbar-panel {
+  background-color: #25a25a;
+}
+.btn-navbar-green > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1452,34 +1510,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-green a:hover {
+.btn-navbar-green > a:hover {
   background-color: #2ecc71;
   text-decoration: none;
 }
-.btn-navbar-green a img {
+.btn-navbar-green > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-green a .arw-after::after {
+.btn-navbar-green > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-green a svg {
+.btn-navbar-green > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-green a h3, .btn-navbar-green a p {
+.btn-navbar-green > a h3, .btn-navbar-green > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-green a p {
+.btn-navbar-green > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1488,10 +1547,22 @@ footer {
 .btn-navbar-red:hover {
   background-color: #d64541;
 }
+.btn-navbar-red:hover .a {
+  background-color: #d64541;
+}
 .btn-navbar-red:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-red a {
+.btn-navbar-red:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-red .triangle-under {
+  display: none;
+}
+.btn-navbar-red .navbar-panel {
+  background-color: #bc2c28;
+}
+.btn-navbar-red > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1509,34 +1580,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-red a:hover {
+.btn-navbar-red > a:hover {
   background-color: #d64541;
   text-decoration: none;
 }
-.btn-navbar-red a img {
+.btn-navbar-red > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-red a .arw-after::after {
+.btn-navbar-red > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-red a svg {
+.btn-navbar-red > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-red a h3, .btn-navbar-red a p {
+.btn-navbar-red > a h3, .btn-navbar-red > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-red a p {
+.btn-navbar-red > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1545,10 +1617,22 @@ footer {
 .btn-navbar-purple:hover {
   background-color: #926fb1;
 }
+.btn-navbar-purple:hover .a {
+  background-color: #926fb1;
+}
 .btn-navbar-purple:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-purple a {
+.btn-navbar-purple:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-purple .triangle-under {
+  display: none;
+}
+.btn-navbar-purple .navbar-panel {
+  background-color: #79539a;
+}
+.btn-navbar-purple > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1566,34 +1650,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-purple a:hover {
+.btn-navbar-purple > a:hover {
   background-color: #926fb1;
   text-decoration: none;
 }
-.btn-navbar-purple a img {
+.btn-navbar-purple > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-purple a .arw-after::after {
+.btn-navbar-purple > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-purple a svg {
+.btn-navbar-purple > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-purple a h3, .btn-navbar-purple a p {
+.btn-navbar-purple > a h3, .btn-navbar-purple > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-purple a p {
+.btn-navbar-purple > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1602,10 +1687,22 @@ footer {
 .btn-navbar-pink:hover {
   background-color: #f62459;
 }
+.btn-navbar-pink:hover .a {
+  background-color: #f62459;
+}
 .btn-navbar-pink:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-pink a {
+.btn-navbar-pink:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-pink .triangle-under {
+  display: none;
+}
+.btn-navbar-pink .navbar-panel {
+  background-color: #de093f;
+}
+.btn-navbar-pink > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1623,34 +1720,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-pink a:hover {
+.btn-navbar-pink > a:hover {
   background-color: #f62459;
   text-decoration: none;
 }
-.btn-navbar-pink a img {
+.btn-navbar-pink > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-pink a .arw-after::after {
+.btn-navbar-pink > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-pink a svg {
+.btn-navbar-pink > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-pink a h3, .btn-navbar-pink a p {
+.btn-navbar-pink > a h3, .btn-navbar-pink > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-pink a p {
+.btn-navbar-pink > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -1659,10 +1757,22 @@ footer {
 .btn-navbar-orange:hover {
   background-color: #ce4125;
 }
+.btn-navbar-orange:hover .a {
+  background-color: #ce4125;
+}
 .btn-navbar-orange:hover .navbar-panel {
   display: inherit;
 }
-.btn-navbar-orange a {
+.btn-navbar-orange:hover .triangle-under {
+  display: inherit;
+}
+.btn-navbar-orange .triangle-under {
+  display: none;
+}
+.btn-navbar-orange .navbar-panel {
+  background-color: #a3331d;
+}
+.btn-navbar-orange > a {
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1680,34 +1790,35 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
   text-align: center;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-orange a:hover {
+.btn-navbar-orange > a:hover {
   background-color: #ce4125;
   text-decoration: none;
 }
-.btn-navbar-orange a img {
+.btn-navbar-orange > a img {
   width: 50px;
   height: 50px;
 }
-.btn-navbar-orange a .arw-after::after {
+.btn-navbar-orange > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-orange a svg {
+.btn-navbar-orange > a svg {
   width: 25px;
   height: 30px;
   fill: #fff;
 }
-.btn-navbar-orange a h3, .btn-navbar-orange a p {
+.btn-navbar-orange > a h3, .btn-navbar-orange > a p {
   margin: 7px;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1px;
 }
-.btn-navbar-orange a p {
+.btn-navbar-orange > a p {
   margin-bottom: 14px;
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -2042,7 +2153,7 @@ a.lnk:hover {
    Navbar Styles
 ======================================== */
 .navbar {
-  margin: 16px 0;
+  margin: 0;
   height: 99.016px;
   width: 100%;
   background-color: #333645;
@@ -2071,12 +2182,20 @@ a.lnk:hover {
   display: none;
   background-color: #1d1f28;
   position: absolute;
-  top: 24%;
+  top: 22.9%;
   left: 0;
   min-width: 100%;
-  z-index: 10;
+  z-index: 5;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-panel a {
+  text-decoration: none;
+}
+.navbar-panel a:hover {
+  text-decoration: underline;
 }
 
 .btn-nav-container {

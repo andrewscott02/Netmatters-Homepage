@@ -45,13 +45,33 @@
     {
         background-color: $buttonHoverColour;
 
+        .a
+        {
+            background-color: $buttonHoverColour;
+        }
+
         .navbar-panel
         {
             display: inherit;
         }
+
+        .triangle-under
+        {
+            display:inherit;
+        }
     }
 
-    a
+    .triangle-under
+    {
+        display:none;
+    }
+
+    .navbar-panel
+    {
+        background-color: $panelColour;
+    }
+
+    & > a
     {
         @include btnstyles($buttonBaseColour, $buttonHoverColour);
         margin: auto;
@@ -61,6 +81,8 @@
         display: block;
         width: 100%;
         height: 100%;
+
+        overflow: visible;
 
         text-align: center;
         //background-color: black;

@@ -8,7 +8,7 @@
 
     .flex-container
     {
-        overflow: hidden;
+        overflow-x: clip;
         flex-wrap: nowrap;
         justify-content: flex-start;
     }

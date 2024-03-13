@@ -1,12 +1,7 @@
 Breakpoints - Header and Navigation
 
 992px
-Searchbar input vanished, but button stays
-Support and contact buttons appear
 Navigation bar appears
-
-1260px
-Searchbar input reappears
 
 Breakpoints - Hero Image
 
