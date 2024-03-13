@@ -1355,6 +1355,9 @@ footer {
 .btn-navbar-blue-desat:hover .triangle-under::after {
   border-color: #67809f transparent transparent;
 }
+.btn-navbar-blue-desat:hover svg {
+  fill: #fff;
+}
 .btn-navbar-blue-desat .triangle-under {
   display: none;
 }
@@ -1399,7 +1402,7 @@ footer {
 .btn-navbar-blue-desat > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #67809f;
 }
 .btn-navbar-blue-desat > a h3, .btn-navbar-blue-desat > a p {
   margin: 7px;
@@ -1427,6 +1430,9 @@ footer {
 }
 .btn-navbar-blue:hover .triangle-under::after {
   border-color: #4183d7 transparent transparent;
+}
+.btn-navbar-blue:hover svg {
+  fill: #fff;
 }
 .btn-navbar-blue .triangle-under {
   display: none;
@@ -1472,7 +1478,7 @@ footer {
 .btn-navbar-blue > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #4183d7;
 }
 .btn-navbar-blue > a h3, .btn-navbar-blue > a p {
   margin: 7px;
@@ -1500,6 +1506,9 @@ footer {
 }
 .btn-navbar-green:hover .triangle-under::after {
   border-color: #2ecc71 transparent transparent;
+}
+.btn-navbar-green:hover svg {
+  fill: #fff;
 }
 .btn-navbar-green .triangle-under {
   display: none;
@@ -1545,7 +1554,7 @@ footer {
 .btn-navbar-green > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #2ecc71;
 }
 .btn-navbar-green > a h3, .btn-navbar-green > a p {
   margin: 7px;
@@ -1573,6 +1582,9 @@ footer {
 }
 .btn-navbar-red:hover .triangle-under::after {
   border-color: #d64541 transparent transparent;
+}
+.btn-navbar-red:hover svg {
+  fill: #fff;
 }
 .btn-navbar-red .triangle-under {
   display: none;
@@ -1618,7 +1630,7 @@ footer {
 .btn-navbar-red > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #d64541;
 }
 .btn-navbar-red > a h3, .btn-navbar-red > a p {
   margin: 7px;
@@ -1646,6 +1658,9 @@ footer {
 }
 .btn-navbar-purple:hover .triangle-under::after {
   border-color: #926fb1 transparent transparent;
+}
+.btn-navbar-purple:hover svg {
+  fill: #fff;
 }
 .btn-navbar-purple .triangle-under {
   display: none;
@@ -1691,7 +1706,7 @@ footer {
 .btn-navbar-purple > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #926fb1;
 }
 .btn-navbar-purple > a h3, .btn-navbar-purple > a p {
   margin: 7px;
@@ -1719,6 +1734,9 @@ footer {
 }
 .btn-navbar-pink:hover .triangle-under::after {
   border-color: #f62459 transparent transparent;
+}
+.btn-navbar-pink:hover svg {
+  fill: #fff;
 }
 .btn-navbar-pink .triangle-under {
   display: none;
@@ -1764,7 +1782,7 @@ footer {
 .btn-navbar-pink > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #f62459;
 }
 .btn-navbar-pink > a h3, .btn-navbar-pink > a p {
   margin: 7px;
@@ -1792,6 +1810,9 @@ footer {
 }
 .btn-navbar-orange:hover .triangle-under::after {
   border-color: #ce4125 transparent transparent;
+}
+.btn-navbar-orange:hover svg {
+  fill: #fff;
 }
 .btn-navbar-orange .triangle-under {
   display: none;
@@ -1837,7 +1858,7 @@ footer {
 .btn-navbar-orange > a svg {
   width: 25px;
   height: 30px;
-  fill: #fff;
+  fill: #ce4125;
 }
 .btn-navbar-orange > a h3, .btn-navbar-orange > a p {
   margin: 7px;
