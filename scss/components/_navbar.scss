@@ -10,7 +10,7 @@
     height: 99.016px;
     width: 100%;
 
-    background-color: grey;
+    background-color: #333645;
 
     .section
     {
@@ -44,6 +44,20 @@
     {
         list-style: none;
     }
+}
+
+.navbar-panel
+{
+    margin: 0;
+    display: none;
+    background-color: #1d1f28;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 //Nav Button

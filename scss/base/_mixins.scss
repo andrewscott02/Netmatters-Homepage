@@ -43,10 +43,11 @@
 {
     &:hover
     {
-        //display panel
-        &:hover
+        background-color: $buttonHoverColour;
+
+        .navbar-panel
         {
-            background-color: $buttonHoverColour;
+            display: inherit;
         }
     }
 
