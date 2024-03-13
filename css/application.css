@@ -389,7 +389,7 @@ footer {
 /* Hero Image Styles */
 /* ========================================================== */
 #HeroImage {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/heroimage.webp") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/heroimage.webp") no-repeat;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   #HeroImage {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../images/heroimage.webp") no-repeat;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../Images/heroimage.webp") no-repeat;
     background-position: 80% 35%;
   }
 }

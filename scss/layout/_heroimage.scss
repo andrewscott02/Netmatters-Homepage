@@ -4,7 +4,7 @@
 
 #HeroImage
 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/heroimage.webp") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/heroimage.webp") no-repeat;
     height: 500px;
 
     background-position: center;
@@ -45,7 +45,7 @@
 
     @media #{$break-wide}
     {
-        background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/heroimage.webp") no-repeat;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../Images/heroimage.webp") no-repeat;
         // background: linear-gradient(270deg, transparent 25%, #000);
         background-position: 80% 35%;
     }
