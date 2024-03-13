@@ -196,6 +196,7 @@ footer {
   height: auto;
 }
 #FooterInfo h3 {
+  margin-top: 0;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -221,18 +222,21 @@ footer {
 }
 #FooterBottom .section {
   padding-top: 10px;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 #FooterBottom p {
-  display: flex;
+  display: inline;
   width: 100%;
-  padding: 5px 0 10px;
   margin: 0;
+  margin-right: 5px;
   font-size: 0.8125rem;
   text-decoration: none;
   color: #fff;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
+}
+#FooterBottom p:first-child {
+  margin-right: 0;
 }
 
 /* ========================================================== */
@@ -2186,6 +2190,36 @@ footer {
 @media screen and (min-width: 992px) {
   #SignUp .grid-container {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  }
+}
+
+#FooterInfo {
+  overflow: clip;
+}
+#FooterInfo .grid-container {
+  grid-gap: 30px;
+}
+@media screen and (min-width: 1260px) {
+  #FooterInfo .grid-container {
+    grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
+  }
+}
+#FooterInfo .footerinfo .grid-container {
+  grid-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  #FooterInfo .footerinfo .grid-container {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  #FooterInfo .footerinfo .grid-container {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  #FooterInfo .footerinfo .grid-container {
+    grid-gap: 2px;
   }
 }
 

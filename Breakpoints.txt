@@ -1,7 +1,7 @@
 Breakpoints - Header and Navigation
 
 992px
-Navigation bar appears
+Icons for navbar
 
 Breakpoints - Hero Image
 
@@ -11,26 +11,13 @@ Hero image text aligns left
 Breakpoints - Welcome
 
 992px
-Welcome and client reviews appear on the same row (2 columns)
 Buttons appear in 2 rows
 
 1260px
 Buttons appear in a single row (2 columns per section)
 
-Breakpoints - News
-
-768px
-1st item appears slightly smaller
-
 Breakpoints - Footer
 
 768px
-Footer links appear in 2 columns
-Footer rights appear in single row
+Footer copyrights appear in single row
 - appears before sitemap
-
-992px
-Footer links appear in 4 columns
-
-1260px
-Netmatters logo and socials appear in same row as links (5 columns)
