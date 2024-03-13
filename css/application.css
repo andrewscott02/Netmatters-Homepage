@@ -2129,6 +2129,11 @@ footer {
   }
 }
 
+.navbar-panel .grid-container {
+  grid-gap: 5px;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+}
+
 /* ===================================== 
    Icon Styles
 ======================================== */
@@ -2224,11 +2229,30 @@ a.lnk:hover {
   color: #fff;
   text-decoration: none;
 }
+.navbar-panel h3 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
 .navbar-panel a {
+  display: inline-block;
+  margin-top: 10px;
   text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.313rem;
 }
 .navbar-panel a:hover {
   text-decoration: underline;
+}
+.navbar-panel svg {
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  width: 30px;
+  height: 36px;
+  fill: #fff;
 }
 
 .btn-nav-container {
