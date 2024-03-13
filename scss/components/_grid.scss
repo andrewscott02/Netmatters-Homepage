@@ -7,6 +7,29 @@
     display: grid;
 }
 
+.navbar-panel
+{
+    .grid-container
+    {
+        grid-gap: 5px;
+
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+}
+
+#Welcome
+{
+    .grid-container
+    {   
+        @media #{$break-wide}
+        {
+            grid-gap: 30px;
+
+            grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        }
+    }
+}
+
 #Services
 {
     .grid-container
@@ -139,15 +162,5 @@
         {
             grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
         }
-    }
-}
-
-.navbar-panel
-{
-    .grid-container
-    {
-        grid-gap: 5px;
-
-        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
     }
 }
