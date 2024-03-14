@@ -45,7 +45,7 @@
         margin: auto;
         
         color: $white;
-        background-color: rgba(1, 0, 0, 0.5);
+        background-color: $transparent;
         text-align: center;
 
         & > div:first-child
@@ -86,16 +86,18 @@
     .triangle-under
     {
         display: none;
+        width:72px;
         position: absolute;
-        bottom: 50%;
+        bottom: 90%;
         left: -200px;
         right: -200px;
         margin: auto;
-        // background-color: $transparent;
+        // background-color: red;
     }
 
     .triangle-under::after
     {
+        border-width: 35px 36px 0;
         border-color: $color-secondary transparent transparent transparent;
     }
 

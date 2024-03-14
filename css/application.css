@@ -689,7 +689,7 @@ footer {
   right: -200px;
   margin: auto;
   color: #fff;
-  background-color: rgba(1, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
 }
 .btn-case .hoverdisplay > div:first-child {
@@ -717,13 +717,15 @@ footer {
 }
 .btn-case .triangle-under {
   display: none;
+  width: 72px;
   position: absolute;
-  bottom: 50%;
+  bottom: 90%;
   left: -200px;
   right: -200px;
   margin: auto;
 }
 .btn-case .triangle-under::after {
+  border-width: 35px 36px 0;
   border-color: #333645 transparent transparent transparent;
 }
 .btn-case:hover .triangle-under {
