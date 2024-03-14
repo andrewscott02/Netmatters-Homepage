@@ -29,28 +29,29 @@
 {
     @include partnerbtn();
 
-    ~.hoverdisplay
+    .hoverdisplay
     {  
         display: none;
         position: relative;
-        left: 0px;
-        bottom: 186px;
+        left: -50%;
+        bottom: 150px;
         
         color: $white;
-
+        background-color: rgba(1, 0, 0, 0.5);
         text-align: center;
 
         div
         {
             display: flex;
             flex-direction: column;
-            position: relative;
+            // position: relative;
             justify-content: flex-end;
-            bottom: 100px;
+            // bottom: 100px;
             
             background-color: $color-secondary;
             padding: 20px;
             width: 280px;
+            margin-bottom:65px;
         }
 
         h3
@@ -73,7 +74,7 @@
 
     &:hover
     {
-        ~.hoverdisplay
+        .hoverdisplay
         {
             display: flex;
         }
