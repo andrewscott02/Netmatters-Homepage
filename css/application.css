@@ -469,6 +469,11 @@ footer {
   border-radius: 100%;
   border: 2px solid #fff;
 }
+@media screen and (min-width: 992px) {
+  .HeroNavigation span:first-child:after {
+    bottom: 50%;
+  }
+}
 
 /* ===================================== 
    News Styles

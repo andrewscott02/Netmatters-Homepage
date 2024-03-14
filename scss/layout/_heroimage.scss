@@ -114,5 +114,10 @@
         height: 20px;
         border-radius: 100%;
         border: 2px solid $white;
+
+        @media #{$break-wide}
+        {
+            bottom: 50%;
+        }
     }
 }
