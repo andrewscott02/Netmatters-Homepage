@@ -115,6 +115,10 @@ p {
   }
 }
 
+.float-left {
+  float: left;
+}
+
 /* ===================================== 
    Grid Layout
 ======================================== */
@@ -2234,6 +2238,264 @@ footer {
   fill: currentColor;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?dpfmnu");
+  src: url("../fonts/icomoon.eot?dpfmnu#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dpfmnu") format("truetype"), url("../fonts/icomoon.woff?dpfmnu") format("woff"), url("../fonts/icomoon.svg?dpfmnu#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  margin-top: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-small {
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+
+.icon-medium {
+  font-size: 1.438rem;
+  line-height: 35px;
+  margin-right: 5px;
+}
+
+.icon-large {
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+
+.icon-bar-graph:before {
+  content: "\e900";
+}
+
+.icon-transfer:before {
+  content: "\e901";
+}
+
+.icon-arrows:before {
+  content: "\e901";
+}
+
+.icon-headphones:before {
+  content: "\e910";
+}
+
+.icon-bullhorn:before {
+  content: "\e91a";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-ticket:before {
+  content: "\e939";
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+
+.icon-clock:before {
+  content: "\e94e";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-laptop:before {
+  content: "\e957";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+.icon-drive:before {
+  content: "\e963";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+.icon-shuffle:before {
+  content: "\ea30";
+}
+
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+.icon-angle-double-right:before {
+  content: "\e902";
+}
+
+.icon-star:before {
+  content: "\e903";
+}
+
+.icon-lock:before {
+  content: "\e904";
+}
+
+.icon-flask:before {
+  content: "\e905";
+}
+
+.icon-clipboard:before {
+  content: "\e906";
+}
+
+.icon-paste:before {
+  content: "\e906";
+}
+
+.icon-handshake-o:before {
+  content: "\e907";
+}
+
+.icon-dashboard:before {
+  content: "\e908";
+}
+
+.icon-tachometer:before {
+  content: "\e908";
+}
+
+.icon-phone-square:before {
+  content: "\e909";
+}
+
+.icon-pencil:before {
+  content: "\e90a";
+}
+
+.icon-envelope:before {
+  content: "\e90b";
+}
+
+.icon-money:before {
+  content: "\e90c";
+}
+
+.icon-graduation-cap:before {
+  content: "\e90d";
+}
+
+.icon-cloud-download:before {
+  content: "\e90e";
+}
+
+.icon-cloud:before {
+  content: "\e90f";
+}
+
+.icon-group:before {
+  content: "\e911";
+}
+
+.icon-users:before {
+  content: "\e911";
+}
+
+.icon-cogs:before {
+  content: "\e912";
+}
+
+.icon-gears:before {
+  content: "\e912";
+}
+
+.icon-paperplane:before {
+  content: "\e913";
+}
+
+.icon-send:before {
+  content: "\e913";
+}
+
+.icon-flight:before {
+  content: "\e913";
+}
+
+.icon-email:before {
+  content: "\e913";
+}
+
+.icon-chat:before {
+  content: "\e914";
+}
+
+.icon-help:before {
+  content: "\e915";
+}
+
+.icon-security:before {
+  content: "\e916";
+}
+
+.icon-call:before {
+  content: "\e917";
+}
+
+.icon-trending_up:before {
+  content: "\e918";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e919";
+}
+
+.icon-mouse:before {
+  content: "\e91b";
+}
+
 /* ===================================== 
    Links Styles
 ======================================== */
@@ -2254,20 +2516,14 @@ a.lnk:hover {
 }
 
 .link-phone {
-  content: " ";
-  width: 28px;
   margin: auto;
-}
-.link-phone svg {
-  fill: #333645;
-  width: 28px;
-  height: 28px;
-  margin-top: 10px;
-  margin-right: 10px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #333645;
 }
 .link-phone:hover {
   text-decoration: underline;
-  border-bottom: 1px solid #333645;
+  text-decoration-thickness: from-font;
 }
 
 /* ===================================== 
@@ -2416,11 +2672,19 @@ a.lnk:hover {
   width: auto;
   height: 100%;
 }
-.search-sbmt svg {
-  width: 20px;
-  height: 24px;
-  margin-top: 10px;
-  margin-right: 10px;
+
+.search-sbmt-mobile {
+  width: 30px;
+  height: 43px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  line-height: 47px;
+  font-size: 20px;
+  outline: none;
 }
 
 .search-main {
@@ -2455,8 +2719,10 @@ a.lnk:hover {
   overflow: hidden;
   width: 63px;
   height: 56px;
-  padding: 5px 20px 3px;
+  padding: 13px 20px 3px;
   border-radius: 0 3px 3px 0;
+  text-align: center;
+  font-size: 23px;
 }
 .search-main .search-sbmt:hover {
   background-color: #84858f;
@@ -2468,11 +2734,6 @@ a.lnk:hover {
 }
 .search-main .search-sbmt .arw-after::after {
   color: #fff;
-}
-.search-main .search-sbmt svg {
-  width: 25px;
-  height: 30px;
-  fill: #fff;
 }
 @media screen and (min-width: 768px) {
   .search-main {

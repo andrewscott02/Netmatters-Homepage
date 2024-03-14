@@ -24,25 +24,15 @@ a.lnk
 
 .link-phone
 {
-    content: " ";
-    width: 28px;
-
-    svg
-    {
-        fill: $color-secondary;
-        width:28px;
-        height:28px;
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
     margin: auto;
+
+    text-decoration: none;
+    font-size: 32px;
+    color: $color-secondary;
 
     &:hover
     {
         text-decoration: underline;
-
-        //TODO - Temporary, remove later
-        border-bottom: 1px solid $color-secondary;
+        text-decoration-thickness: from-font;
     }
 }
