@@ -425,8 +425,20 @@ footer {
 }
 @media screen and (min-width: 992px) {
   #HeroImage {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../Images/heroimage.webp") no-repeat;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%, rgb(0, 0, 0)), url("../Images/heroimage.webp") no-repeat;
     background-position: 80% 35%;
+  }
+  #HeroImage .HeroElements {
+    text-align: left;
+  }
+  #HeroImage .HeroElements h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 600;
+  }
+  #HeroImage .HeroElements p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
   }
 }
 

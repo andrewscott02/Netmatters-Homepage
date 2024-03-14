@@ -45,8 +45,26 @@
 
     @media #{$break-wide}
     {
-        background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../Images/heroimage.webp") no-repeat;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 1)), url("../Images/heroimage.webp") no-repeat;
         // background: linear-gradient(270deg, transparent 25%, #000);
         background-position: 80% 35%;
+
+        .HeroElements
+        {
+            text-align: left;
+            
+            h1
+            {
+                font-size: 4rem;
+                line-height: 5rem;
+                font-weight: 600;
+            }
+
+            p
+            {
+                font-size: 1.625rem;
+                line-height: 2.5rem;
+            }
+        }
     }
 }
