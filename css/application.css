@@ -624,6 +624,58 @@ footer {
 }
 
 /* ===================================== 
+   Overlay Styles
+======================================== */
+.manage-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #75788a;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+}
+.manage-consent p {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.8rem;
+  line-height: 22px;
+  padding: 0 10px;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.manage-consent:hover {
+  cursor: pointer;
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+
+.chat {
+  position: fixed;
+  bottom: 25px;
+  right: 8px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #333645;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  padding-top: 10px;
+}
+.chat:hover {
+  cursor: pointer;
+}
+
+/* ===================================== 
    Partners Styles
 ======================================== */
 .partners {

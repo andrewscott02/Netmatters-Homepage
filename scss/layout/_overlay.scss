@@ -1,0 +1,70 @@
+/* ===================================== 
+   Overlay Styles
+======================================== */
+
+.manage-consent
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    z-index: 10;
+
+    background-color: $color-manage-consent-base;
+    border: solid $color-manage-consent-base;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+
+    p
+    {
+        color: $white;
+        font-weight: 600;
+        margin: 0;
+
+        text-align: center;
+        vertical-align: middle;
+
+        font-size: .8rem;
+
+        line-height: 22px;
+        padding: 0 10px;
+
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+
+    &:hover
+    {
+        cursor: pointer;
+        background-color: $color-manage-consent-hover;
+        border-color: $color-manage-consent-hover;
+    }
+}
+
+.chat
+{
+    position: fixed;
+    bottom: 25px;
+    right: 8px;
+    z-index: 10;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background-color: $color-secondary;
+
+    color: $white;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+
+    margin: auto;
+    padding-top: 10px;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
