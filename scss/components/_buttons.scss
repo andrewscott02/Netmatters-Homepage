@@ -12,7 +12,8 @@
     @include btnstyles($colour-btn-dark-base, $colour-btn-dark-hover);
     border: 3px solid transparent;
     padding: 5px 15px;
-    font-size: 1.063rem;
+    font-size: 20px !important;
+    margin-right: auto;
 }
 
 .btn-purple

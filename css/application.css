@@ -664,6 +664,7 @@ footer {
   height: 60px;
   border-radius: 50%;
   background-color: #333645;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -1259,7 +1260,8 @@ footer {
   overflow: hidden;
   border: 3px solid transparent;
   padding: 5px 15px;
-  font-size: 1.063rem;
+  font-size: 20px !important;
+  margin-right: auto;
 }
 .btn-welcome:hover {
   background-color: #121318;
@@ -2274,8 +2276,29 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  #Welcome .grid-container {
+  .welcome.grid-container {
     grid-gap: 30px;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  }
+}
+
+.welcome-btngrid.grid-container {
+  grid-gap: 10px;
+  grid-template-columns: minmax(200px, 1fr);
+}
+@media screen and (min-width: 768px) {
+  .welcome-btngrid.grid-container {
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .welcome-btngrid.grid-container {
+    grid-gap: 17px;
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+@media screen and (min-width: 1260px) {
+  .welcome-btngrid.grid-container {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   }
 }
