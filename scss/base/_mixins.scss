@@ -65,15 +65,15 @@
             border-color: $buttonHoverColour transparent transparent
         }
 
-        svg
-        {
-            fill: $white;
-        }
-
         span
         {
             color: $white;
         }
+
+        // span
+        // {
+        //     color: $white;
+        // }
     }
 
     .triangle-under
@@ -104,13 +104,6 @@
         text-decoration: none;
         font-size: 1.125rem;
         line-height: 1px;
-
-        svg
-        {
-            width:25px;
-            height:30px;
-            fill: $buttonHoverColour;
-        }
 
         span
         {
@@ -237,9 +230,9 @@
     {
         background-color: $col2;
 
-        svg
+        [class^="icon-"], [class*=" icon-"]
         {
-            fill: $col1;
+            color: $col1;
         }
     }
 
@@ -252,6 +245,13 @@
     {
         color: $col1;
         background-color: $col2;
+    }
+
+    [class^="icon-"], [class*=" icon-"]
+    {
+        font-size: 2rem;
+        line-height: 62px;
+        color: $col2;
     }
 }
 

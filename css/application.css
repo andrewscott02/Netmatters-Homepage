@@ -480,7 +480,7 @@ footer {
   width: 100%;
   height: auto;
 }
-.news .icon {
+.news .icon-news {
   width: 47px;
   height: 47px;
 }
@@ -708,15 +708,6 @@ footer {
   width: 65px;
   background-color: #926fb1;
   border-radius: 50%;
-  padding-top: 15px;
-}
-.icon-services svg {
-  fill: #fff;
-  position: relative;
-  vertical-align: middle;
-  margin: auto;
-  width: 55%;
-  height: auto;
 }
 
 .invert-blue-desat {
@@ -725,8 +716,8 @@ footer {
 .invert-blue-desat .icon-services {
   background-color: #67809f;
 }
-.invert-blue-desat .icon-services svg {
-  fill: #fff;
+.invert-blue-desat .icon-services [class^=icon-], .invert-blue-desat .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-blue-desat h3, .invert-blue-desat p {
   color: #333645;
@@ -735,14 +726,19 @@ footer {
   color: #fff;
   background-color: #67809f;
 }
+.invert-blue-desat [class^=icon-], .invert-blue-desat [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #67809f;
+}
 .invert-blue-desat:hover {
   background-color: #67809f;
 }
 .invert-blue-desat:hover .icon-services {
   background-color: #fff;
 }
-.invert-blue-desat:hover .icon-services svg {
-  fill: #67809f;
+.invert-blue-desat:hover .icon-services [class^=icon-], .invert-blue-desat:hover .icon-services [class*=" icon-"] {
+  color: #67809f;
 }
 .invert-blue-desat:hover h3, .invert-blue-desat:hover p {
   color: #fff;
@@ -751,6 +747,11 @@ footer {
   color: #67809f;
   background-color: #fff;
 }
+.invert-blue-desat:hover [class^=icon-], .invert-blue-desat:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-blue-sat {
   background-color: #fff;
@@ -758,8 +759,8 @@ footer {
 .invert-blue-sat .icon-services {
   background-color: #4183d7;
 }
-.invert-blue-sat .icon-services svg {
-  fill: #fff;
+.invert-blue-sat .icon-services [class^=icon-], .invert-blue-sat .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-blue-sat h3, .invert-blue-sat p {
   color: #333645;
@@ -768,14 +769,19 @@ footer {
   color: #fff;
   background-color: #4183d7;
 }
+.invert-blue-sat [class^=icon-], .invert-blue-sat [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #4183d7;
+}
 .invert-blue-sat:hover {
   background-color: #4183d7;
 }
 .invert-blue-sat:hover .icon-services {
   background-color: #fff;
 }
-.invert-blue-sat:hover .icon-services svg {
-  fill: #4183d7;
+.invert-blue-sat:hover .icon-services [class^=icon-], .invert-blue-sat:hover .icon-services [class*=" icon-"] {
+  color: #4183d7;
 }
 .invert-blue-sat:hover h3, .invert-blue-sat:hover p {
   color: #fff;
@@ -784,6 +790,11 @@ footer {
   color: #4183d7;
   background-color: #fff;
 }
+.invert-blue-sat:hover [class^=icon-], .invert-blue-sat:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-green {
   background-color: #fff;
@@ -791,8 +802,8 @@ footer {
 .invert-green .icon-services {
   background-color: #2ecc71;
 }
-.invert-green .icon-services svg {
-  fill: #fff;
+.invert-green .icon-services [class^=icon-], .invert-green .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-green h3, .invert-green p {
   color: #333645;
@@ -801,14 +812,19 @@ footer {
   color: #fff;
   background-color: #2ecc71;
 }
+.invert-green [class^=icon-], .invert-green [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #2ecc71;
+}
 .invert-green:hover {
   background-color: #2ecc71;
 }
 .invert-green:hover .icon-services {
   background-color: #fff;
 }
-.invert-green:hover .icon-services svg {
-  fill: #2ecc71;
+.invert-green:hover .icon-services [class^=icon-], .invert-green:hover .icon-services [class*=" icon-"] {
+  color: #2ecc71;
 }
 .invert-green:hover h3, .invert-green:hover p {
   color: #fff;
@@ -817,6 +833,11 @@ footer {
   color: #2ecc71;
   background-color: #fff;
 }
+.invert-green:hover [class^=icon-], .invert-green:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-red {
   background-color: #fff;
@@ -824,8 +845,8 @@ footer {
 .invert-red .icon-services {
   background-color: #d64541;
 }
-.invert-red .icon-services svg {
-  fill: #fff;
+.invert-red .icon-services [class^=icon-], .invert-red .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-red h3, .invert-red p {
   color: #333645;
@@ -834,14 +855,19 @@ footer {
   color: #fff;
   background-color: #d64541;
 }
+.invert-red [class^=icon-], .invert-red [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #d64541;
+}
 .invert-red:hover {
   background-color: #d64541;
 }
 .invert-red:hover .icon-services {
   background-color: #fff;
 }
-.invert-red:hover .icon-services svg {
-  fill: #d64541;
+.invert-red:hover .icon-services [class^=icon-], .invert-red:hover .icon-services [class*=" icon-"] {
+  color: #d64541;
 }
 .invert-red:hover h3, .invert-red:hover p {
   color: #fff;
@@ -850,6 +876,11 @@ footer {
   color: #d64541;
   background-color: #fff;
 }
+.invert-red:hover [class^=icon-], .invert-red:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-purple {
   background-color: #fff;
@@ -857,8 +888,8 @@ footer {
 .invert-purple .icon-services {
   background-color: #926fb1;
 }
-.invert-purple .icon-services svg {
-  fill: #fff;
+.invert-purple .icon-services [class^=icon-], .invert-purple .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-purple h3, .invert-purple p {
   color: #333645;
@@ -867,14 +898,19 @@ footer {
   color: #fff;
   background-color: #926fb1;
 }
+.invert-purple [class^=icon-], .invert-purple [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #926fb1;
+}
 .invert-purple:hover {
   background-color: #926fb1;
 }
 .invert-purple:hover .icon-services {
   background-color: #fff;
 }
-.invert-purple:hover .icon-services svg {
-  fill: #926fb1;
+.invert-purple:hover .icon-services [class^=icon-], .invert-purple:hover .icon-services [class*=" icon-"] {
+  color: #926fb1;
 }
 .invert-purple:hover h3, .invert-purple:hover p {
   color: #fff;
@@ -883,6 +919,11 @@ footer {
   color: #926fb1;
   background-color: #fff;
 }
+.invert-purple:hover [class^=icon-], .invert-purple:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-pink {
   background-color: #fff;
@@ -890,8 +931,8 @@ footer {
 .invert-pink .icon-services {
   background-color: #f62459;
 }
-.invert-pink .icon-services svg {
-  fill: #fff;
+.invert-pink .icon-services [class^=icon-], .invert-pink .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-pink h3, .invert-pink p {
   color: #333645;
@@ -900,14 +941,19 @@ footer {
   color: #fff;
   background-color: #f62459;
 }
+.invert-pink [class^=icon-], .invert-pink [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #f62459;
+}
 .invert-pink:hover {
   background-color: #f62459;
 }
 .invert-pink:hover .icon-services {
   background-color: #fff;
 }
-.invert-pink:hover .icon-services svg {
-  fill: #f62459;
+.invert-pink:hover .icon-services [class^=icon-], .invert-pink:hover .icon-services [class*=" icon-"] {
+  color: #f62459;
 }
 .invert-pink:hover h3, .invert-pink:hover p {
   color: #fff;
@@ -916,6 +962,11 @@ footer {
   color: #f62459;
   background-color: #fff;
 }
+.invert-pink:hover [class^=icon-], .invert-pink:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
 
 .invert-orange {
   background-color: #fff;
@@ -923,8 +974,8 @@ footer {
 .invert-orange .icon-services {
   background-color: #ce4125;
 }
-.invert-orange .icon-services svg {
-  fill: #fff;
+.invert-orange .icon-services [class^=icon-], .invert-orange .icon-services [class*=" icon-"] {
+  color: #fff;
 }
 .invert-orange h3, .invert-orange p {
   color: #333645;
@@ -933,14 +984,19 @@ footer {
   color: #fff;
   background-color: #ce4125;
 }
+.invert-orange [class^=icon-], .invert-orange [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #ce4125;
+}
 .invert-orange:hover {
   background-color: #ce4125;
 }
 .invert-orange:hover .icon-services {
   background-color: #fff;
 }
-.invert-orange:hover .icon-services svg {
-  fill: #ce4125;
+.invert-orange:hover .icon-services [class^=icon-], .invert-orange:hover .icon-services [class*=" icon-"] {
+  color: #ce4125;
 }
 .invert-orange:hover h3, .invert-orange:hover p {
   color: #fff;
@@ -948,6 +1004,11 @@ footer {
 .invert-orange:hover .btn {
   color: #ce4125;
   background-color: #fff;
+}
+.invert-orange:hover [class^=icon-], .invert-orange:hover [class*=" icon-"] {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
 }
 
 /* ========================================================== */
@@ -1013,11 +1074,10 @@ footer {
   flex-shrink: 2;
   max-width: 100%;
 }
-.fivestar svg {
-  padding-top: 30px;
-  fill: orange;
-  width: 50px;
-  height: auto;
+.fivestar span {
+  color: orange;
+  font-size: 50px;
+  margin-right: 5px;
 }
 
 .quote {
@@ -1289,7 +1349,7 @@ footer {
   overflow: hidden;
   border: 3px solid transparent;
   border-radius: 0;
-  padding: 5px 15px;
+  padding: 12px 18px 16px;
   font-size: 1.063rem;
   margin-right: 10px;
   width: 70.406px;
@@ -1310,6 +1370,9 @@ footer {
   margin: auto;
   width: 70%;
   fill: #fff;
+}
+.btn-social span {
+  font-size: 26px;
 }
 
 .facebook:hover {
@@ -1369,9 +1432,6 @@ footer {
 .btn-navbar-blue-desat:hover .triangle-under::after {
   border-color: #67809f transparent transparent;
 }
-.btn-navbar-blue-desat:hover svg {
-  fill: #fff;
-}
 .btn-navbar-blue-desat:hover span {
   color: #fff;
 }
@@ -1416,11 +1476,6 @@ footer {
 .btn-navbar-blue-desat > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue-desat > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #67809f;
-}
 .btn-navbar-blue-desat > a span {
   color: #67809f;
   font-size: 1.45rem;
@@ -1455,9 +1510,6 @@ footer {
 }
 .btn-navbar-blue:hover .triangle-under::after {
   border-color: #4183d7 transparent transparent;
-}
-.btn-navbar-blue:hover svg {
-  fill: #fff;
 }
 .btn-navbar-blue:hover span {
   color: #fff;
@@ -1503,11 +1555,6 @@ footer {
 .btn-navbar-blue > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #4183d7;
-}
 .btn-navbar-blue > a span {
   color: #4183d7;
   font-size: 1.45rem;
@@ -1542,9 +1589,6 @@ footer {
 }
 .btn-navbar-green:hover .triangle-under::after {
   border-color: #2ecc71 transparent transparent;
-}
-.btn-navbar-green:hover svg {
-  fill: #fff;
 }
 .btn-navbar-green:hover span {
   color: #fff;
@@ -1590,11 +1634,6 @@ footer {
 .btn-navbar-green > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-green > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #2ecc71;
-}
 .btn-navbar-green > a span {
   color: #2ecc71;
   font-size: 1.45rem;
@@ -1629,9 +1668,6 @@ footer {
 }
 .btn-navbar-red:hover .triangle-under::after {
   border-color: #d64541 transparent transparent;
-}
-.btn-navbar-red:hover svg {
-  fill: #fff;
 }
 .btn-navbar-red:hover span {
   color: #fff;
@@ -1677,11 +1713,6 @@ footer {
 .btn-navbar-red > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-red > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #d64541;
-}
 .btn-navbar-red > a span {
   color: #d64541;
   font-size: 1.45rem;
@@ -1716,9 +1747,6 @@ footer {
 }
 .btn-navbar-purple:hover .triangle-under::after {
   border-color: #926fb1 transparent transparent;
-}
-.btn-navbar-purple:hover svg {
-  fill: #fff;
 }
 .btn-navbar-purple:hover span {
   color: #fff;
@@ -1764,11 +1792,6 @@ footer {
 .btn-navbar-purple > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-purple > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #926fb1;
-}
 .btn-navbar-purple > a span {
   color: #926fb1;
   font-size: 1.45rem;
@@ -1803,9 +1826,6 @@ footer {
 }
 .btn-navbar-pink:hover .triangle-under::after {
   border-color: #f62459 transparent transparent;
-}
-.btn-navbar-pink:hover svg {
-  fill: #fff;
 }
 .btn-navbar-pink:hover span {
   color: #fff;
@@ -1851,11 +1871,6 @@ footer {
 .btn-navbar-pink > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-pink > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #f62459;
-}
 .btn-navbar-pink > a span {
   color: #f62459;
   font-size: 1.45rem;
@@ -1890,9 +1905,6 @@ footer {
 }
 .btn-navbar-orange:hover .triangle-under::after {
   border-color: #ce4125 transparent transparent;
-}
-.btn-navbar-orange:hover svg {
-  fill: #fff;
 }
 .btn-navbar-orange:hover span {
   color: #fff;
@@ -1937,11 +1949,6 @@ footer {
 }
 .btn-navbar-orange > a .arw-after::after {
   color: #fff;
-}
-.btn-navbar-orange > a svg {
-  width: 25px;
-  height: 30px;
-  fill: #ce4125;
 }
 .btn-navbar-orange > a span {
   color: #ce4125;
@@ -2286,7 +2293,7 @@ footer {
 /* ===================================== 
    Icon Styles
 ======================================== */
-.icon {
+.icon-news {
   width: 1em;
   height: 1em;
   stroke-width: 0;
