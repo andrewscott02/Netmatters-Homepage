@@ -52,31 +52,6 @@ body
 	}
 }
 
-// .link-phone::after
-// {
-// 	content: "\E902";
-
-//     font-size:32px;
-
-// 	display: inline-block;
-// }
-
-.arw-after::after
-{
-	//content: "\E906";
-    // display: inline-block;
-    content: "\2192";
-    width: 30px;
-    height: 15px;
-
-    //margin-left: 10px;
-
-    //background: transparent url("../images/arrow-right.svg") no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .hidden
 {
 	display: none;
