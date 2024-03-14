@@ -2312,7 +2312,6 @@ footer {
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  margin-top: auto;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -2645,11 +2644,13 @@ a.lnk:hover {
 }
 .navbar-panel a {
   display: inline;
-  margin-top: 10px;
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   line-height: 1.313rem;
+}
+.navbar-panel li {
+  padding: 0.625rem 0.938rem 0.625rem 0;
 }
 .navbar-panel a:hover {
   text-decoration: underline;
@@ -2658,7 +2659,7 @@ a.lnk:hover {
   display: inline;
   float: left;
   margin-right: 10px;
-  padding-bottom: 15px;
+  font-size: 1.2rem;
 }
 
 .btn-nav-container {

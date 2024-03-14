@@ -75,11 +75,15 @@
     a
     {
         display: inline;
-        margin-top: 10px;
         text-decoration: none;
         color: #fff;
         font-size: 1.2rem;
         line-height: 1.313rem;
+    }
+
+    li
+    {
+        padding: 0.625rem 0.938rem 0.625rem 0;
     }
 
     a:hover
@@ -92,7 +96,7 @@
         display: inline;
         float: left;
         margin-right: 10px;
-        padding-bottom: 15px;
+        font-size: 1.2rem;
     }
 }
 
