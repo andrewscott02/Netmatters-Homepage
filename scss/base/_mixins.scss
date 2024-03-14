@@ -69,6 +69,11 @@
         {
             fill: $white;
         }
+
+        span
+        {
+            color: $white;
+        }
     }
 
     .triangle-under
@@ -106,6 +111,19 @@
             height:30px;
             fill: $buttonHoverColour;
         }
+
+        span
+        {
+            color: $buttonHoverColour;
+            font-size: 1.45rem;
+            line-height: 1.3;
+        }
+
+        // .icon-large
+        // {
+        //     font-size: 1.75rem;
+        //     line-height: 1;
+        // }
 
         h3, p
         {

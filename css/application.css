@@ -1372,6 +1372,9 @@ footer {
 .btn-navbar-blue-desat:hover svg {
   fill: #fff;
 }
+.btn-navbar-blue-desat:hover span {
+  color: #fff;
+}
 .btn-navbar-blue-desat .triangle-under {
   display: none;
 }
@@ -1418,6 +1421,11 @@ footer {
   height: 30px;
   fill: #67809f;
 }
+.btn-navbar-blue-desat > a span {
+  color: #67809f;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-blue-desat > a h3, .btn-navbar-blue-desat > a p {
   margin: 7px;
   text-decoration: none;
@@ -1450,6 +1458,9 @@ footer {
 }
 .btn-navbar-blue:hover svg {
   fill: #fff;
+}
+.btn-navbar-blue:hover span {
+  color: #fff;
 }
 .btn-navbar-blue .triangle-under {
   display: none;
@@ -1497,6 +1508,11 @@ footer {
   height: 30px;
   fill: #4183d7;
 }
+.btn-navbar-blue > a span {
+  color: #4183d7;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-blue > a h3, .btn-navbar-blue > a p {
   margin: 7px;
   text-decoration: none;
@@ -1529,6 +1545,9 @@ footer {
 }
 .btn-navbar-green:hover svg {
   fill: #fff;
+}
+.btn-navbar-green:hover span {
+  color: #fff;
 }
 .btn-navbar-green .triangle-under {
   display: none;
@@ -1576,6 +1595,11 @@ footer {
   height: 30px;
   fill: #2ecc71;
 }
+.btn-navbar-green > a span {
+  color: #2ecc71;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-green > a h3, .btn-navbar-green > a p {
   margin: 7px;
   text-decoration: none;
@@ -1608,6 +1632,9 @@ footer {
 }
 .btn-navbar-red:hover svg {
   fill: #fff;
+}
+.btn-navbar-red:hover span {
+  color: #fff;
 }
 .btn-navbar-red .triangle-under {
   display: none;
@@ -1655,6 +1682,11 @@ footer {
   height: 30px;
   fill: #d64541;
 }
+.btn-navbar-red > a span {
+  color: #d64541;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-red > a h3, .btn-navbar-red > a p {
   margin: 7px;
   text-decoration: none;
@@ -1687,6 +1719,9 @@ footer {
 }
 .btn-navbar-purple:hover svg {
   fill: #fff;
+}
+.btn-navbar-purple:hover span {
+  color: #fff;
 }
 .btn-navbar-purple .triangle-under {
   display: none;
@@ -1734,6 +1769,11 @@ footer {
   height: 30px;
   fill: #926fb1;
 }
+.btn-navbar-purple > a span {
+  color: #926fb1;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-purple > a h3, .btn-navbar-purple > a p {
   margin: 7px;
   text-decoration: none;
@@ -1766,6 +1806,9 @@ footer {
 }
 .btn-navbar-pink:hover svg {
   fill: #fff;
+}
+.btn-navbar-pink:hover span {
+  color: #fff;
 }
 .btn-navbar-pink .triangle-under {
   display: none;
@@ -1813,6 +1856,11 @@ footer {
   height: 30px;
   fill: #f62459;
 }
+.btn-navbar-pink > a span {
+  color: #f62459;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
 .btn-navbar-pink > a h3, .btn-navbar-pink > a p {
   margin: 7px;
   text-decoration: none;
@@ -1845,6 +1893,9 @@ footer {
 }
 .btn-navbar-orange:hover svg {
   fill: #fff;
+}
+.btn-navbar-orange:hover span {
+  color: #fff;
 }
 .btn-navbar-orange .triangle-under {
   display: none;
@@ -1891,6 +1942,11 @@ footer {
   width: 25px;
   height: 30px;
   fill: #ce4125;
+}
+.btn-navbar-orange > a span {
+  color: #ce4125;
+  font-size: 1.45rem;
+  line-height: 1.3;
 }
 .btn-navbar-orange > a h3, .btn-navbar-orange > a p {
   margin: 7px;
@@ -2581,7 +2637,7 @@ a.lnk:hover {
   line-height: 1.1;
 }
 .navbar-panel a {
-  display: inline-block;
+  display: inline;
   margin-top: 10px;
   text-decoration: none;
   color: #fff;
@@ -2591,13 +2647,11 @@ a.lnk:hover {
 .navbar-panel a:hover {
   text-decoration: underline;
 }
-.navbar-panel svg {
+.navbar-panel span {
+  display: inline;
   float: left;
   margin-right: 10px;
   padding-bottom: 15px;
-  width: 30px;
-  height: 36px;
-  fill: #fff;
 }
 
 .btn-nav-container {
