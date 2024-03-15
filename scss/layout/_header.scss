@@ -45,3 +45,12 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.header-bar
+{
+    div:not(:first-child)
+    {
+        padding-top: 5px;
+        padding-bottom: 7px;
+    }
+}
