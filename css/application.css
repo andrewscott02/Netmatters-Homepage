@@ -273,6 +273,11 @@ footer {
   border: 1px solid #ccc;
 }
 
+textarea:focus, input:focus {
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6), 0 0 4px #5bc0de;
+}
+
 .checkbox-field {
   width: 100%;
   height: 100%;
@@ -2918,7 +2923,7 @@ a.lnk:hover {
 }
 
 .search-main {
-  margin-top: -1px !important;
+  margin-top: 1px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   padding-right: 20px;
@@ -2936,6 +2941,10 @@ a.lnk:hover {
 .search-main input {
   width: 100%;
   height: 100%;
+}
+.search-main .flex-container {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 .search-main .search-sbmt {
   height: auto;
@@ -2973,6 +2982,9 @@ a.lnk:hover {
   }
 }
 @media screen and (min-width: 992px) {
+  .search-main {
+    margin-top: -3px !important;
+  }
   .search-main .search-sbmt {
     border-radius: 3px;
   }
@@ -2981,6 +2993,9 @@ a.lnk:hover {
   }
 }
 @media screen and (min-width: 1260px) {
+  .search-main {
+    margin-top: -1px !important;
+  }
   .search-main .search-sbmt {
     border-radius: 0 3px 3px 0;
   }
