@@ -99,6 +99,13 @@
 
 .HeroNavigation
 {
+    overflow: hidden;
+    overflow: clip;
+}
+
+.HeroNavigation > div
+{
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,11 +113,11 @@
     flex-direction: row;
     
     position: absolute;
-    left: -200px;
-    right: -200px;
+    // left: -200px;
+    // right: -200px;
     margin: auto;
     bottom: 32px;
-    width: auto;
+    width: 100%;
     height: 50px;
 
     span

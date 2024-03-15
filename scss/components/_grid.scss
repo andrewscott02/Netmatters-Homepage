@@ -209,10 +209,11 @@
     overflow: clip;
     .grid-container
     {   
-        grid-gap: 30px;
-
+        // grid-gap: 17px;
+        grid-gap: 0;
         @media #{$break-full}
         {
+            grid-gap: 17px;
             grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
         }
     }
@@ -222,6 +223,7 @@
         .grid-container
         {   
             grid-gap: 30px;
+            row-gap: 26px;
 
             @media #{$break-narrow}
             {

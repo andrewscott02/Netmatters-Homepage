@@ -176,7 +176,7 @@ footer {
   color: #fff;
 }
 #FooterInfo .section {
-  padding-top: 27px;
+  padding-top: 47px;
   padding-bottom: 27px;
 }
 #FooterInfo ul {
@@ -184,7 +184,7 @@ footer {
 }
 #FooterInfo .footer-title {
   margin: auto;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   position: relative;
   text-align: center;
   width: 320px;
@@ -192,6 +192,7 @@ footer {
 }
 #FooterInfo h3 {
   margin-top: 0;
+  margin-bottom: 22px;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -201,6 +202,20 @@ footer {
   margin: 0;
   font-size: 0.8125rem;
   line-height: 1.375rem;
+}
+.footerinfo li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+@media screen and (min-width: 992px) {
+  .footerinfo li {
+    max-width: 180px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .footerinfo li {
+    max-width: 170px;
+  }
 }
 .footerinfo a {
   text-decoration: none;
@@ -229,6 +244,24 @@ footer {
   color: #fff;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
+}
+#FooterBottom p.narrow-only {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #FooterBottom p.narrow-only {
+    display: inline;
+  }
+}
+#FooterBottom br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: -6px; /* change this to whatever height you want it */
+}
+@media screen and (min-width: 768px) {
+  #FooterBottom br {
+    display: none;
+  }
 }
 #FooterBottom p:first-child {
   margin-right: 0;
@@ -489,20 +522,24 @@ textarea:focus, input:focus {
 }
 
 .HeroNavigation {
+  overflow: hidden;
+  overflow: clip;
+}
+
+.HeroNavigation > div {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
   position: absolute;
-  left: -200px;
-  right: -200px;
   margin: auto;
   bottom: 32px;
-  width: auto;
+  width: 100%;
   height: 50px;
 }
-.HeroNavigation span {
+.HeroNavigation > div span {
   height: 12px;
   width: 12px;
   background-color: hsla(0, 0%, 100%, 0.5);
@@ -511,10 +548,10 @@ textarea:focus, input:focus {
   margin-left: 7px;
   margin-right: 7px;
 }
-.HeroNavigation span:first-child {
+.HeroNavigation > div span:first-child {
   background-color: #fff;
 }
-.HeroNavigation span:first-child:after {
+.HeroNavigation > div span:first-child:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -732,7 +769,7 @@ textarea:focus, input:focus {
 
 .chat {
   position: fixed;
-  bottom: 8px;
+  bottom: 25px;
   right: 8px;
   z-index: 10;
   width: 60px;
@@ -2232,15 +2269,17 @@ textarea:focus, input:focus {
    Checkbox Styles
 ======================================== */
 .checkbox-hide {
+  position: absolute !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  height: 100px !important;
   border-radius: 3px;
   border: 3px solid #333645;
   z-index: 1;
   opacity: 0;
   background-color: rgba(1, 0, 0, 0.5);
-  position: absolute !important;
   left: 0;
-  width: 100%;
-  height: 100px !important;
 }
 .checkbox-hide:hover {
   cursor: pointer;
@@ -2375,6 +2414,7 @@ textarea:focus, input:focus {
   flex-wrap: wrap;
   align-items: flex-start;
   width: max-content;
+  height: max-content;
   margin: 30px auto 30px 0;
 }
 .socials .flex-item-center {
@@ -2544,15 +2584,17 @@ textarea:focus, input:focus {
   overflow: clip;
 }
 #FooterInfo .grid-container {
-  grid-gap: 30px;
+  grid-gap: 0;
 }
 @media screen and (min-width: 1260px) {
   #FooterInfo .grid-container {
+    grid-gap: 17px;
     grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
   }
 }
 #FooterInfo .footerinfo .grid-container {
   grid-gap: 30px;
+  row-gap: 26px;
 }
 @media screen and (min-width: 768px) {
   #FooterInfo .footerinfo .grid-container {

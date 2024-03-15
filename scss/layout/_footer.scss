@@ -6,7 +6,7 @@
 {
     .section
     {
-        padding-top: 27px;
+        padding-top: 47px;
         padding-bottom: 27px;
     }
 
@@ -21,7 +21,7 @@
     .footer-title
     {
         margin: auto;
-        margin-bottom: 24px;
+        margin-bottom: 12px;
 
         position: relative;
         text-align: center;
@@ -33,6 +33,7 @@
     h3
     {
         margin-top: 0;
+        margin-bottom: 22px;
         font-size: 1rem;
         font-weight: 400;
     }
@@ -44,8 +45,24 @@
     {
         list-style: none;
         margin: 0;
-        font-size: .8125rem;
+        font-size: 0.8125rem;
         line-height: 1.375rem;
+    }
+
+    li
+    {
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+
+        @media #{$break-wide}
+        {
+            max-width: 180px;
+        }
+
+        @media #{$break-full}
+        {
+            max-width: 170px;
+        }
     }
 
     a
@@ -85,6 +102,28 @@
         color: $white;
         letter-spacing: 0.4px;
         line-height: 1.42857143;
+        
+        &.narrow-only
+        {
+            display: none;
+            @media #{$break-narrow}
+            {
+                display: inline;
+            }
+        }
+
+    }
+
+    br
+    {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: -6px; /* change this to whatever height you want it */
+
+        @media #{$break-narrow}
+        {
+            display: none;
+        }
     }
 
     p:first-child
