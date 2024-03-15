@@ -53,4 +53,39 @@
         padding-top: 5px;
         padding-bottom: 7px;
     }
+
+    div:last-child
+    {
+        padding-top: 0px;
+    }
+    
+    @media #{$break-narrow}
+    {
+        div:not(:first-child)
+        {
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+
+        div:last-child
+        {
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+    }
+    
+    @media #{$break-wide}
+    {
+        div:not(:first-child)
+        {
+            padding-top: 5px;
+            padding-bottom: 7px;
+        }
+
+        div:last-child
+        {
+            padding-top: 5px;
+            padding-bottom: 7px;
+        }
+    }
 }

@@ -381,6 +381,29 @@ textarea:focus, input:focus {
   padding-top: 5px;
   padding-bottom: 7px;
 }
+.header-bar div:last-child {
+  padding-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .header-bar div:not(:first-child) {
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+  .header-bar div:last-child {
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-bar div:not(:first-child) {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+  .header-bar div:last-child {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+}
 
 /* ========================================================== */
 /* Hero Image Styles */
@@ -2924,7 +2947,7 @@ a.lnk:hover {
 
 .search-main {
   margin-top: 1px !important;
-  padding-top: 0px !important;
+  padding-top: 1px !important;
   padding-bottom: 0px !important;
   padding-right: 20px;
   height: 56px;
@@ -2983,7 +3006,7 @@ a.lnk:hover {
 }
 @media screen and (min-width: 992px) {
   .search-main {
-    margin-top: -3px !important;
+    margin-top: -5px !important;
   }
   .search-main .search-sbmt {
     border-radius: 3px;
@@ -2994,7 +3017,7 @@ a.lnk:hover {
 }
 @media screen and (min-width: 1260px) {
   .search-main {
-    margin-top: -1px !important;
+    margin-top: -3px !important;
   }
   .search-main .search-sbmt {
     border-radius: 0 3px 3px 0;
