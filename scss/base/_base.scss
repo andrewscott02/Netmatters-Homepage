@@ -95,7 +95,7 @@ p
     {
         overflow: visible;
         position: relative;
-        bottom: -65%;
+        bottom: -62%;
         content: "";
         width: 0px;
         $width: width;
@@ -108,7 +108,7 @@ p
         @media #{$break-full}
         {
             bottom: -66%;
-            border-width: 35px 83.5px 0;
+            border-width: 38px 85.5px 0;
         }
     }
 }

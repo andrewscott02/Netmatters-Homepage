@@ -90,7 +90,7 @@ p {
 .triangle-under::after {
   overflow: visible;
   position: relative;
-  bottom: -65%;
+  bottom: -62%;
   content: "";
   width: 0px;
   height: 0px;
@@ -102,7 +102,7 @@ p {
 @media screen and (min-width: 1260px) {
   .triangle-under::after {
     bottom: -66%;
-    border-width: 35px 83.5px 0;
+    border-width: 38px 85.5px 0;
   }
 }
 
