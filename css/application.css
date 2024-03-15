@@ -16,6 +16,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap");
 * {
   box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -306,14 +307,6 @@ footer {
   flex-shrink: 2;
   max-width: 100%;
 }
-.checkbox-field:hover {
-  cursor: pointer;
-}
-.checkbox-field .checkbox-item:first-child {
-  margin-left: 0;
-  margin-right: 20px;
-  margin-bottom: auto;
-}
 .checkbox-field .checkbox-item {
   position: relative;
   vertical-align: middle;
@@ -478,6 +471,18 @@ footer {
 /* ===================================== 
    News Styles
 ======================================== */
+#LatestNews {
+  padding: 45px 15px 50px;
+}
+#LatestNews > div:first-child {
+  margin-bottom: 28px;
+}
+#LatestNews h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
 .news {
   top: 0px;
   transition: 0.5s ease;
@@ -517,9 +522,13 @@ footer {
 .news > p {
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 25px;
 }
 .news .btn {
   margin: 30px;
+  line-height: 35px;
+  padding: 11px 15px;
+  border: 1px solid transparent;
 }
 .news img {
   width: 100%;
@@ -1164,7 +1173,8 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 75px;
+  height: 50px;
+  margin-bottom: 25px;
 }
 .fivestar .flex-item-center {
   position: relative;
@@ -1450,9 +1460,12 @@ footer {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
   padding: 5px 15px;
   font-size: 1.063rem;
+  border: 1px solid transparent;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 .btn-subscribe:hover {
   background-color: #22242e;
@@ -2109,21 +2122,31 @@ footer {
   border: 3px solid #333645;
   z-index: 1;
   opacity: 0;
+  background-color: rgba(1, 0, 0, 0.5);
+  position: absolute !important;
+  left: 0;
+  width: 100%;
+  height: 100px !important;
 }
 .checkbox-hide:hover {
   cursor: pointer;
 }
-.checkbox-hide:checked ~ .checkbox-custom {
+.checkbox-hide:checked ~ .checkbox-field .checkbox-custom {
   background-color: #333645;
 }
-.checkbox-hide:checked ~ .checkbox-custom svg {
+.checkbox-hide:checked ~ .checkbox-field .checkbox-custom svg {
   fill: #fff;
 }
-.checkbox-hide:not(checked) ~ .checkbox-custom {
+.checkbox-hide:not(checked) ~ .checkbox-field .checkbox-custom {
   background-color: rgba(0, 0, 0, 0);
 }
-.checkbox-hide:not(checked) ~ .checkbox-custom svg {
+.checkbox-hide:not(checked) ~ .checkbox-field .checkbox-custom svg {
   fill: rgba(0, 0, 0, 0);
+}
+@media screen and (min-width: 992px) {
+  .checkbox-hide {
+    height: 75px !important;
+  }
 }
 
 .checkbox-custom {
@@ -2132,7 +2155,6 @@ footer {
   height: 32px;
   width: 32px;
   margin-top: 3px;
-  margin-left: -52px;
   margin-right: 20px;
 }
 .checkbox-custom svg {
@@ -2712,8 +2734,6 @@ footer {
 
 a.lnk {
   font-weight: 600;
-  padding-left: 15px;
-  padding-right: 15px;
   font-size: 1.625rem;
   text-decoration: none;
 }
