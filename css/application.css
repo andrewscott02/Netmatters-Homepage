@@ -1139,17 +1139,13 @@ footer {
 #Welcome {
   background-color: #333645;
   color: #fff;
+  line-height: 39.6px;
 }
 #Welcome h2 {
   font-size: 2.25rem;
   font-weight: 600;
   color: #fff;
-}
-#Welcome h2:nth-child(1) {
-  margin-bottom: 0;
-}
-#Welcome div > div:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 #Welcome strong {
   font-weight: 600;
@@ -1169,7 +1165,6 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   height: 75px;
-  margin-bottom: 25px;
 }
 .fivestar .flex-item-center {
   position: relative;
@@ -1200,6 +1195,8 @@ footer {
   color: orange;
   font-size: 50px;
   margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .quote {
@@ -1213,6 +1210,17 @@ footer {
   color: #a3a8ac;
   font-size: 1.1rem;
   line-height: 1.875rem;
+}
+
+.welcome-btngrid a {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 0;
+}
+.welcome-btngrid a:first-child {
+  margin-right: 8px;
 }
 
 /* ========================================================== */
@@ -2278,28 +2286,20 @@ footer {
 @media screen and (min-width: 992px) {
   .welcome.grid-container {
     grid-gap: 30px;
+    row-gap: 0;
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   }
-}
-
-.welcome-btngrid.grid-container {
-  grid-gap: 10px;
-  grid-template-columns: minmax(200px, 1fr);
-}
-@media screen and (min-width: 768px) {
-  .welcome-btngrid.grid-container {
-    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  .welcome.grid-container > div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
-}
-@media screen and (min-width: 992px) {
-  .welcome-btngrid.grid-container {
-    grid-gap: 17px;
-    grid-template-columns: minmax(200px, 1fr);
+  .welcome.grid-container > div:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
-}
-@media screen and (min-width: 1260px) {
-  .welcome-btngrid.grid-container {
-    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  .welcome.grid-container > div:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 
