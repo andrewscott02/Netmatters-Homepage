@@ -8,7 +8,7 @@
 
     & > div:first-child
     {
-        margin-bottom: 28px;
+        margin-bottom: 35px;
     }
 
     h2
@@ -47,16 +47,17 @@
 
     .btn
     {
-        margin: 30px;
+        margin: 0 30px;
         line-height: 35px;
-        padding: 11px 15px;
+        padding: 5px 15px;
         border: 1px solid transparent;
     }
 
     img
     {
-        width: 100%;
+        width: 100.5%;
         height: auto;
+        margin-bottom: 10px;
     }
 
     .icon-news
@@ -68,7 +69,7 @@
 
 .news-poster-container
 {
-    margin: 30px;
+    margin: 23px 30px 20px;
 }
 
 .news-poster

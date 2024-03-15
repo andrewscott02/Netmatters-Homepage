@@ -528,7 +528,7 @@ textarea:focus, input:focus {
   padding: 45px 15px 50px;
 }
 #LatestNews > div:first-child {
-  margin-bottom: 28px;
+  margin-bottom: 35px;
 }
 #LatestNews h2 {
   font-size: 2.25rem;
@@ -537,6 +537,7 @@ textarea:focus, input:focus {
 }
 
 .news {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   top: 0px;
   transition: 0.5s ease;
   text-decoration: none;
@@ -578,14 +579,15 @@ textarea:focus, input:focus {
   margin-bottom: 25px;
 }
 .news .btn {
-  margin: 30px;
+  margin: 0 30px;
   line-height: 35px;
-  padding: 11px 15px;
+  padding: 5px 15px;
   border: 1px solid transparent;
 }
 .news img {
-  width: 100%;
+  width: 100.5%;
   height: auto;
+  margin-bottom: 10px;
 }
 .news .icon-news {
   width: 47px;
@@ -593,7 +595,7 @@ textarea:focus, input:focus {
 }
 
 .news-poster-container {
-  margin: 30px;
+  margin: 23px 30px 20px;
 }
 
 .news-poster {
@@ -853,7 +855,12 @@ textarea:focus, input:focus {
 /* ========================================================== */
 /* Services Styles */
 /* ========================================================== */
+#Services {
+  padding-top: 52px;
+}
+
 .card {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   top: 0px;
   transition: 0.5s ease;
   text-decoration: none;
