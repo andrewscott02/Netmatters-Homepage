@@ -90,7 +90,7 @@ p {
 .triangle-under::after {
   overflow: visible;
   position: relative;
-  bottom: -62%;
+  bottom: -75%;
   content: "";
   width: 0px;
   height: 0px;
@@ -101,7 +101,7 @@ p {
 }
 @media screen and (min-width: 1260px) {
   .triangle-under::after {
-    bottom: -66%;
+    bottom: -80%;
     border-width: 38px 85.5px 0;
   }
 }
@@ -341,7 +341,6 @@ textarea:focus, input:focus {
 /* Header Styles */
 /* ========================================================== */
 #Header {
-  height: 110px;
   padding: 20px 0;
 }
 #Header .header-title {
@@ -371,6 +370,11 @@ textarea:focus, input:focus {
 }
 #Header .section {
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  #Header {
+    height: 110px;
+  }
 }
 
 .header-container {
@@ -431,7 +435,7 @@ textarea:focus, input:focus {
   color: #fff;
 }
 #HeroImage .HeroElements h1 {
-  margin-top: 10px !important;
+  margin-top: 9px !important;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
@@ -461,6 +465,7 @@ textarea:focus, input:focus {
     text-align: left;
   }
   #HeroImage .HeroElements h1 {
+    margin-top: 35px !important;
     font-size: 4rem;
     line-height: 5rem;
     font-weight: 600;
@@ -468,6 +473,11 @@ textarea:focus, input:focus {
   #HeroImage .HeroElements p {
     font-size: 1.625rem;
     line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 1260px) {
+  #HeroImage .HeroElements h1 {
+    margin-top: 9px !important;
   }
 }
 
@@ -478,9 +488,10 @@ textarea:focus, input:focus {
   flex-wrap: nowrap;
   flex-direction: row;
   position: absolute;
+  left: -200px;
+  right: -200px;
   margin: auto;
-  left: 42.5%;
-  bottom: 4px;
+  bottom: 32px;
   width: auto;
   height: 50px;
 }
@@ -490,7 +501,8 @@ textarea:focus, input:focus {
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: 50%;
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 .HeroNavigation span:first-child {
   background-color: #fff;
@@ -498,18 +510,15 @@ textarea:focus, input:focus {
 .HeroNavigation span:first-child:after {
   content: "";
   display: inline-block;
-  position: relative;
-  left: -50%;
-  bottom: 43%;
+  position: absolute;
+  left: -386px;
+  right: -200px;
+  margin: auto;
+  bottom: 13px;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   border: 2px solid #fff;
-}
-@media screen and (min-width: 992px) {
-  .HeroNavigation span:first-child:after {
-    bottom: 50%;
-  }
 }
 
 /* ===================================== 
@@ -790,7 +799,7 @@ textarea:focus, input:focus {
 .btn-case .hoverdisplay {
   display: none;
   position: absolute;
-  bottom: 86%;
+  bottom: 70%;
   left: -200px;
   right: -200px;
   margin: auto;

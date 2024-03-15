@@ -4,7 +4,6 @@
 
 #Header
 {
-    height: 110px;
     padding: 20px 0;
 
     .header-title
@@ -38,6 +37,11 @@
     .section
     {
         padding: 0;
+    }
+
+    @media #{$break-narrow}
+    {
+        height: 110px;
     }
 }
 

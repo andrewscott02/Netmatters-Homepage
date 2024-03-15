@@ -16,7 +16,7 @@
     {
         h1
         {
-            margin-top: 10px !important;
+            margin-top: 9px !important;
             font-size: 2.5rem;
             line-height: 3rem;
             margin: 0 0 1.25rem;
@@ -71,6 +71,7 @@
             
             h1
             {
+                margin-top: 35px !important;
                 font-size: 4rem;
                 line-height: 5rem;
                 font-weight: 600;
@@ -80,6 +81,17 @@
             {
                 font-size: 1.625rem;
                 line-height: 2.5rem;
+            }
+        }
+    }
+
+    @media #{$break-full}
+    {
+        .HeroElements
+        {
+            h1
+            {
+                margin-top: 9px !important;
             }
         }
     }
@@ -94,9 +106,10 @@
     flex-direction: row;
     
     position: absolute;
-    margin:auto;
-    left: 42.5%;
-    bottom: 4px;
+    left: -200px;
+    right: -200px;
+    margin: auto;
+    bottom: 32px;
     width: auto;
     height: 50px;
 
@@ -108,7 +121,8 @@
         border-radius: 50%;
         display: inline-block;
 
-        margin-right: 20px;
+        margin-left: 7px;
+        margin-right: 7px;
     }
 
     span:first-child
@@ -121,17 +135,20 @@
         content: "";
         
         display: inline-block;
-        position: relative;
-        left: -50%;
-        bottom: 43%;
+        position: absolute;
+        left: -386px;
+        right: -200px;
+        margin: auto;
+        bottom: 13px;
         width: 20px;
         height: 20px;
         border-radius: 100%;
         border: 2px solid $white;
-
-        @media #{$break-wide}
-        {
-            bottom: 50%;
-        }
     }
+
+    // @media #{$break-wide}
+    // {
+    //     left: 42.5%;
+    //     bottom: 4px;
+    // }
 }
