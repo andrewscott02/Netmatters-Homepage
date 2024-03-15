@@ -550,6 +550,7 @@ textarea:focus, input:focus {
   border-radius: 0 0 3px 3px;
   text-align: left;
   max-width: 720px;
+  border-top: 0px solid #ccc;
 }
 .news h3 {
   font-size: 1.3rem;
@@ -559,7 +560,7 @@ textarea:focus, input:focus {
 .news p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   font-weight: 400;
 }
 .news:hover {
@@ -638,8 +639,11 @@ textarea:focus, input:focus {
   margin-left: 20px;
   margin-right: auto;
 }
+.news-poster div strong {
+  font-weight: 600;
+}
 .news-poster div p {
-  margin-top: 0px;
+  margin-top: 2px;
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
@@ -881,7 +885,7 @@ textarea:focus, input:focus {
 .card p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   font-weight: 400;
 }
 .card:hover {
@@ -2839,6 +2843,7 @@ a.lnk {
   font-weight: 600;
   font-size: 1.625rem;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 a.lnk:hover {
   text-decoration: underline;
