@@ -240,9 +240,16 @@ footer {
 #SignUp {
   background-color: #ddd;
 }
+#SignUp .section {
+  padding-top: 53px;
+}
 #SignUp h2 {
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: 5px;
+}
+#SignUp input {
+  margin-top: 5px;
 }
 
 .required::after {
@@ -264,7 +271,7 @@ footer {
 }
 .form label {
   font-weight: 600;
-  margin-bottom: 5;
+  margin-bottom: 5px;
 }
 .form input {
   width: 100%;
@@ -285,7 +292,7 @@ textarea:focus, input:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .checkbox-field .flex-item-center {
   position: relative;
@@ -586,7 +593,7 @@ textarea:focus, input:focus {
   border: 1px solid transparent;
 }
 .news img {
-  width: 100.5%;
+  width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
@@ -2525,7 +2532,7 @@ textarea:focus, input:focus {
 }
 
 #SignUp .grid-container {
-  grid-gap: 30px;
+  grid-gap: 13px;
 }
 @media screen and (min-width: 992px) {
   #SignUp .grid-container {
