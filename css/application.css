@@ -431,17 +431,26 @@ textarea:focus, input:focus {
   color: #fff;
 }
 #HeroImage .HeroElements h1 {
+  margin-top: 10px !important;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
   color: #fff;
 }
+#HeroImage .HeroElements p {
+  margin-top: 0px;
+  margin-bottom: 37px;
+}
 #HeroImage .HeroElements [class^=btn-], #HeroImage .HeroElements [class*=" btn-"] {
   height: auto;
-  padding: 12px 20px;
+  padding: 11px 15px 11px 18px;
   font-weight: 400;
   font-size: 1.25rem;
   max-width: 50%;
+  margin-bottom: 18px;
+}
+#HeroImage .HeroElements [class^=btn-] span, #HeroImage .HeroElements [class*=" btn-"] span {
+  margin-left: 5px;
 }
 @media screen and (min-width: 992px) {
   #HeroImage {
@@ -468,9 +477,10 @@ textarea:focus, input:focus {
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
-  position: relative;
+  position: absolute;
   margin: auto;
-  bottom: 10%;
+  left: 42.5%;
+  bottom: 4px;
   width: auto;
   height: 50px;
 }
@@ -1274,6 +1284,7 @@ textarea:focus, input:focus {
    Button Styles
 ======================================== */
 .btn {
+  display: inline-block;
   height: auto;
   background-color: #926fb1;
   border-radius: 3px;
@@ -1299,6 +1310,7 @@ textarea:focus, input:focus {
 }
 
 .btn-welcome {
+  display: inline-block;
   height: auto;
   background-color: #272936;
   border-radius: 3px;
@@ -1328,6 +1340,7 @@ textarea:focus, input:focus {
 }
 
 .btn-purple {
+  display: inline-block;
   height: auto;
   background-color: #926fb1;
   border-radius: 3px;
@@ -1356,6 +1369,7 @@ textarea:focus, input:focus {
 }
 
 .btn-grey {
+  display: inline-block;
   height: auto;
   background-color: #999aa2;
   border-radius: 3px;
@@ -1384,6 +1398,7 @@ textarea:focus, input:focus {
 }
 
 .btn-blue {
+  display: inline-block;
   height: auto;
   background-color: #4387f6;
   border-radius: 3px;
@@ -1412,6 +1427,7 @@ textarea:focus, input:focus {
 }
 
 .btn-blue-desat {
+  display: inline-block;
   height: auto;
   background-color: #67809f;
   border-radius: 3px;
@@ -1440,6 +1456,7 @@ textarea:focus, input:focus {
 }
 
 .btn-green {
+  display: inline-block;
   height: auto;
   background-color: #00b67b;
   border-radius: 3px;
@@ -1482,6 +1499,7 @@ textarea:focus, input:focus {
 }
 
 .btn-subscribe {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1513,6 +1531,7 @@ textarea:focus, input:focus {
 }
 
 .btn-social {
+  display: inline-block;
   height: auto;
   background-color: #212330;
   border-radius: 3px;
@@ -1619,6 +1638,7 @@ textarea:focus, input:focus {
   background-color: #526781;
 }
 .btn-navbar-blue-desat > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1702,6 +1722,7 @@ textarea:focus, input:focus {
   background-color: #286abd;
 }
 .btn-navbar-blue > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1785,6 +1806,7 @@ textarea:focus, input:focus {
   background-color: #25a25a;
 }
 .btn-navbar-green > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1868,6 +1890,7 @@ textarea:focus, input:focus {
   background-color: #bc2c28;
 }
 .btn-navbar-red > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -1951,6 +1974,7 @@ textarea:focus, input:focus {
   background-color: #79539a;
 }
 .btn-navbar-purple > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -2034,6 +2058,7 @@ textarea:focus, input:focus {
   background-color: #de093f;
 }
 .btn-navbar-pink > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -2117,6 +2142,7 @@ textarea:focus, input:focus {
   background-color: #a3331d;
 }
 .btn-navbar-orange > a {
+  display: inline-block;
   height: auto;
   background-color: #333645;
   border-radius: 3px;
@@ -2999,6 +3025,7 @@ a.lnk:hover {
   padding-bottom: 0px !important;
 }
 .search-main .search-sbmt {
+  display: inline-block;
   height: auto;
   background-color: #999aa2;
   border-radius: 3px;

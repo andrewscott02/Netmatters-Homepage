@@ -4,6 +4,7 @@
 
 @mixin btnstyles($bkgrndColour, $bkgrndHoverColour)
 {
+    display: inline-block;
     height: auto;
 
     background-color: $bkgrndColour;
