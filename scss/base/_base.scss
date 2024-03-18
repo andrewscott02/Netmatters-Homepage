@@ -86,13 +86,14 @@ p
 .triangle-under
 {
     overflow: visible;
+    position: relative;
     
     &::after
     {
         overflow: visible;
         position: absolute;
         left: 50%;
-        bottom: -35px;
+        bottom: -37px;
         transform: translate(-50%);
         z-index: 10;
 
@@ -105,7 +106,7 @@ p
 
         @media #{$break-full}
         {
-            bottom: -38px;
+            bottom: -40px;
             border-width: 38px 83.5px 0;
         }
     }

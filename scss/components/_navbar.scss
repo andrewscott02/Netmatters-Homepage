@@ -10,6 +10,7 @@
     margin: 0;
     height: 99.016px;
     width: 100%;
+    z-index: 2;
 
     background-color: #333645;
 
@@ -54,10 +55,10 @@
     display: none;
     background-color: #1d1f28;
     position: absolute;
-    top: 22.7%;
+    float: left;
     left: 0;
     min-width: 100%;
-    z-index: 5;
+    z-index: 1;
     padding-top: 50px;
     padding-bottom: 50px;
 

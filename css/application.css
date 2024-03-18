@@ -82,12 +82,13 @@ p {
 
 .triangle-under {
   overflow: visible;
+  position: relative;
 }
 .triangle-under::after {
   overflow: visible;
   position: absolute;
   left: 50%;
-  bottom: -35px;
+  bottom: -37px;
   transform: translate(-50%);
   z-index: 10;
   content: "";
@@ -99,7 +100,7 @@ p {
 }
 @media screen and (min-width: 1260px) {
   .triangle-under::after {
-    bottom: -38px;
+    bottom: -40px;
     border-width: 38px 83.5px 0;
   }
 }
@@ -1686,13 +1687,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-blue-desat {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-blue-desat:hover {
   background-color: #67809f;
 }
 .btn-navbar-blue-desat:hover > a {
   background-color: #67809f;
+}
+.btn-navbar-blue-desat:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-blue-desat:hover .triangle-under::after {
   display: inherit;
@@ -1769,13 +1773,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-blue {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-blue:hover {
   background-color: #4183d7;
 }
 .btn-navbar-blue:hover > a {
   background-color: #4183d7;
+}
+.btn-navbar-blue:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-blue:hover .triangle-under::after {
   display: inherit;
@@ -1852,13 +1859,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-green {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-green:hover {
   background-color: #2ecc71;
 }
 .btn-navbar-green:hover > a {
   background-color: #2ecc71;
+}
+.btn-navbar-green:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-green:hover .triangle-under::after {
   display: inherit;
@@ -1935,13 +1945,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-red {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-red:hover {
   background-color: #d64541;
 }
 .btn-navbar-red:hover > a {
   background-color: #d64541;
+}
+.btn-navbar-red:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-red:hover .triangle-under::after {
   display: inherit;
@@ -2018,13 +2031,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-purple {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-purple:hover {
   background-color: #926fb1;
 }
 .btn-navbar-purple:hover > a {
   background-color: #926fb1;
+}
+.btn-navbar-purple:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-purple:hover .triangle-under::after {
   display: inherit;
@@ -2101,13 +2117,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-pink {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-pink:hover {
   background-color: #f62459;
 }
 .btn-navbar-pink:hover > a {
   background-color: #f62459;
+}
+.btn-navbar-pink:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-pink:hover .triangle-under::after {
   display: inherit;
@@ -2184,13 +2203,16 @@ textarea:focus, input:focus {
 }
 
 .btn-navbar-orange {
-  position: relative;
+  z-index: 5;
 }
 .btn-navbar-orange:hover {
   background-color: #ce4125;
 }
 .btn-navbar-orange:hover > a {
   background-color: #ce4125;
+}
+.btn-navbar-orange:hover .navbar-panel {
+  display: block;
 }
 .btn-navbar-orange:hover .triangle-under::after {
   display: inherit;
@@ -2921,6 +2943,7 @@ a.lnk:hover {
   margin: 0;
   height: 99.016px;
   width: 100%;
+  z-index: 2;
   background-color: #333645;
 }
 .navbar .section {
@@ -2952,10 +2975,10 @@ a.lnk:hover {
   display: none;
   background-color: #1d1f28;
   position: absolute;
-  top: 22.7%;
+  float: left;
   left: 0;
   min-width: 100%;
-  z-index: 5;
+  z-index: 1;
   padding-top: 50px;
   padding-bottom: 50px;
   color: #fff;
