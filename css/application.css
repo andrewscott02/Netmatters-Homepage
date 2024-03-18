@@ -519,8 +519,8 @@ textarea:focus, input:focus {
 }
 @media screen and (min-width: 1260px) {
   #HeroImage {
-    background-position: 75% 50%;
-    background-size: auto 102.5%;
+    background-position: center;
+    background-size: cover;
   }
   #HeroImage .HeroElements h1 {
     margin-top: 9px !important;

@@ -89,8 +89,8 @@
 
     @media #{$break-full}
     {
-        background-position: 75% 50%;
-        background-size: auto 102.5%;
+        background-position: center;
+        background-size: cover;
 
         .HeroElements
         {
