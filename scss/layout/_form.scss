@@ -64,6 +64,11 @@
     }
 }
 
+label
+{
+    color: $color-secondary;
+}
+
 textarea:focus, input:focus
 {
     outline: 0;
