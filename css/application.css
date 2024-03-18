@@ -83,27 +83,26 @@ p {
 .triangle-under {
   overflow: visible;
   position: relative;
-  width: 100%;
-  height: 160%;
+  width: 0;
+  height: 0;
   z-index: 10;
   bottom: 1px;
 }
 .triangle-under::after {
   overflow: visible;
   position: relative;
-  bottom: -75%;
+  bottom: 26px;
   content: "";
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 35px 68px 0;
+  border-width: 35px 65px 0;
   border-color: #FFFFFF transparent transparent transparent;
   transform: rotate(0deg);
 }
 @media screen and (min-width: 1260px) {
   .triangle-under::after {
-    bottom: -80%;
-    border-width: 38px 85.5px 0;
+    border-width: 38px 82.5px 0;
   }
 }
 
@@ -331,8 +330,8 @@ textarea:focus, input:focus {
 .checkbox-field .flex-item-center {
   position: relative;
   vertical-align: middle;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .checkbox-field .flex-item-center.last-on-left {
   margin-right: auto;
@@ -657,8 +656,8 @@ textarea:focus, input:focus {
 .news-poster .flex-item-center {
   position: relative;
   vertical-align: middle;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .news-poster .flex-item-center.last-on-left {
   margin-right: auto;
@@ -1295,8 +1294,8 @@ textarea:focus, input:focus {
 .fivestar .flex-item-center {
   position: relative;
   vertical-align: middle;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .fivestar .flex-item-center.last-on-left {
   margin-right: auto;
@@ -1691,6 +1690,14 @@ textarea:focus, input:focus {
 .btn-navbar-blue-desat .triangle-under {
   display: none;
 }
+.btn-navbar-blue-desat .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-blue-desat .triangle-under::after {
+    bottom: -78px;
+  }
+}
 .btn-navbar-blue-desat .navbar-panel {
   background-color: #526781;
 }
@@ -1775,6 +1782,14 @@ textarea:focus, input:focus {
 }
 .btn-navbar-blue .triangle-under {
   display: none;
+}
+.btn-navbar-blue .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-blue .triangle-under::after {
+    bottom: -78px;
+  }
 }
 .btn-navbar-blue .navbar-panel {
   background-color: #286abd;
@@ -1861,6 +1876,14 @@ textarea:focus, input:focus {
 .btn-navbar-green .triangle-under {
   display: none;
 }
+.btn-navbar-green .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-green .triangle-under::after {
+    bottom: -78px;
+  }
+}
 .btn-navbar-green .navbar-panel {
   background-color: #25a25a;
 }
@@ -1945,6 +1968,14 @@ textarea:focus, input:focus {
 }
 .btn-navbar-red .triangle-under {
   display: none;
+}
+.btn-navbar-red .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-red .triangle-under::after {
+    bottom: -78px;
+  }
 }
 .btn-navbar-red .navbar-panel {
   background-color: #bc2c28;
@@ -2031,6 +2062,14 @@ textarea:focus, input:focus {
 .btn-navbar-purple .triangle-under {
   display: none;
 }
+.btn-navbar-purple .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-purple .triangle-under::after {
+    bottom: -78px;
+  }
+}
 .btn-navbar-purple .navbar-panel {
   background-color: #79539a;
 }
@@ -2116,6 +2155,14 @@ textarea:focus, input:focus {
 .btn-navbar-pink .triangle-under {
   display: none;
 }
+.btn-navbar-pink .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-pink .triangle-under::after {
+    bottom: -78px;
+  }
+}
 .btn-navbar-pink .navbar-panel {
   background-color: #de093f;
 }
@@ -2200,6 +2247,14 @@ textarea:focus, input:focus {
 }
 .btn-navbar-orange .triangle-under {
   display: none;
+}
+.btn-navbar-orange .triangle-under::after {
+  bottom: -75px;
+}
+@media screen and (min-width: 1260px) {
+  .btn-navbar-orange .triangle-under::after {
+    bottom: -78px;
+  }
 }
 .btn-navbar-orange .navbar-panel {
   background-color: #a3331d;
@@ -2330,8 +2385,8 @@ textarea:focus, input:focus {
 .flex-container .flex-item-center {
   position: relative;
   vertical-align: middle;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .flex-container .flex-item-center.last-on-left {
   margin-right: auto;
@@ -2420,8 +2475,8 @@ textarea:focus, input:focus {
 .socials .flex-item-center {
   position: relative;
   vertical-align: middle;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .socials .flex-item-center.last-on-left {
   margin-right: auto;
