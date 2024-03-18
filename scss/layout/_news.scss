@@ -121,6 +121,11 @@
 
         margin: 0;
     }
+    
+    &:hover p
+    {
+        text-decoration: underline;
+    }
 }
 
 .news-purple

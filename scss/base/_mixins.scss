@@ -84,11 +84,11 @@
 
         &::after
         {
-            bottom: -75px;
+            bottom: -70px;
 
             @media #{$break-full}
             {
-                bottom: -78px;
+                bottom: -75px;
             }
         }
     }

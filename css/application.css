@@ -86,7 +86,6 @@ p {
   width: 0;
   height: 0;
   z-index: 10;
-  bottom: 1px;
 }
 .triangle-under::after {
   overflow: visible;
@@ -480,6 +479,7 @@ textarea:focus, input:focus {
   line-height: 3rem;
   margin: 0 0 1.25rem;
   color: #fff;
+  font-weight: 600;
 }
 #HeroImage .HeroElements p {
   margin-top: 0px;
@@ -490,6 +490,7 @@ textarea:focus, input:focus {
   padding: 11px 15px 11px 18px;
   font-weight: 400;
   font-size: 1.25rem;
+  min-width: 250px;
   max-width: 50%;
   margin-bottom: 18px;
 }
@@ -712,6 +713,9 @@ textarea:focus, input:focus {
   line-height: 1.438rem;
   font-weight: 600;
   margin: 0;
+}
+.news-popup:hover p {
+  text-decoration: underline;
 }
 
 .news-purple .btn,
@@ -1405,7 +1409,6 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   font-size: 20px !important;
-  margin-bottom: 30px;
   margin-right: auto;
 }
 .btn-welcome:hover {
@@ -1697,11 +1700,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-blue-desat .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-blue-desat .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-blue-desat .navbar-panel {
@@ -1790,11 +1793,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-blue .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-blue .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-blue .navbar-panel {
@@ -1883,11 +1886,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-green .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-green .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-green .navbar-panel {
@@ -1976,11 +1979,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-red .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-red .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-red .navbar-panel {
@@ -2069,11 +2072,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-purple .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-purple .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-purple .navbar-panel {
@@ -2162,11 +2165,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-pink .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-pink .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-pink .navbar-panel {
@@ -2255,11 +2258,11 @@ textarea:focus, input:focus {
   display: none;
 }
 .btn-navbar-orange .triangle-under::after {
-  bottom: -75px;
+  bottom: -70px;
 }
 @media screen and (min-width: 1260px) {
   .btn-navbar-orange .triangle-under::after {
-    bottom: -78px;
+    bottom: -75px;
   }
 }
 .btn-navbar-orange .navbar-panel {
@@ -3093,6 +3096,10 @@ a.lnk:hover {
   width: 100%;
   height: 100%;
 }
+.search textarea:focus, .search input:focus {
+  outline: 0;
+  box-shadow: none;
+}
 .search input {
   font-family: Poppins, sans-serif;
   background-color: rgba(0, 0, 0, 0);
@@ -3165,7 +3172,7 @@ a.lnk:hover {
   overflow: hidden;
   width: 63px;
   height: 56px;
-  padding: 13px 20px 3px;
+  padding: 11px 15px 3px;
   border-radius: 0 3px 3px 0;
   text-align: center;
   font-size: 23px;
