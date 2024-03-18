@@ -3,6 +3,7 @@
 /* ========================================================== */
 
 //Breakpoints
+$break-mobile       :"screen and (min-width: 481px)";
 $break-narrow       :"screen and (min-width: 768px)";
 $break-wide         :"screen and (min-width: 992px)";
 $break-full         :"screen and (min-width: 1260px)";

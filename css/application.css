@@ -186,8 +186,13 @@ footer {
   margin-bottom: 12px;
   position: relative;
   text-align: center;
-  width: 320px;
+  width: 250px;
   height: auto;
+}
+@media screen and (min-width: 481px) {
+  #FooterInfo .footer-title {
+    width: 320px;
+  }
 }
 #FooterInfo h3 {
   margin-top: 0;
@@ -856,40 +861,6 @@ textarea:focus, input:focus {
 .btn-case:hover {
   filter: grayscale(0);
 }
-.btn-case .hoverdisplay {
-  display: none;
-  position: absolute;
-  bottom: 70%;
-  left: -200px;
-  right: -200px;
-  margin: auto;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-}
-.btn-case .hoverdisplay > div:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: #333645;
-  padding: 20px;
-  width: 280px;
-  margin: auto;
-  margin-bottom: 65px;
-}
-.btn-case .hoverdisplay h3 {
-  margin-top: 0;
-  font-size: 1.125rem;
-}
-.btn-case .hoverdisplay p {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  padding-top: 0;
-  margin-bottom: 0;
-}
-.btn-case .hoverdisplay a {
-  font-size: 16px;
-}
 .btn-case .triangle-under {
   display: none;
   width: 72px;
@@ -908,6 +879,42 @@ textarea:focus, input:focus {
 }
 .btn-case:hover .hoverdisplay {
   display: flex;
+}
+
+.hoverdisplay {
+  display: none;
+  position: absolute;
+  bottom: 70%;
+  left: -200px;
+  right: -200px;
+  margin: auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.hoverdisplay > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #333645;
+  padding: 20px;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 65px;
+}
+.hoverdisplay h3 {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+.hoverdisplay p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.hoverdisplay a {
+  margin-top: 11px;
+  font-size: 16px;
 }
 
 /* ========================================================== */
@@ -1633,6 +1640,7 @@ textarea:focus, input:focus {
   color: #fff;
 }
 .btn-social span {
+  margin: auto;
   font-size: 24px;
 }
 
@@ -2508,7 +2516,7 @@ textarea:focus, input:focus {
 }
 .socials .flex-item,
 .socials .flex-item-center {
-  margin-right: 7px;
+  margin-right: 0px;
 }
 
 /* ===================================== 
@@ -2645,6 +2653,15 @@ textarea:focus, input:focus {
   #FooterInfo .grid-container {
     grid-gap: 17px;
     grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
+  }
+}
+#FooterInfo .socials .grid-container {
+  grid-gap: 10px;
+  grid-template-columns: 75% 75%;
+}
+@media screen and (min-width: 481px) {
+  #FooterInfo .socials .grid-container {
+    grid-template-columns: auto auto auto auto;
   }
 }
 #FooterInfo .footerinfo .grid-container {

@@ -35,54 +35,6 @@
     vertical-align: middle;
     position: relative;
 
-    .hoverdisplay
-    {  
-        display: none;
-        position: absolute;
-        bottom: 70%;
-        left: -200px;
-        right: -200px;
-        margin: auto;
-        
-        color: $white;
-        background-color: $transparent;
-        text-align: center;
-
-        & > div:first-child
-        {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            //position: absolute;
-            //left: 50%;
-            //bottom: 100%;
-            
-            background-color: $color-secondary;
-            padding: 20px;
-            width: 280px;
-            margin: auto;
-            margin-bottom:65px;
-        }
-
-        h3
-        {
-            margin-top: 0;
-            font-size: 1.125rem;
-        }
-        p
-        {
-            font-size: .8125rem;
-            line-height: 1.375rem;
-            padding-top: 0;
-            margin-bottom: 0;
-        }
-        a
-        {
-            font-size: 16px;
-        }
-    }
-    
     .triangle-under
     {
         display: none;
@@ -111,5 +63,54 @@
         {
             display: flex;
         }
+    }
+}
+
+.hoverdisplay
+{  
+    display: none;
+    position: absolute;
+    bottom: 70%;
+    left: -200px;
+    right: -200px;
+    margin: auto;
+    
+    color: $white;
+    background-color: $transparent;
+    text-align: center;
+
+    & > div:first-child
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        //position: absolute;
+        //left: 50%;
+        //bottom: 100%;
+        
+        background-color: $color-secondary;
+        padding: 20px;
+        width: 280px;
+        margin: auto;
+        margin-bottom:65px;
+    }
+
+    h3
+    {
+        margin-top: 0;
+        font-size: 1.125rem;
+    }
+    p
+    {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    a
+    {
+        margin-top: 11px;
+        font-size: 16px;
     }
 }

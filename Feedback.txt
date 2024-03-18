@@ -1,6 +1,5 @@
+Feedback
+
 Triangles are not aligned properly
-Underline on Our Work
-Nav panel not aligned properly
-Social media buttons sould be in 2 rows until breakpoint: 481px
-Margin around case study buttons
 Text colour should be black (form section, but check others too)
+Nav panel not aligned properly

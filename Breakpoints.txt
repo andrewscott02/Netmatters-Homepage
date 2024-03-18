@@ -1,7 +1,1 @@
-Breakpoints - Welcome
-
-992px
-Buttons appear in 2 rows
-
-1260px
-Buttons appear in a single row (2 columns per section)
+Breakpoints - None left
