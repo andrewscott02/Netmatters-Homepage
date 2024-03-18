@@ -8,6 +8,11 @@
     color: $color-text-light;
     line-height: 39.6px;
 
+    .section
+    {
+        padding-bottom: 8px;
+    }
+
 	h2
 	{
 		font-size: 2.25rem;
@@ -80,6 +85,11 @@
         border: 0;
 
         &:first-child
+        {
+            margin-right: 4px;
+        }
+
+        &.btn-reviews:first-child
         {
             margin-right: 8px;
         }

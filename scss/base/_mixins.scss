@@ -7,10 +7,11 @@
     display: inline-block;
     height: auto;
 
-    background-color: $bkgrndColour;
+    padding: 5px 15px;
+    border: 3px solid transparent;
     border-radius: 3px;
 
-    padding: 10px 20px;
+    background-color: $bkgrndColour;
 
     color: $color-text-light;
     text-decoration: none;
@@ -91,7 +92,7 @@
     {
         @include btnstyles($buttonBaseColour, $buttonHoverColour);
         margin: auto;
-        padding: 16px 0 18px;
+        padding: 13px 0 18px;
         border-radius: 0;
         
         display: block;
@@ -106,7 +107,7 @@
         font-size: 1.125rem;
         line-height: 1px;
 
-        div
+        .nav-iconcontainer
         {
             padding-bottom: 10px;
         }
@@ -260,6 +261,16 @@
         font-size: 2rem;
         line-height: 62px;
         color: $col2;
+    }
+}
+
+@mixin invertCards($bckgrnd-colour, $btn-colour, $txt-colour)
+{
+    @include cardColour($bckgrnd-colour, $btn-colour, $txt-colour);
+
+    &:hover
+    {
+        @include cardColour($btn-colour, $bckgrnd-colour, $bckgrnd-colour);
     }
 }
 

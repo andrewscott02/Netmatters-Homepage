@@ -4,7 +4,12 @@
 
 #Services
 {
-    padding-top: 52px;
+    padding-top: 47px;
+}
+
+.services-cardcontainer
+{
+    margin-top: 23px;
 }
 
 .card
@@ -37,70 +42,40 @@
 
 .invert-blue-desat
 {
-    @include cardColour($white, $colour-card-blue-desat, $color-secondary);
-
-    &:hover
-    {
-        @include cardColour($colour-card-blue-desat, $white, $white);
-    }
+    @include invertCards($white, $colour-card-blue-desat, $color-secondary);
 }
 
 .invert-blue-sat
 {
-    @include cardColour($white, $colour-card-blue-sat, $color-secondary);
-
-    &:hover
-    {
-        @include cardColour($colour-card-blue-sat, $white, $white);
-    }
+    @include invertCards($white, $colour-card-blue-sat, $color-secondary);
 }
 
 .invert-green
 {
-    @include cardColour($white, $colour-card-green, $color-secondary);
+    @include invertCards($white, $colour-card-green, $color-secondary);
 
-    &:hover
-    {
-        @include cardColour($colour-card-green, $white, $white);
-    }
 }
 
 .invert-red
 {
-    @include cardColour($white, $colour-card-red, $color-secondary);
+    @include invertCards($white, $colour-card-red, $color-secondary);
 
-    &:hover
-    {
-        @include cardColour($colour-card-red, $white, $white);
-    }
 }
 
 .invert-purple
 {
-    @include cardColour($white, $colour-card-purple, $color-secondary);
+    @include invertCards($white, $colour-card-purple, $color-secondary);
 
-    &:hover
-    {
-        @include cardColour($colour-card-purple, $white, $white);
-    }
 }
 
 .invert-pink
 {
-    @include cardColour($white, $colour-card-pink, $color-secondary);
+    @include invertCards($white, $colour-card-pink, $color-secondary);
 
-    &:hover
-    {
-        @include cardColour($colour-card-pink, $white, $white);
-    }
 }
 
 .invert-orange
 {
-    @include cardColour($white, $colour-card-orange, $color-secondary);
+    @include invertCards($white, $colour-card-orange, $color-secondary);
 
-    &:hover
-    {
-        @include cardColour($colour-card-orange, $white, $white);
-    }
 }

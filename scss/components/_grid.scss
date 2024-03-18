@@ -5,6 +5,7 @@
 .grid-container
 {
     display: grid;
+    grid-gap: 30px;
 }
 
 .navbar-panel
@@ -21,7 +22,6 @@
 {
     @media #{$break-wide}
     {
-        grid-gap: 30px;
         row-gap: 0;
 
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -46,35 +46,10 @@
     }
 }
 
-// .welcome-btngrid.grid-container
-// {
-//     grid-gap: 10px;
-//     grid-template-columns: minmax(50px, 1fr);
-
-//     @media #{$break-narrow}
-//     {
-//         grid-template-columns: minmax(50px, 1fr) minmax(50px, 1fr);
-//     }
-
-//     @media #{$break-wide}
-//     {
-//         grid-gap: 17px;
-
-//         grid-template-columns: minmax(100px, 1fr);
-//     }
-
-//     @media #{$break-full}
-//     {
-//         grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
-//     }
-// }
-
 #Services
 {
     .grid-container
     {
-        grid-gap: 30px;
-
         @media #{$break-narrow}
         {
             grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -164,8 +139,6 @@
 {
     .grid-container
     {
-        grid-gap: 30px;
-
         @media #{$break-narrow}
         {
             grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -195,8 +168,6 @@
 {
     .grid-container
     {
-        grid-gap: 30px;
-
         @media #{$break-wide}
         {
             grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -208,9 +179,9 @@
 {
     overflow: clip;
     .grid-container
-    {   
-        // grid-gap: 17px;
+    {
         grid-gap: 0;
+
         @media #{$break-full}
         {
             grid-gap: 17px;
@@ -222,7 +193,6 @@
     {
         .grid-container
         {   
-            grid-gap: 30px;
             row-gap: 26px;
 
             @media #{$break-narrow}
@@ -242,17 +212,3 @@
         }
     }
 }
-
-// #FooterBottom
-// {
-//     // overflow: clip;
-//     .grid-container
-//     {   
-//         grid-gap: 1px;
-//         width: 500px;
-//         @media #{$break-narrow}
-//         {
-//             grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
-//         }
-//     }
-// }

@@ -86,6 +86,7 @@ p {
   width: 100%;
   height: 160%;
   z-index: 10;
+  bottom: 1px;
 }
 .triangle-under::after {
   overflow: visible;
@@ -558,7 +559,7 @@ textarea:focus, input:focus {
   left: -386px;
   right: -200px;
   margin: auto;
-  bottom: 13px;
+  bottom: 14px;
   width: 19px;
   height: 19px;
   border-radius: 100%;
@@ -904,7 +905,11 @@ textarea:focus, input:focus {
 /* Services Styles */
 /* ========================================================== */
 #Services {
-  padding-top: 52px;
+  padding-top: 47px;
+}
+
+.services-cardcontainer {
+  margin-top: 23px;
 }
 
 .card {
@@ -1258,6 +1263,9 @@ textarea:focus, input:focus {
   color: #fff;
   line-height: 39.6px;
 }
+#Welcome .section {
+  padding-bottom: 8px;
+}
 #Welcome h2 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -1338,6 +1346,9 @@ textarea:focus, input:focus {
   border: 0;
 }
 .welcome-btngrid a:first-child {
+  margin-right: 4px;
+}
+.welcome-btngrid a.btn-reviews:first-child {
   margin-right: 8px;
 }
 
@@ -1350,9 +1361,10 @@ textarea:focus, input:focus {
 .btn {
   display: inline-block;
   height: auto;
-  background-color: #926fb1;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #926fb1;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1376,9 +1388,10 @@ textarea:focus, input:focus {
 .btn-welcome {
   display: inline-block;
   height: auto;
-  background-color: #272936;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #272936;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1386,9 +1399,8 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
   font-size: 20px !important;
+  margin-bottom: 30px;
   margin-right: auto;
 }
 .btn-welcome:hover {
@@ -1406,9 +1418,10 @@ textarea:focus, input:focus {
 .btn-purple {
   display: inline-block;
   height: auto;
-  background-color: #926fb1;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #926fb1;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1416,9 +1429,6 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 .btn-purple:hover {
   background-color: #7e57a0;
@@ -1435,9 +1445,10 @@ textarea:focus, input:focus {
 .btn-grey {
   display: inline-block;
   height: auto;
-  background-color: #999aa2;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #999aa2;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1445,9 +1456,6 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 .btn-grey:hover {
   background-color: #84858f;
@@ -1464,9 +1472,10 @@ textarea:focus, input:focus {
 .btn-blue {
   display: inline-block;
   height: auto;
-  background-color: #4387f6;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #4387f6;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1474,9 +1483,6 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 .btn-blue:hover {
   background-color: #166af4;
@@ -1493,9 +1499,10 @@ textarea:focus, input:focus {
 .btn-blue-desat {
   display: inline-block;
   height: auto;
-  background-color: #67809f;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #67809f;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1503,9 +1510,6 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 .btn-blue-desat:hover {
   background-color: #166af4;
@@ -1522,9 +1526,10 @@ textarea:focus, input:focus {
 .btn-green {
   display: inline-block;
   height: auto;
-  background-color: #00b67b;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #00b67b;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1532,9 +1537,6 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 .btn-green:hover {
   background-color: #009b69;
@@ -1565,9 +1567,10 @@ textarea:focus, input:focus {
 .btn-subscribe {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1575,10 +1578,7 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  padding: 5px 15px;
-  font-size: 1.063rem;
   border: 1px solid transparent;
-  line-height: 35px;
   font-weight: 400;
   letter-spacing: normal;
 }
@@ -1597,9 +1597,10 @@ textarea:focus, input:focus {
 .btn-social {
   display: inline-block;
   height: auto;
-  background-color: #212330;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #212330;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1607,10 +1608,8 @@ textarea:focus, input:focus {
   font-size: 1.063rem;
   white-space: normal;
   overflow: hidden;
-  border: 3px solid transparent;
   border-radius: 0;
   padding: 16px 18px;
-  font-size: 1.063rem;
   margin-right: 10px;
   height: 56px;
 }
@@ -1698,9 +1697,10 @@ textarea:focus, input:focus {
 .btn-navbar-blue-desat > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1709,7 +1709,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -1731,7 +1731,7 @@ textarea:focus, input:focus {
 .btn-navbar-blue-desat > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue-desat > a div {
+.btn-navbar-blue-desat > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-blue-desat > a span {
@@ -1782,9 +1782,10 @@ textarea:focus, input:focus {
 .btn-navbar-blue > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1793,7 +1794,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -1815,7 +1816,7 @@ textarea:focus, input:focus {
 .btn-navbar-blue > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-blue > a div {
+.btn-navbar-blue > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-blue > a span {
@@ -1866,9 +1867,10 @@ textarea:focus, input:focus {
 .btn-navbar-green > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1877,7 +1879,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -1899,7 +1901,7 @@ textarea:focus, input:focus {
 .btn-navbar-green > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-green > a div {
+.btn-navbar-green > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-green > a span {
@@ -1950,9 +1952,10 @@ textarea:focus, input:focus {
 .btn-navbar-red > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -1961,7 +1964,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -1983,7 +1986,7 @@ textarea:focus, input:focus {
 .btn-navbar-red > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-red > a div {
+.btn-navbar-red > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-red > a span {
@@ -2034,9 +2037,10 @@ textarea:focus, input:focus {
 .btn-navbar-purple > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -2045,7 +2049,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -2067,7 +2071,7 @@ textarea:focus, input:focus {
 .btn-navbar-purple > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-purple > a div {
+.btn-navbar-purple > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-purple > a span {
@@ -2118,9 +2122,10 @@ textarea:focus, input:focus {
 .btn-navbar-pink > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -2129,7 +2134,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -2151,7 +2156,7 @@ textarea:focus, input:focus {
 .btn-navbar-pink > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-pink > a div {
+.btn-navbar-pink > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-pink > a span {
@@ -2202,9 +2207,10 @@ textarea:focus, input:focus {
 .btn-navbar-orange > a {
   display: inline-block;
   height: auto;
-  background-color: #333645;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   line-height: 35px;
@@ -2213,7 +2219,7 @@ textarea:focus, input:focus {
   white-space: normal;
   overflow: hidden;
   margin: auto;
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -2235,7 +2241,7 @@ textarea:focus, input:focus {
 .btn-navbar-orange > a .arw-after::after {
   color: #fff;
 }
-.btn-navbar-orange > a div {
+.btn-navbar-orange > a .nav-iconcontainer {
   padding-bottom: 10px;
 }
 .btn-navbar-orange > a span {
@@ -2446,6 +2452,7 @@ textarea:focus, input:focus {
 ======================================== */
 .grid-container {
   display: grid;
+  grid-gap: 30px;
 }
 
 .navbar-panel .grid-container {
@@ -2455,7 +2462,6 @@ textarea:focus, input:focus {
 
 @media screen and (min-width: 992px) {
   .welcome.grid-container {
-    grid-gap: 30px;
     row-gap: 0;
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   }
@@ -2473,9 +2479,6 @@ textarea:focus, input:focus {
   }
 }
 
-#Services .grid-container {
-  grid-gap: 30px;
-}
 @media screen and (min-width: 768px) {
   #Services .grid-container {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -2544,9 +2547,6 @@ textarea:focus, input:focus {
   }
 }
 
-#LatestNews .grid-container {
-  grid-gap: 30px;
-}
 @media screen and (min-width: 768px) {
   #LatestNews .grid-container {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -2565,9 +2565,6 @@ textarea:focus, input:focus {
   }
 }
 
-#SignUp .grid-container {
-  grid-gap: 30px;
-}
 @media screen and (min-width: 992px) {
   #SignUp .grid-container {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -2587,7 +2584,6 @@ textarea:focus, input:focus {
   }
 }
 #FooterInfo .footerinfo .grid-container {
-  grid-gap: 30px;
   row-gap: 26px;
 }
 @media screen and (min-width: 768px) {
@@ -2652,6 +2648,10 @@ textarea:focus, input:focus {
 .icon-large {
   font-size: 1.438rem;
   line-height: 45px;
+}
+
+.icon-margin-left {
+  margin-left: 12px;
 }
 
 .icon-bar-graph:before {
@@ -2942,7 +2942,7 @@ a.lnk:hover {
   display: none;
   background-color: #1d1f28;
   position: absolute;
-  top: 22.9%;
+  top: 22.7%;
   left: 0;
   min-width: 100%;
   z-index: 5;
@@ -3091,9 +3091,10 @@ a.lnk:hover {
 .search-main .search-sbmt {
   display: inline-block;
   height: auto;
-  background-color: #999aa2;
+  padding: 5px 15px;
+  border: 3px solid transparent;
   border-radius: 3px;
-  padding: 10px 20px;
+  background-color: #999aa2;
   color: #fff;
   text-decoration: none;
   line-height: 35px;

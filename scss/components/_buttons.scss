@@ -10,50 +10,34 @@
 .btn-welcome
 {
     @include btnstyles($colour-btn-dark-base, $colour-btn-dark-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
     font-size: 20px !important;
+    margin-bottom: 30px;
     margin-right: auto;
 }
 
 .btn-purple
 {
     @include btnstyles($colour-btn-purple-base, $colour-btn-purple-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
-    font-size: 1.063rem;
 }
 
 .btn-grey
 {
     @include btnstyles($colour-btn-grey-base, $colour-btn-grey-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
-    font-size: 1.063rem;
 }
 
 .btn-blue
 {
     @include btnstyles($colour-btn-blue-base, $colour-btn-blue-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
-    font-size: 1.063rem;
 }
 
 .btn-blue-desat
 {
     @include btnstyles($colour-btn-blue-desat-base, $colour-btn-blue-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
-    font-size: 1.063rem;
 }
 
 .btn-green
 {
     @include btnstyles($colour-btn-green-base, $colour-btn-green-hover);
-    border: 3px solid transparent;
-    padding: 5px 15px;
-    font-size: 1.063rem;
 }
 
 //Styles for specific buttons
@@ -81,11 +65,9 @@
 .btn-subscribe
 {
     @include btnstyles($colour-btn-sub-base, $colour-btn-sub-hover);
-    padding: 5px 15px;
-    font-size: 1.063rem;
     border: 1px solid transparent;
 
-    line-height: 35px;
+    //line-height: 35px;
     font-weight: 400;
     letter-spacing: normal;
 }
@@ -93,10 +75,8 @@
 .btn-social
 {
     @include btnstyles($colour-btn-social-base, $colour-btn-fb-hover);
-    border: 3px solid transparent;
     border-radius: 0;
     padding: 16px 18px;
-    font-size: 1.063rem;
     margin-right: 10px;
 
     //width: 70.406px;
