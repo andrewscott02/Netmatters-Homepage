@@ -86,29 +86,28 @@ p
 .triangle-under
 {
     overflow: visible;
-    position: relative;
-    width: 0;
-    height: 0;
-    z-index: 10;
-    //bottom: 1px;
-
+    
     &::after
     {
         overflow: visible;
-        position: relative;
-        bottom: 26px;
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+        transform: translate(-50%);
+        z-index: 10;
+
         content: "";
-        width: 0px;
-        $width: width;
-        height: 0px;
+        width: 0;
+        height: 0;
         border-style: solid;
-        border-width: 35px 65px 0;
+        border-width: 35px 67.5px 0;
         border-color: #FFFFFF transparent transparent transparent;
         transform: rotate(0deg);
 
         @media #{$break-full}
         {
-            border-width: 38px 82.5px 0;
+            bottom: -38px;
+            border-width: 38px 83.5px 0;
         }
     }
 }

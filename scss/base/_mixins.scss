@@ -43,6 +43,8 @@
 
 @mixin btnstyles-nav($buttonBaseColour, $buttonHoverColour, $panelColour)
 {
+    position: relative;
+
     &:hover
     {
         background-color: $buttonHoverColour;
@@ -54,16 +56,12 @@
 
         .navbar-panel
         {
-            display: inherit;
-        }
-
-        .triangle-under
-        {
-            display:inherit;
+            //display: inherit;
         }
 
         .triangle-under::after
         {
+            display:inherit;
             border-color: $buttonHoverColour transparent transparent
         }
 
@@ -78,18 +76,14 @@
         // }
     }
 
-    .triangle-under
+    .triangle-under::after
     {
         display:none;
+        //bottom: -70px;
 
-        &::after
+        @media #{$break-full}
         {
-            bottom: -70px;
-
-            @media #{$break-full}
-            {
-                bottom: -75px;
-            }
+            //bottom: -75px;
         }
     }
 
