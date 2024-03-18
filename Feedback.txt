@@ -1,7 +1,0 @@
-Feedback
-
-Text colour should be black (form section, but check others too)
-
-Check
-Triangles are not aligned properly
-Nav panel not aligned properly
