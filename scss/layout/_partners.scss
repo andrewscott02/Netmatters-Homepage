@@ -35,20 +35,9 @@
     vertical-align: middle;
     position: relative;
 
-    .triangle-under
-    {
-        display: none;
-        width:72px;
-        position: absolute;
-        bottom: 125%;
-        left: -200px;
-        right: -200px;
-        margin: auto;
-        // background-color: red;
-    }
-
     .triangle-under::after
     {
+        bottom: 32px;
         border-width: 35px 36px 0;
         border-color: $color-secondary transparent transparent transparent;
     }
