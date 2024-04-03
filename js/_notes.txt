@@ -1,0 +1,9 @@
+Banner Slider
+
+Side Menu
+
+Mobile Menu
+
+Sticky Header
+
+pop-up notifying the user the website uses cookies, this should store locally and prevent the pop-up reappearing on page reload

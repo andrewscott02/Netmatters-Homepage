@@ -503,8 +503,8 @@
         </div>
     </header>
 
-    <div id="HeroImage">
-        <!-- Hero image, cycles through multiple images with different text, colours and backgrounds -->
+    <!-- Banner image when javascript is disabled -->
+    <div class="HeroImage javascript-disabled">
         <div class="HeroElements">
             <div class="section">
                 <div>
@@ -521,29 +521,44 @@
                 </div>
             </div>
         </div>
-        <div class="HeroNavigation">
-            <div>
-                <a href="#" class="hero-nav-outer active">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
-                <a href="#" class="hero-nav-outer">
-                    <div class="hero-nav-inner"></div>
-                </a>
+    </div>
+
+    <!-- Carousel when javascript is enabled -->
+    <div class="Carousel slides requires-javascript">
+        <div class="HeroImage">
+            <div class="HeroElements">
+                <div class="section">
+                    <div>
+                        <h1>The East Of England's Leading Technology Company</h1>
+                        <p>
+                            Performance-driven digital and technology services
+                            <br>
+                            with complete transparency.
+                        </p>
+                        <a class="btn-purple" href="#">
+                            WHY CHOOSE US?
+                            <span class="icon-arrow-right2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="HeroImage">
+            <div class="HeroElements">
+                <div class="section">
+                    <div>
+                        <h1>The East Of England's Leading Technology Company</h1>
+                        <p>
+                            Performance-driven digital and technology services
+                            <br>
+                            with complete transparency.
+                        </p>
+                        <a class="btn-blue" href="#">
+                            WHY CHOOSE US?
+                            <span class="icon-arrow-right2"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1130,6 +1145,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/plugins/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
