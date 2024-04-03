@@ -1,0 +1,68 @@
+/* ===================================== 
+   Carousel
+======================================== */
+
+.Carousel
+{
+   height: fit-content; 
+   height: 550px;
+   overflow-x: clip;
+}
+
+//Slick styles
+
+.slick-dots
+{
+    bottom: 44px;
+}
+
+.slick-dots li button:before
+{
+    color:#d6d6d6;
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before
+{
+    color:white;
+}
+
+.slick-dots li.slick-active button:after
+{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.slick-slide 
+{
+    height: auto; // ← that must not be ignored
+    &>div
+    {
+        height: 100%;
+        &>div
+        {
+            height: 100%;
+        }
+    }
+}
+
+.slick-track
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 100%;
+}
+
+.slick-list
+{
+    height: 100%;
+}
