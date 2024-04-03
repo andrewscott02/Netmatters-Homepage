@@ -9,6 +9,50 @@
    overflow-x: clip;
 }
 
+.HeroImage-TechCompany
+{
+    @include BackgroundGradient(url("../Images/Carousel/TechCompany.webp"));
+}
+
+.HeroImage-BespokeSoftware
+{
+    @include BackgroundGradient(url("../Images/Carousel/BespokeSoftware.webp"));
+}
+
+.HeroImage-ITSupport
+{
+    @include BackgroundGradient(url("../Images/Carousel/ITSupport.webp"));
+}
+
+.HeroImage-DigitalMarketting
+{
+    @include BackgroundGradient(url("../Images/Carousel/DigitalMarketting.webp"));
+}
+
+.HeroImage-TelecomsServices
+{
+    @include BackgroundGradient(url("../Images/Carousel/TelecomsServices.webp"));
+}
+
+.HeroImage-WebDesign
+{
+    @include BackgroundGradient(url("../Images/Carousel/WebDesign.webp"));
+}
+
+.HeroImage-CyberSecurity
+{
+    @include BackgroundGradient(url("../Images/Carousel/CyberSecurity.webp"));
+}
+
+// .carousel-image
+// {
+//     @include BackgroundGradient(url("../Images/heroimage.webp"));
+
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+// }
+
 //Slick styles
 
 .slick-dots

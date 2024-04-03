@@ -39,6 +39,16 @@
     @include btnstyles($colour-btn-green-base, $colour-btn-green-hover);
 }
 
+.btn-red
+{
+    @include btnstyles($colour-btn-red-base, $colour-btn-red-hover);
+}
+
+.btn-pink
+{
+    @include btnstyles($colour-btn-pink-base, $colour-btn-pink-hover);
+}
+
 //Styles for specific buttons
 
 .btn-header
