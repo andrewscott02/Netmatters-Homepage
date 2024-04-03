@@ -1,4 +1,4 @@
-Banner Slider
+Banner Slider - Implemented, need to refine some things
 
 Side Menu
 
