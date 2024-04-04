@@ -198,10 +198,10 @@ function DetermineCookiesPopup(cookiesOpen)
 //TODO: Not working properly
 function SetCookiesData(value)
 {
-	alert("Setting data to: " + value);
+	console.log("Setting data to: " + value);
 	
 	const config = {
-        method: "POST",
+        method: `POST`,
         headers: {
             "Content-Type": "application/json"
         },
