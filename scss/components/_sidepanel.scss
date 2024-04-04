@@ -13,6 +13,40 @@
 #MainContentContainer
 {
     position: relative;
+    left: 0;
+
+    transition: all .5s;
+
+    &::after
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .4);
+        z-index: -1;
+        content: "";
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &.sidepanel-open
+    {
+        left: -275px;
+        cursor: pointer;
+
+        &::after
+        {
+            z-index: 10;
+            opacity: 1;
+        }
+    }
+}
+
+.maincontent-inner
+{
+    position: relative;
     z-index: 2;
     overflow-x: clip;
     overflow-y: scroll;
@@ -21,14 +55,6 @@
     height: 100vh;
     width: 100vw;
     left: 0;
-
-    transition: all .5s;
-
-    &.sidepanel-open
-    {
-        left: -275px;
-        cursor: pointer;
-    }
 }
 
 #SidePanel

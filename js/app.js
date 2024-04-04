@@ -17,14 +17,23 @@ function GeneralJavaScriptSetup()
 //#region Side Panel
 
 /** TODO
- * Low opacity overlay on page
- * Clicking on main page removes class
  * Content and styling for elements in side panel
  */
 
+let canClose = false;
+
 $(".sidepanel-btn").on("click", (event)=>{
     $("#MainContentContainer").toggleClass("sidepanel-open");
-})
+    setTimeout(()=>{canClose = true}, 100);
+});
+
+$("#MainContentContainer").on("click", (event)=>{
+    if (canClose)
+    {
+        $("#MainContentContainer").removeClass("sidepanel-open");
+        canClose = false;
+    }
+});
 
 //#endregion
 
