@@ -43,6 +43,11 @@
     {
         height: 110px;
     }
+
+    &.sticky
+    {
+        position: sticky;
+    }
 }
 
 .header-container

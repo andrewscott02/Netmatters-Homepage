@@ -14,6 +14,32 @@ function GeneralJavaScriptSetup()
 
 //#endregion
 
+//#region Sticky Navigation
+
+let prevScroll = 0;
+
+$(".maincontent-inner").on('scroll', CheckScroll);
+
+function CheckScroll(event)
+{
+    let scroll = $(".maincontent-inner").scrollTop();
+
+    if (scroll > prevScroll)
+    {
+        //Show header
+        console.log("scroll down");
+        $("#Header").addClass("sticky");
+    }
+    else
+    {
+        //Hide header
+        console.log("scroll up");
+        $("#Header").removeClass("sticky");
+    }
+
+    prevScroll = scroll;
+}
+
 //#region Side Panel
 
 /** TODO
