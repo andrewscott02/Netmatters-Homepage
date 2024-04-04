@@ -200,7 +200,7 @@ function GetCookiesData()
 
 function DetermineCookiesPopup(cookiesOpen)
 {
-    console.log(`Data fetch success, cookie popup will appear: ${data.cookiesOpen}`);
+    console.log(`Data fetch success, cookie popup will appear: ${cookiesOpen}`);
     cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
