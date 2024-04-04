@@ -152,7 +152,7 @@ function CloseCookies()
 {
     //Send cookies closed via AJAX
     console.log("Closing Cookies Popup");
-    $.post(cookiesURL, {cookiesOpen:'false'});
+    SetCookiesData(false);
     $('body').removeClass('stop-scrolling');
     $("#CookiesPopup").hide();
 }
@@ -193,6 +193,25 @@ function DetermineCookiesPopup(cookiesOpen)
 {
     console.log(`Data fetch success, cookie popup will appear: ` + cookiesOpen);
     cookiesOpen ? OpenCookies : CloseCookies;
+}
+
+//TODO: Not working properly
+function SetCookiesData(value)
+{
+	alert("Setting data to: " + value);
+	
+	const config = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({cookiesOpen: value})
+    }
+	
+	fetch(cookiesURL, config)
+        .then(CheckStatus)
+        .then(res=> res.json())
+        .then(data => console.log(data));
 }
 
 //#endregion
