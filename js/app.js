@@ -137,9 +137,10 @@ var cookiesOpen = false;
 function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
-    GetCookies()
-        .then(OpenCookies)
-        .catch(CloseCookies);
+    GetCookiesData();
+
+        // .then(OpenCookies)
+        // .catch(CloseCookies);
 
     // cookiesOpen ? OpenCookies() : CloseCookies();
 }
@@ -164,31 +165,38 @@ $("#AcceptCookies").on("click", ()=>{
 
 //#region Cookies - AJAX Requests
 
-function GetCookies()
+function GetCookiesData()
 {
-    return fetch("cookies.xml")
-                .then(CheckStatus)
-                .then(res => res.json())
-                .catch(err => console.log("Something went wrong", err));
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = ()=>{
+        if (xhr.readyState === 4)
+        {
+            switch (xhr.status)
+            {
+                case 200:
+                    //Success
+                    var data = JSON.parse(xhr.responseText);
+                    DetermineCookiesPopup(data.cookiesOpen);
+                    break;
+                case 404:
+                    //File not found
+                    alert(`Error: 404 (File not found)`);
+                    break;
+                case 500:
+                    //Server error
+                    alert(`Error: 500 (Server error)`);
+                    break;
+                default:
+                    alert(`Error: ${xhr.status}`);
+                    break;
+            }
+        }
+    };
 }
 
-function CheckStatus(response)
+function DetermineCookiesPopup(cookiesOpen)
 {
-    if (response.ok)
-    {
-        return Promise.resolve(response);
-    }
-    else
-    {
-        return Promise.reject(new Error(response.statusText));
-    }
-}
-
-function sendAJAX(){
-    xhr.send(); //Sends the request via function, could be called on button click
-    /* Can call function from button in HTML like this
-    <button id="load" onclick="sendAJAX()">AJAX button</button>
-    */
+    cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
 //#endregion
