@@ -1,0 +1,45 @@
+/* ===================================== 
+   Side Panel
+======================================== */
+
+#MainContentGrid
+{
+    // display: grid;
+    // grid-gap: 30px;
+
+    // grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+}
+
+#MainContentContainer
+{
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: white;
+
+    height: 100vh;
+    left: 0;
+
+    transition: all .5s;
+
+    &.sidepanel-open
+    {
+        left: -275px;
+        cursor: pointer;
+    }
+}
+
+#SidePanel
+{
+    position: absolute;
+    z-index: -100;
+    background-color: red;
+    float: right;
+
+    height: 100vh;
+    width: 275px;
+
+    top: 0;
+    right: 0;
+}

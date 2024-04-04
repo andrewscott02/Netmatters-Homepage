@@ -14,6 +14,19 @@ function GeneralJavaScriptSetup()
 
 //#endregion
 
+//#region Side Panel
+
+/** TODO
+ * Low opacity overlay on page
+ * Clicking on main page removes class
+ */
+
+$(".sidepanel-btn").on("click", (event)=>{
+    $("#MainContentContainer").toggleClass("sidepanel-open");
+})
+
+//#endregion
+
 //#region Carousel
 
 //$("#Featured").addClass("java-enabled");
