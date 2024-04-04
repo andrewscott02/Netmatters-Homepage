@@ -2,6 +2,21 @@
 /* Header Styles */
 /* ========================================================== */
 
+.sticky-header
+{
+    position: relative;
+    background-color: $white;
+    z-index: 10;
+
+    transition: all 1s;
+
+    &.sticky
+    {
+        position: sticky;
+        top: 0;
+    }
+}
+
 #Header
 {
     padding: 20px 0;
@@ -42,11 +57,6 @@
     @media #{$break-narrow}
     {
         height: 110px;
-    }
-
-    &.sticky
-    {
-        position: sticky;
     }
 }
 

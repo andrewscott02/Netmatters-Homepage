@@ -28,16 +28,48 @@ function CheckScroll(event)
     {
         //Show header
         console.log("scroll down");
-        $("#Header").addClass("sticky");
+
+        if ($(".sticky-header").hasClass("sticky"))
+        {
+            AnimateHeader(false);
+
+            setTimeout(() => {
+                $(".sticky-header").removeClass("sticky");
+            }, 500);
+        }
     }
     else
     {
         //Hide header
         console.log("scroll up");
-        $("#Header").removeClass("sticky");
+
+        if (!$(".sticky-header").hasClass("sticky"))
+        {
+            $(".sticky-header").addClass("sticky");
+            AnimateHeader(true);
+        }
     }
 
     prevScroll = scroll;
+}
+
+function AnimateHeader(down)
+{
+    from = "0";
+    to = "-100%";
+    if (down)
+    {
+        from = "-100%";
+        to = "0";
+    }
+
+    $(".sticky-header").css("transition", "all 0s");
+    $(".sticky-header").css("top", from);
+
+    setTimeout(() => {
+        $(".sticky-header").css("transition", "all 1s");
+        $(".sticky-header").css("top", to);
+    }, 10);
 }
 
 //#region Side Panel
