@@ -138,11 +138,6 @@ function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
     GetCookiesData();
-
-        // .then(OpenCookies)
-        // .catch(CloseCookies);
-
-    // cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
 function OpenCookies()
@@ -200,7 +195,7 @@ function GetCookiesData()
 
 function DetermineCookiesPopup(cookiesOpen)
 {
-    console.log(`Data fetch success, cookie popup will appear: ${cookiesOpen}`);
+    console.log(`Data fetch success, cookie popup will appear: ` + cookiesOpen);
     cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
