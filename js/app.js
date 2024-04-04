@@ -192,7 +192,7 @@ function GetCookiesData()
             }
         }
     };
-    xhr.open("GET", "cookies.json", true);
+    xhr.open("GET", "js/cookies.json", true);
     xhr.send();
 }
 
