@@ -165,7 +165,7 @@ $("#AcceptCookies").on("click", ()=>{
 
 //#region Cookies - AJAX Requests
 
-const cookiesURL = "/data/cookiedata.json";
+const cookiesURL = "data/cookiedata.json";
 
 function GetCookiesData()
 {
