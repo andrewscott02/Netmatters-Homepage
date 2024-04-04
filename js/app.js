@@ -192,6 +192,8 @@ function GetCookiesData()
             }
         }
     };
+    xhr.open("GET", "cookies.json", true);
+    xhr.send();
 }
 
 function DetermineCookiesPopup(cookiesOpen)
