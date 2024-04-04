@@ -166,7 +166,7 @@ $("#AcceptCookies").on("click", ()=>{
 
 function GetCookies()
 {
-    return fetch("cookies.json")
+    return fetch("cookies.xml")
                 .then(CheckStatus)
                 .then(res => res.json())
                 .catch(err => console.log("Something went wrong", err));
