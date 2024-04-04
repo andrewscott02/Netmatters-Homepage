@@ -165,6 +165,8 @@ $("#AcceptCookies").on("click", ()=>{
 
 //#region Cookies - AJAX Requests
 
+const cookiesURL = "/data/cookiedata.json";
+
 function GetCookiesData()
 {
     var xhr = new XMLHttpRequest();
@@ -192,7 +194,7 @@ function GetCookiesData()
             }
         }
     };
-    xhr.open("GET", "/data/cookiedata.json", true);
+    xhr.open("GET", cookiesURL, true);
     xhr.send();
 }
 
