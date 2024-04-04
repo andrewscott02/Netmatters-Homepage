@@ -142,6 +142,7 @@ function CheckCookies()
 
 function OpenCookies()
 {
+    console.log("Opening Cookies Popup");
     $('body').addClass('stop-scrolling');
     $("#CookiesPopup").show();
 }
@@ -149,6 +150,7 @@ function OpenCookies()
 function CloseCookies()
 {
     //Send cookies closed via AJAX
+    console.log("Closing Cookies Popup");
     $.post(cookiesURL, {cookiesOpen:'false'});
     $('body').removeClass('stop-scrolling');
     $("#CookiesPopup").hide();
@@ -164,33 +166,23 @@ const cookiesURL = "data/cookies.json";
 
 function GetCookiesData()
 {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = ()=>{
-        if (xhr.readyState === 4)
-        {
-            switch (xhr.status)
-            {
-                case 200:
-                    //Success
-                    var data = JSON.parse(xhr.responseText);
-                    DetermineCookiesPopup(data.cookiesOpen);
-                    break;
-                case 404:
-                    //File not found
-                    console.log(`Error: 404 (File not found)`);
-                    break;
-                case 500:
-                    //Server error
-                    console.log(`Error: 500 (Server error)`);
-                    break;
-                default:
-                    console.log(`Error: ${xhr.status}`);
-                    break;
-            }
-        }
-    };
-    xhr.open("GET", cookiesURL, true);
-    xhr.send();
+    fetch(cookiesURL)
+        .then(CheckStatus)
+        .then(res=> res.json())
+        .then(data=> DetermineCookiesPopup(data.cookiesOpen))
+        .catch(err => console.log("Something went wrong", err));
+}
+
+function CheckStatus(response)
+{
+    if (response.ok)
+    {
+        return Promise.resolve(response);
+    }
+    else
+    {
+        return Promise.reject(new Error(response.statusText));
+    }
 }
 
 function DetermineCookiesPopup(cookiesOpen)
