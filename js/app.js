@@ -38,10 +38,11 @@ var cookiesOpen = false;
 function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
-    GetCookies()
-        .then(OpenCookies)
-        .catch(CloseCookies);
-    //cookiesOpen ? OpenCookies() : CloseCookies();
+    // GetCookies()
+    //     .then(OpenCookies)
+    //     .catch(CloseCookies);
+
+    cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
 function OpenCookies()
