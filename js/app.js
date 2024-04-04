@@ -154,7 +154,7 @@ function OpenCookies()
 function CloseCookies()
 {
     //Send cookies closed via AJAX
-
+    $.post(cookiesURL, {cookiesOpen:'false'});
     $('body').removeClass('stop-scrolling');
     $("#CookiesPopup").hide();
 }
@@ -165,7 +165,7 @@ $("#AcceptCookies").on("click", ()=>{
 
 //#region Cookies - AJAX Requests
 
-const cookiesURL = "data/cookiedata.json";
+const cookiesURL = "data/cookies.json";
 
 function GetCookiesData()
 {
@@ -182,14 +182,14 @@ function GetCookiesData()
                     break;
                 case 404:
                     //File not found
-                    alert(`Error: 404 (File not found)`);
+                    console.log(`Error: 404 (File not found)`);
                     break;
                 case 500:
                     //Server error
-                    alert(`Error: 500 (Server error)`);
+                    console.log(`Error: 500 (Server error)`);
                     break;
                 default:
-                    alert(`Error: ${xhr.status}`);
+                    console.log(`Error: ${xhr.status}`);
                     break;
             }
         }
@@ -200,6 +200,7 @@ function GetCookiesData()
 
 function DetermineCookiesPopup(cookiesOpen)
 {
+    console.log(`Data fetch success, cookie popup will appear: ${data.cookiesOpen}`);
     cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
