@@ -137,7 +137,8 @@ var cookiesOpen = false;
 function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
-    GetCookiesData();
+    // GetCookiesData();
+    OpenCookies();
 }
 
 function OpenCookies()
@@ -170,7 +171,10 @@ function GetCookiesData()
         .then(CheckStatus)
         .then(res=> res.json())
         .then(data=> DetermineCookiesPopup(data.cookiesOpen))
-        .catch(err => console.log("Something went wrong", err));
+        .catch(err => {
+            console.log("Something went wrong", err);
+            OpenCookies();
+        });
 }
 
 function CheckStatus(response)
@@ -188,7 +192,7 @@ function CheckStatus(response)
 function DetermineCookiesPopup(cookiesOpen)
 {
     console.log(`Data fetch success, cookie popup will appear: ` + cookiesOpen);
-    cookiesOpen ? OpenCookies() : CloseCookies();
+    cookiesOpen ? OpenCookies : CloseCookies;
 }
 
 //#endregion
