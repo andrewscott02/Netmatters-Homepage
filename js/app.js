@@ -79,10 +79,13 @@ function AnimateHeader(down, transitionTime)
     }, 200);
 }
 
+//#endregion
+
 //#region Side Panel
 
 /** TODO
  * Content and styling for elements in side panel
+ * Breakpoint for buttons to appear differently, with >> symbol before
  */
 
 let canClose = false;
@@ -134,11 +137,11 @@ var cookiesOpen = false;
 function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
-    // GetCookies()
-    //     .then(OpenCookies)
-    //     .catch(CloseCookies);
+    GetCookies()
+        .then(OpenCookies)
+        .catch(CloseCookies);
 
-    cookiesOpen ? OpenCookies() : CloseCookies();
+    // cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
 function OpenCookies()
@@ -163,7 +166,7 @@ $("#AcceptCookies").on("click", ()=>{
 
 function GetCookies()
 {
-    return fetch("cookies.js")
+    return fetch("cookies.json")
                 .then(CheckStatus)
                 .then(res => res.json())
                 .catch(err => console.log("Something went wrong", err));
