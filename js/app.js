@@ -21,7 +21,10 @@ var cookiesOpen = false;
 function CheckCookies()
 {
     //Check if cookies menu should be open through AJAX request
-    cookiesOpen ? OpenCookies() : CloseCookies();
+    GetCookies()
+        .then(OpenCookies)
+        .catch(CloseCookies);
+    //cookiesOpen ? OpenCookies() : CloseCookies();
 }
 
 function OpenCookies()
@@ -41,6 +44,37 @@ function CloseCookies()
 $("#AcceptCookies").on("click", ()=>{
     CloseCookies();
 });
+
+//#region Cookies - AJAX Requests
+
+function GetCookies()
+{
+    return fetch("cookies.js")
+                .then(CheckStatus)
+                .then(res => res.json())
+                .catch(err => console.log("Something went wrong", err));
+}
+
+function CheckStatus(response)
+{
+    if (response.ok)
+    {
+        return Promise.resolve(response);
+    }
+    else
+    {
+        return Promise.reject(new Error(response.statusText));
+    }
+}
+
+function sendAJAX(){
+    xhr.send(); //Sends the request via function, could be called on button click
+    /* Can call function from button in HTML like this
+    <button id="load" onclick="sendAJAX()">AJAX button</button>
+    */
+}
+
+//#endregion
 
 //#endregion
 
