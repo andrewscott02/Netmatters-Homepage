@@ -13,7 +13,7 @@
 #MainContentContainer
 {
     position: relative;
-    z-index: 10;
+    z-index: 2;
     overflow-x: clip;
     overflow-y: scroll;
     background-color: white;
@@ -34,7 +34,7 @@
 #SidePanel
 {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     background-color: $color-secondary;
     float: right;
 
@@ -85,14 +85,31 @@
     
     outline: 1px solid rgba(0, 0, 0, .25);
     border: 1px solid hsla(0, 0%, 100%, .1);
-    border-top: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+.sidepanel-list
+{
+    list-style: none;
+
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .25);
+
+    li:not(:first-child)
+    {
+        border-top: 1px solid rgba(0, 0, 0, .45);
+        .sidepanel-btn-item
+        {
+            border-top: 1px solid hsla(0, 0%, 100%, .05);
+        }
+    }
+
+    border-top: 1px solid rgba(0, 0, 0, .45);
+    // border-bottom: 1px solid rgba(0, 0, 0, .45);
 }
 
 .sidepanel-btn-item
 {
-    background-color: rgba(0, 0, 0, .25);
+    font-size: 1rem;
     border-radius: 0;
     padding: 10px;
-
-    border-top: 1px solid rgba(0, 0, 0, .45);
 }
