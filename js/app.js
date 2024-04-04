@@ -19,6 +19,7 @@ function GeneralJavaScriptSetup()
 /** TODO
  * Low opacity overlay on page
  * Clicking on main page removes class
+ * Content and styling for elements in side panel
  */
 
 $(".sidepanel-btn").on("click", (event)=>{
@@ -31,13 +32,21 @@ $(".sidepanel-btn").on("click", (event)=>{
 
 //$("#Featured").addClass("java-enabled");
 
-//Scales the overlay of the videos to their width so videos cannot be interacted with
-//$(".featured-overlay-container").css("width", $(".featured-overlay-container").parent().css("width"));
+$(window).resize(function(){
+    RefreshCarousel();
+    setTimeout(RefreshCarousel, 500);
+});
+
+function RefreshCarousel()
+{
+    $('.slides')[0].slick.refresh();
+}
 
 $(".slides").slick({
     //fade:true,
     autoplay: false,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 3000,
+    speed: 300,
     arrows: false,
     dots: true
 });
