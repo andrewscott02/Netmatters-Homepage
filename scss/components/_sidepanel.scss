@@ -34,8 +34,8 @@
 #SidePanel
 {
     position: absolute;
-    z-index: -100;
-    background-color: red;
+    z-index: 5;
+    background-color: $color-secondary;
     float: right;
 
     overflow-x: clip;
@@ -46,4 +46,53 @@
 
     top: 0;
     right: 0;
+
+    padding: 21px;
+}
+
+[class^="sidepanel-btn-"]
+{
+    display: block;
+    width: 100%;
+
+    color: $white;
+    text-align: center;
+    font-size: 1.125rem;
+    text-decoration: none;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
+.sidepanel-category
+{
+    &:hover
+    {
+        .sidepanel-btn-category
+        {
+            background-color: hsla(0, 0%, 100%, .05);
+        }
+    }
+}
+
+.sidepanel-btn-category
+{
+    padding: 19px 0 18px;
+    margin: 0 0 20px;
+    border-radius: 3px;
+    
+    outline: 1px solid rgba(0, 0, 0, .25);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    border-top: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+.sidepanel-btn-item
+{
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 0;
+    padding: 10px;
+
+    border-top: 1px solid rgba(0, 0, 0, .45);
 }
