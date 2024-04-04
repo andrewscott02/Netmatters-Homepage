@@ -17,6 +17,9 @@ function GeneralJavaScriptSetup()
 //#region Sticky Navigation
 
 let prevScroll = 0;
+let stickyHeaderActive = false;
+
+let scrollUpTimeout;
 
 $(".maincontent-inner").on('scroll', CheckScroll);
 
@@ -29,11 +32,12 @@ function CheckScroll(event)
         //Show header
         console.log("scroll down");
 
-        if ($(".sticky-header").hasClass("sticky"))
+        if (stickyHeaderActive)
         {
-            AnimateHeader(false);
+            stickyHeaderActive = false;
+            AnimateHeader(false, 1.3);
 
-            setTimeout(() => {
+            scrollUpTimeout = setTimeout(() => {
                 $(".sticky-header").removeClass("sticky");
             }, 500);
         }
@@ -43,23 +47,26 @@ function CheckScroll(event)
         //Hide header
         console.log("scroll up");
 
-        if (!$(".sticky-header").hasClass("sticky"))
+        if (!stickyHeaderActive)
         {
+            stickyHeaderActive = true;
+            clearTimeout(scrollUpTimeout);
+
             $(".sticky-header").addClass("sticky");
-            AnimateHeader(true);
+            AnimateHeader(true, 0.6);
         }
     }
 
     prevScroll = scroll;
 }
 
-function AnimateHeader(down)
+function AnimateHeader(down, transitionTime)
 {
     from = "0";
     to = "-100%";
     if (down)
     {
-        from = "-100%";
+        from = $(".sticky-header").css("top");
         to = "0";
     }
 
@@ -67,9 +74,9 @@ function AnimateHeader(down)
     $(".sticky-header").css("top", from);
 
     setTimeout(() => {
-        $(".sticky-header").css("transition", "all 1s");
+        $(".sticky-header").css("transition", `all ${transitionTime}s`);
         $(".sticky-header").css("top", to);
-    }, 10);
+    }, 200);
 }
 
 //#region Side Panel

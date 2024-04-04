@@ -8,8 +8,6 @@
     background-color: $white;
     z-index: 10;
 
-    transition: all 1s;
-
     &.sticky
     {
         position: sticky;
