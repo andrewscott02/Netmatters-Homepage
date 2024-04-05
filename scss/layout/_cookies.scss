@@ -9,6 +9,9 @@
     z-index: 100;
     top: 50%;
     left: 50%;
+
+    // overflow-x: clip;
+    // overflow-y: scroll;
     
     transform: translate(-50%, -50%);
     
@@ -18,12 +21,24 @@
     padding: 34px;
 }
 
+.cookies-container
+{
+    position: relative;
+
+    overflow-x: clip;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100%;
+}
+
 .cookies-menu
 {
     position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    // transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+
     z-index: 100;
 
     border: 1px solid rgba(0, 0, 0, .2);
@@ -31,8 +46,7 @@
 
     background-color: white;
     
-    //width: auto;
-    width: 100%; //Screen sizes >= 768px
+    width: 100%;
     height: fit-content;
 
     h2
