@@ -134,8 +134,6 @@ $(".slides").slick({
 
 function CheckCookies()
 {
-    document.cookie = "cookiesAccepted=false";
-
     var index = document.cookie.indexOf(";");
     var substring = document.cookie.substring(0, index);
 
@@ -146,7 +144,7 @@ function CheckCookies()
     else
     {
         console.log("Cookies data is " + document.cookie);
-        console.log("Substring is " + substring);
+        console.log("Substring data is " + substring);
     }
 }
 
