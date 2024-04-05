@@ -139,7 +139,7 @@ function CheckCookies()
 {
     if (document.cookie === null
         || document.cookie === ""
-        || document.cookie === ("cookies=true"))
+        || document.cookie === ("cookiesAccepted=false"))
     {
         OpenCookies();
     }
@@ -152,7 +152,6 @@ function CheckCookies()
 function OpenCookies()
 {
     console.log("Opening Cookies Popup");
-    SetCookiesData(true);
 
     $('body').addClass('stop-scrolling');
     $("#CookiesPopup").show();
@@ -168,7 +167,7 @@ function CloseCookies()
 {
     //Send cookies closed via AJAX
     console.log("Closing Cookies Popup");
-    SetCookiesData(false);
+    SetCookiesData(true);
 
     $('body').removeClass('stop-scrolling');
     $("#CookiesPopup").hide();
@@ -179,7 +178,7 @@ function CloseCookies()
 //TODO: Not working properly
 function SetCookiesData(value)
 {
-	document.cookie = `cookiesOpen=${value}`;
+	document.cookie = `cookiesAccepted=${value}`;
 }
 
 //#endregion
