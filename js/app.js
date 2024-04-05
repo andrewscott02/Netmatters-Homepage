@@ -134,7 +134,7 @@ $(".slides").slick({
 
 function CheckCookies()
 {
-    if (!document.cookie.toString().includes("cookiesAccepted=true;"))
+    if (!document.cookie.toString().includes("cookiesAccepted=true"))
     {
         OpenCookies();
     }
@@ -146,12 +146,10 @@ function CheckCookies()
 
 function OpenCookies()
 {
-    console.log("Opening Cookies Popup");
+    console.log("Opening Cookies Popup, data is " + document.cookie);
 
     $('body').addClass('stop-scrolling');
     $("#CookiesPopup").show();
-
-    console.log("Cookies data is " + document.cookie);
 }
 
 $("#AcceptCookies").on("click", ()=>{
