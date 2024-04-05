@@ -1,9 +1,9 @@
 Banner Slider - Implemented, need to refine some things
 
-Side Menu - Implemented, need to refine some things
+Side Menu - Need to add content
 
 Mobile Menu
 
 Sticky Header - Implemented, need to refine timings
 
-pop-up notifying the user the website uses cookies, this should store locally and prevent the pop-up reappearing on page reload
+Cookies Popup - Implemented, small style changes
