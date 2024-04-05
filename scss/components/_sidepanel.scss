@@ -1,0 +1,255 @@
+/* ===================================== 
+   Side Panel
+======================================== */
+
+#MainContentContainer
+{
+    position: relative;
+    left: 0;
+
+    transition: all .5s;
+
+    &::after
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .4);
+        z-index: -1;
+        content: "";
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &.sidepanel-open
+    {
+        left: -275px;
+        cursor: pointer;
+
+        &::after
+        {
+            z-index: 10;
+            opacity: 1;
+        }
+
+        @media #{$break-wide}
+        {
+            left: -350px;
+        }
+    }
+}
+
+.maincontent-inner
+{
+    position: relative;
+    z-index: 2;
+    overflow-x: clip;
+    overflow-y: scroll;
+    background-color: white;
+
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+}
+
+#SidePanel
+{
+    position: absolute;
+    z-index: 1;
+    background-color: $color-secondary;
+    float: right;
+
+    overflow-x: clip;
+    overflow-y: scroll;
+
+    height: 100vh; //Temp, size to fit content
+    width: 275px;
+
+    top: 0;
+    right: 0;
+
+    @media #{$break-wide}
+    {
+        width: 350px;
+    }
+}
+
+.narrowItems
+{
+    padding: 21px;
+
+    .sidepanel-btn-category
+    {
+        border: 1px solid hsla(0, 0%, 100%, .1);
+    }
+
+    @media #{$break-wide}
+    {
+        display: none;
+    }
+}
+
+.alt
+{
+    ul
+    {
+        margin: 0;
+    }
+
+    [class^="sidepanel-btn-"]
+    {
+        text-align: start;
+
+        padding: 20px;
+
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .sidepanel-btn-item
+    {
+        font-size: 0.875rem;
+        padding: 15px 20px;
+        line-height: 1.42857143;
+
+        &:before
+        {
+            content: "\BB";
+            padding-right: 15px;
+        }
+    }
+
+    .sidepanel-category:last-child
+    {
+        border-top: 1px solid hsla(0, 0%, 100%, .05);
+    }
+}
+
+[class^="sidepanel-btn-"]
+{
+    display: block;
+    width: 100%;
+
+    color: $white;
+    text-align: center;
+    font-size: 1.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
+.sidepanel-category
+{
+    &:hover
+    {
+        .sidepanel-btn-category
+        {
+            background-color: hsla(0, 0%, 100%, .05);
+        }
+    }
+}
+
+.sidepanel-btn-category
+{
+    padding: 19px 0 18px;
+    margin: 0 0 20px;
+    border-radius: 3px;
+    
+    outline: 1px solid rgba(0, 0, 0, .25);
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+
+    h3
+    {
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    p
+    {
+        font-size: 0.7rem;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    span
+    {
+        display: inline;
+        font-size: 1.6rem;
+    }
+}
+
+.sidepanel-list
+{
+    list-style: none;
+
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .25);
+
+    li:not(:first-child)
+    {
+        border-top: 1px solid rgba(0, 0, 0, .45);
+        .sidepanel-btn-item
+        {
+            border-top: 1px solid hsla(0, 0%, 100%, .05);
+        }
+    }
+
+    border-top: 1px solid rgba(0, 0, 0, .45);
+    // border-bottom: 1px solid rgba(0, 0, 0, .45);
+}
+
+.sidepanel-btn-item
+{
+    font-size: 1rem;
+    border-radius: 0;
+    padding: 10px;
+}
+
+//Icons
+
+.sidepanel-iconcontainer-blue-sat
+{
+    color: $colour-card-blue-sat;
+}
+
+.sidepanel-iconcontainer-blue-desat
+{
+    color: $colour-card-blue-desat;
+}
+
+.sidepanel-iconcontainer-green
+{
+    color: $colour-card-green;
+}
+
+.sidepanel-iconcontainer-red
+{
+    color: $colour-card-red;
+}
+
+.sidepanel-iconcontainer-purple
+{
+    color: $colour-card-purple;
+}
+
+.sidepanel-iconcontainer-pink
+{
+    color: $colour-card-pink;
+}
+
+.sidepanel-iconcontainer-orange
+{
+    color: $colour-card-orange;
+}

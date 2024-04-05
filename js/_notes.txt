@@ -1,0 +1,9 @@
+Banner Slider - Implemented
+
+Side Menu - Implemented
+
+Mobile Menu - Implemented
+
+Sticky Header - Implemented
+
+Cookies Popup - Implemented

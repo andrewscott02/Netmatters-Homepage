@@ -1,0 +1,132 @@
+/* ===================================== 
+   Cookies Popup
+======================================== */
+
+#CookiesPopup
+{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+
+    // overflow-x: clip;
+    // overflow-y: scroll;
+    
+    transform: translate(-50%, -50%);
+    
+    width: 101vw;
+    height: 101vh;
+
+    padding: 34px;
+}
+
+.cookies-container
+{
+    position: relative;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    z-index: 100;
+
+    // overflow-x: clip;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100%;
+
+    @media #{$break-short}
+    {
+        overflow-y: inherit;
+    }
+}
+
+.cookies-menu
+{
+    position: relative;
+
+    z-index: 100;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+
+    background-color: white;
+    
+    width: 100%;
+    height: fit-content;
+
+    h2
+    {
+        padding: 15px 20px;
+        margin:0;
+
+        font-size: 1.625rem;
+        font-weight: 400;
+        color: $color-secondary;
+
+        border-bottom: 1px solid #e5e5e5;
+        min-height: 16.42857143px;
+    }
+
+    p
+    {
+        padding: 20px 20px 45px;
+        border-bottom: 1px solid #e5e5e5;
+        
+        margin:0;
+    }
+
+    @media #{$break-short}
+    {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    @media #{$break-narrow}
+    {
+        width: 600px;
+    }
+}
+
+.cookies-buttons
+{
+    padding: 19px 20px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    
+    @media #{$break-narrow}
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a
+    {
+        line-height: 37px;
+        border: none;
+        text-align: center;
+    }
+}
+
+.cookies-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0.7;
+}
+
+//Text styling 
+
+//Screen sizes < 768px, cookies buttons appear in 2 rows, span entire width
+//Screen sizes >= 768px Show cookies buttons in single line, span entire width

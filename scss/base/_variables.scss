@@ -3,6 +3,8 @@
 /* ========================================================== */
 
 //Breakpoints
+$break-short        :"screen and (min-height: 470px)";
+
 $break-mobile       :"screen and (min-width: 481px)";
 $break-narrow       :"screen and (min-width: 768px)";
 $break-wide         :"screen and (min-width: 992px)";
@@ -50,6 +52,12 @@ $colour-btn-blue-desat-hover    :#566c88;
 
 $colour-btn-green-base          :#00b67b;
 $colour-btn-green-hover         :#009b69;
+
+$colour-btn-red-base            :#d64541;
+$colour-btn-red-hover           :#c42e2a;
+
+$colour-btn-pink-base            :#f62459;
+$colour-btn-pink-hover           :#e80a42;
 
 $colour-btn-sub-base            :$color-secondary;
 $colour-btn-sub-hover           :#22242e;

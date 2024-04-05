@@ -1,0 +1,112 @@
+/* ===================================== 
+   Carousel
+======================================== */
+
+.Carousel
+{
+   height: fit-content; 
+   height: 550px;
+   overflow-x: clip;
+}
+
+.HeroImage-TechCompany
+{
+    @include BackgroundGradient(url("../Images/Carousel/TechCompany.webp"));
+}
+
+.HeroImage-BespokeSoftware
+{
+    @include BackgroundGradient(url("../Images/Carousel/BespokeSoftware.webp"));
+}
+
+.HeroImage-ITSupport
+{
+    @include BackgroundGradient(url("../Images/Carousel/ITSupport.webp"));
+}
+
+.HeroImage-DigitalMarketting
+{
+    @include BackgroundGradient(url("../Images/Carousel/DigitalMarketting.webp"));
+}
+
+.HeroImage-TelecomsServices
+{
+    @include BackgroundGradient(url("../Images/Carousel/TelecomsServices.webp"));
+}
+
+.HeroImage-WebDesign
+{
+    @include BackgroundGradient(url("../Images/Carousel/WebDesign.webp"));
+}
+
+.HeroImage-CyberSecurity
+{
+    @include BackgroundGradient(url("../Images/Carousel/CyberSecurity.webp"));
+}
+
+// .carousel-image
+// {
+//     @include BackgroundGradient(url("../Images/heroimage.webp"));
+
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+// }
+
+//Slick styles
+
+.slick-dots
+{
+    bottom: 44px;
+}
+
+.slick-dots li button:before
+{
+    color:#d6d6d6;
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before
+{
+    color:white;
+}
+
+.slick-dots li.slick-active button:after
+{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.slick-slide 
+{
+    height: auto; // ← that must not be ignored
+    &>div
+    {
+        height: 100%;
+        &>div
+        {
+            height: 100%;
+        }
+    }
+}
+
+.slick-track
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 100%;
+}
+
+.slick-list
+{
+    height: 100%;
+}

@@ -13,6 +13,9 @@
 
 body
 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+
     background-color: $color-primary;
     color: $color-text-dark;
 
@@ -22,6 +25,12 @@ body
 
     padding: 0;
     margin: 0;
+}
+
+.stop-scrolling
+{
+    height: 100%;
+    overflow: hidden;
 }
 
 .container > *
