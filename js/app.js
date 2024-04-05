@@ -168,6 +168,10 @@ function CloseCookies()
     console.log("Cookies data is " + document.cookie);
 }
 
+/**
+ * Sets Cookies Accepted to the value
+ * @param {bool} value Value to set cookiesAccepted to 
+ */
 function SetCookiesData(value)
 {
     let expireDate = new Date();
