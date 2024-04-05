@@ -136,15 +136,17 @@ function CheckCookies()
 {
     document.cookie = "cookiesAccepted=false";
 
-    if (document.cookie === null
-        || document.cookie === ""
-        || document.cookie === ("cookiesAccepted=false"))
+    var index = document.cookie.indexOf(";");
+    var substring = document.cookie.substring(0, index);
+
+    if (substring !== ("cookiesAccepted=true;"))
     {
         OpenCookies();
     }
     else
     {
         console.log("Cookies data is " + document.cookie);
+        console.log("Substring is " + substring);
     }
 }
 
