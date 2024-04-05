@@ -132,9 +132,6 @@ $(".slides").slick({
 
 //#region Cookies Popup
 
-var cookiesOpen = false;
-var cookies = document.cookie;
-
 function CheckCookies()
 {
     if (document.cookie === null
@@ -175,10 +172,11 @@ function CloseCookies()
     console.log("Cookies data is " + document.cookie);
 }
 
-//TODO: Not working properly
 function SetCookiesData(value)
 {
-	document.cookie = `cookiesAccepted=${value}`;
+    let expireDate = new Date();
+    expireDate.setSeconds(expireDate.getSeconds() + 10);
+	document.cookie = `cookiesAccepted=${value};expires=${expireData}`;
 }
 
 //#endregion
