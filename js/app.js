@@ -134,17 +134,13 @@ $(".slides").slick({
 
 function CheckCookies()
 {
-    var index = document.cookie.indexOf(";");
-    var substring = document.cookie.substring(0, index);
-
-    if (substring !== ("cookiesAccepted=true;"))
+    if (!document.cookie.includes("cookiesAccepted=true;"))
     {
         OpenCookies();
     }
     else
     {
         console.log("Cookies data is " + document.cookie);
-        console.log("Substring data is " + substring);
     }
 }
 
