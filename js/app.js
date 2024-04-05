@@ -134,7 +134,7 @@ $(".slides").slick({
 
 function CheckCookies()
 {
-    if (!document.cookie.includes("cookiesAccepted=true;"))
+    if (!document.cookie.toString().includes("cookiesAccepted=true;"))
     {
         OpenCookies();
     }
@@ -175,6 +175,18 @@ function SetCookiesData(value)
     let expireDate = new Date();
     expireDate.setSeconds(expireDate.getSeconds() + 10);
 	document.cookie = `cookiesAccepted=${value};expires=${expireDate}`;
+}
+
+function DeleteAllCookies()
+{
+    const cookies = document.cookie.split(";");
+
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
 }
 
 //#endregion
