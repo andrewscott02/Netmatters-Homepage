@@ -134,7 +134,14 @@ $(".slides").slick({
 
 function CheckCookiesData()
 {
-    !document.cookie.toString().includes("cookiesAccepted=true") ? OpenCookies : ()=>{console.log("Cookies data is " + document.cookie);};
+    if (!document.cookie.toString().includes("cookiesAccepted=true"))
+    {
+        OpenCookies();
+    }
+    else
+    {
+        console.log("Cookies data is " + document.cookie);
+    }
 }
 
 function OpenCookies()
