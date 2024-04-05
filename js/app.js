@@ -16,21 +16,22 @@ function GeneralJavaScriptSetup()
 
 //#region Sticky Navigation
 
-//TODO Fix issue with navbar not animating first time it appears
-
-const navThreshold = 100;
+const navThreshold = 250;
 
 let prevScroll = 0;
 let stickyHeaderActive = true;
 
 let scrollUpTimeout;
 
+//Adds CheckScroll to scroll event
 $(".maincontent-inner").on('scroll', CheckScroll);
 
+//Determines whether header should be sticky when scrolling
 function CheckScroll(event)
 {
     let scroll = $(".maincontent-inner").scrollTop();
 
+    //Checks if scroll direction was up or down
     if (scroll > prevScroll)
     {
         //Show header
@@ -58,19 +59,27 @@ function CheckScroll(event)
         //Hide header
         console.log("scroll up");
 
-        if (!stickyHeaderActive)
+        if (scroll > navThreshold)
         {
-            stickyHeaderActive = true;
-            clearTimeout(scrollUpTimeout);
+            if (!stickyHeaderActive)
+            {
+                stickyHeaderActive = true;
+                clearTimeout(scrollUpTimeout);
 
-            $(".sticky-header").addClass("sticky");
-            AnimateHeader(true, 0.6);
+                $(".sticky-header").addClass("sticky");
+                AnimateHeader(true, 0.6);
+            }
+        }
+        else
+        {
+            $(".sticky-header").removeClass("sticky");
         }
     }
 
     prevScroll = scroll;
 }
 
+//Animates the header so it slides up or down
 function AnimateHeader(down, transitionTime)
 {
     from = "0";
@@ -96,11 +105,13 @@ function AnimateHeader(down, transitionTime)
 
 let canClose = false;
 
+//Opens side menu when button is clicked
 $(".sidepanel-btn").on("click", (event)=>{
     $("#MainContentContainer").toggleClass("sidepanel-open");
     setTimeout(()=>{canClose = true}, 100);
 });
 
+//Closes side menu when main content container is clicked
 $("#MainContentContainer").on("click", (event)=>{
     if (canClose)
     {
@@ -115,16 +126,19 @@ $("#MainContentContainer").on("click", (event)=>{
 
 //$("#Featured").addClass("java-enabled");
 
+//Adds RefreshCarousel function to window resize event
 $(window).resize(function(){
     RefreshCarousel();
-    setTimeout(RefreshCarousel, 500);
+    setTimeout(RefreshCarousel, 500); //Adds a short delay to also refresh after transition animations
 });
 
+//Refreshes carousel size
 function RefreshCarousel()
 {
     $('.slides')[0].slick.refresh();
 }
 
+//Slick setup
 $(".slides").slick({
     //fade:true,
     autoplay: true,
@@ -138,18 +152,25 @@ $(".slides").slick({
 
 //#region Cookies Popup
 
+/** Checks whether the Cookies Popup menu should appear
+ * 
+ * @returns {bool} Boolean value of whether cookies popup should appear
+ */
 function CheckCookiesData()
 {
     if (!document.cookie.toString().includes("cookiesAccepted=true"))
     {
         OpenCookies();
+        return true;
     }
     else
     {
         console.log("Cookies data is " + document.cookie);
+        return false;
     }
 }
 
+/**Opens Cookies Popup */
 function OpenCookies()
 {
     console.log("Opening Cookies Popup, data is " + document.cookie);
@@ -158,10 +179,12 @@ function OpenCookies()
     $("#CookiesPopup").show();
 }
 
+//Add click event to accept cookies button
 $("#AcceptCookies").on("click", ()=>{
     CloseCookies();
 });
 
+/**Closes Cookies Popup */
 function CloseCookies()
 {
     //Send cookies closed via AJAX
@@ -174,15 +197,21 @@ function CloseCookies()
     console.log("Cookies data is " + document.cookie);
 }
 
-/**
- * Sets Cookies Accepted to the value
- * @param {bool} value Value to set cookiesAccepted to 
+/** Sets Cookies Accepted Value
+ * 
+ * @param {bool} value Boolean value for if the cookies have been accepted
+ * 
+ * @returns {string} String value representing the new cookies data
  */
 function SetCookiesData(value)
 {
 	document.cookie = `cookiesAccepted=${value}`;
+    return document.cookie;
 }
 
+/** Deletes all cookies generated
+ *  || Not called here, intended to be used in console
+ */
 function DeleteAllCookies()
 {
     const cookies = document.cookie.split(";");
@@ -191,6 +220,8 @@ function DeleteAllCookies()
         const cookie = cookies[i];
         const eqPos = cookie.indexOf("=");
         const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+
+        //Sets expiry date in past so it will be deleted
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 }
