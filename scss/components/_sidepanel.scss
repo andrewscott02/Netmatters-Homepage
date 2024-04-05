@@ -41,6 +41,11 @@
             z-index: 10;
             opacity: 1;
         }
+
+        @media #{$break-wide}
+        {
+            left: -350px;
+        }
     }
 }
 
@@ -74,6 +79,19 @@
     right: 0;
 
     padding: 21px;
+
+    @media #{$break-wide}
+    {
+        width: 350px;
+    }
+}
+
+.narrowItems
+{
+    @media #{$break-wide}
+    {
+        display: none;
+    }
 }
 
 [class^="sidepanel-btn-"]
@@ -164,6 +182,8 @@
     padding: 10px;
     text-transform: uppercase;
 }
+
+//Icons
 
 .sidepanel-iconcontainer-blue-sat
 {
