@@ -201,11 +201,8 @@ function SetCookiesData(value)
 	console.log("Setting data to: " + value);
 	
 	const config = {
-        method: `POST`,
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({cookiesOpen: value})
+        method: `GET`,
+        header: JSON.stringify({cookiesOpen: value})
     }
 	
 	fetch(cookiesURL, config)
