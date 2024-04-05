@@ -1,9 +1,9 @@
-Banner Slider - Implemented, need to refine some things
+Banner Slider - Implemented
 
-Side Menu - Need to add content
+Side Menu - Implemented
 
-Mobile Menu
+Mobile Menu - Implemented
 
-Sticky Header - Implemented, need to refine timings
+Sticky Header - Implemented
 
-Cookies Popup - Implemented, small style changes
+Cookies Popup - Implemented
