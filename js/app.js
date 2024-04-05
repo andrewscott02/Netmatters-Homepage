@@ -16,8 +16,12 @@ function GeneralJavaScriptSetup()
 
 //#region Sticky Navigation
 
+//TODO Fix issue with navbar not animating first time it appears
+
+const navThreshold = 100;
+
 let prevScroll = 0;
-let stickyHeaderActive = false;
+let stickyHeaderActive = true;
 
 let scrollUpTimeout;
 
@@ -32,14 +36,21 @@ function CheckScroll(event)
         //Show header
         console.log("scroll down");
 
-        if (stickyHeaderActive)
+        if (scroll > navThreshold)
         {
-            stickyHeaderActive = false;
-            AnimateHeader(false, 1.3);
-
-            scrollUpTimeout = setTimeout(() => {
-                $(".sticky-header").removeClass("sticky");
-            }, 500);
+            if (stickyHeaderActive)
+            {
+                stickyHeaderActive = false;
+                AnimateHeader(false, 1.3);
+    
+                scrollUpTimeout = setTimeout(() => {
+                    $(".sticky-header").removeClass("sticky");
+                }, 500);
+            }
+        }
+        else
+        {
+            $(".sticky-header").removeClass("sticky");
         }
     }
     else
@@ -82,11 +93,6 @@ function AnimateHeader(down, transitionTime)
 //#endregion
 
 //#region Side Panel
-
-/** TODO
- * Content and styling for elements in side panel
- * Breakpoint for buttons to appear differently, with >> symbol before
- */
 
 let canClose = false;
 
@@ -191,4 +197,3 @@ function DeleteAllCookies()
 
 //#endregion
 
-//#endregion
