@@ -134,6 +134,8 @@ $(".slides").slick({
 
 function CheckCookies()
 {
+    document.cookie = "cookiesAccepted=false";
+
     if (document.cookie === null
         || document.cookie === ""
         || document.cookie === ("cookiesAccepted=false"))
@@ -176,7 +178,7 @@ function SetCookiesData(value)
 {
     let expireDate = new Date();
     expireDate.setSeconds(expireDate.getSeconds() + 10);
-	document.cookie = `cookiesAccepted=${value};expires=${expireData}`;
+	document.cookie = `cookiesAccepted=${value};expires=${expireDate}`;
 }
 
 //#endregion
