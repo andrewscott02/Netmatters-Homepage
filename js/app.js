@@ -133,82 +133,53 @@ $(".slides").slick({
 //#region Cookies Popup
 
 var cookiesOpen = false;
+var cookies = document.cookie;
 
 function CheckCookies()
 {
-    //Check if cookies menu should be open through AJAX request
-    // GetCookiesData();
-    OpenCookies();
+    if (document.cookie === null
+        || document.cookie === ""
+        || document.cookie === ("cookies=true"))
+    {
+        OpenCookies();
+    }
+    else
+    {
+        console.log("Cookies data is " + document.cookie);
+    }
 }
 
 function OpenCookies()
 {
     console.log("Opening Cookies Popup");
+    SetCookiesData(true);
+
     $('body').addClass('stop-scrolling');
     $("#CookiesPopup").show();
-}
 
-function CloseCookies()
-{
-    //Send cookies closed via AJAX
-    console.log("Closing Cookies Popup");
-    SetCookiesData(false);
-    $('body').removeClass('stop-scrolling');
-    $("#CookiesPopup").hide();
+    console.log("Cookies data is " + document.cookie);
 }
 
 $("#AcceptCookies").on("click", ()=>{
     CloseCookies();
 });
 
-//#region Cookies - AJAX Requests
-
-const cookiesURL = "data/cookies.json";
-
-function GetCookiesData()
+function CloseCookies()
 {
-    fetch(cookiesURL)
-        .then(CheckStatus)
-        .then(res=> res.json())
-        .then(data=> DetermineCookiesPopup(data.cookiesOpen))
-        .catch(err => {
-            console.log("Something went wrong", err);
-            OpenCookies();
-        });
-}
+    //Send cookies closed via AJAX
+    console.log("Closing Cookies Popup");
+    SetCookiesData(false);
 
-function CheckStatus(response)
-{
-    if (response.ok)
-    {
-        return Promise.resolve(response);
-    }
-    else
-    {
-        return Promise.reject(new Error(response.statusText));
-    }
-}
+    $('body').removeClass('stop-scrolling');
+    $("#CookiesPopup").hide();
 
-function DetermineCookiesPopup(cookiesOpen)
-{
-    console.log(`Data fetch success, cookie popup will appear: ` + cookiesOpen);
-    cookiesOpen ? OpenCookies : CloseCookies;
+    console.log("Cookies data is " + document.cookie);
 }
 
 //TODO: Not working properly
 function SetCookiesData(value)
 {
-	console.log("Setting data to: " + value);
-	
-	const config = {
-        method: `GET`,
-        header: JSON.stringify({cookiesOpen: value})
-    }
-	
-	fetch(cookiesURL, config)
-        .then(CheckStatus)
-        .then(res=> res.json())
-        .then(data => console.log(data));
+	document.cookie = `cookiesOpen=${value}`;
 }
 
 //#endregion
