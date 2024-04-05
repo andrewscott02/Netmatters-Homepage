@@ -174,13 +174,7 @@ function CloseCookies()
  */
 function SetCookiesData(value)
 {
-    let expireDate = new Date();
-    expireDate.setSeconds(expireDate.getSeconds() + 10);
-    
-    let acceptText = `cookiesAccepted=${value}`;
-    let expireText = `;expires=${expireDate}`;
-
-	document.cookie = acceptText + expireText;
+	document.cookie = `cookiesAccepted=${value}`;
 }
 
 function DeleteAllCookies()
