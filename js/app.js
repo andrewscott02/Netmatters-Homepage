@@ -1,7 +1,7 @@
 $(document).ready(()=>{
     //Functions here called on page load
     GeneralJavaScriptSetup();
-    CheckCookies();
+    CheckCookiesData();
 });
 
 //#region Enabling/Disabling JavaScript Elements
@@ -132,16 +132,9 @@ $(".slides").slick({
 
 //#region Cookies Popup
 
-function CheckCookies()
+function CheckCookiesData()
 {
-    if (!document.cookie.toString().includes("cookiesAccepted=true"))
-    {
-        OpenCookies();
-    }
-    else
-    {
-        console.log("Cookies data is " + document.cookie);
-    }
+    !document.cookie.toString().includes("cookiesAccepted=true") ? OpenCookies : ()=>{console.log("Cookies data is " + document.cookie);};
 }
 
 function OpenCookies()
