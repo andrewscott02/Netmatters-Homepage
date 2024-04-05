@@ -2,14 +2,6 @@
    Side Panel
 ======================================== */
 
-#MainContentGrid
-{
-    // display: grid;
-    // grid-gap: 30px;
-
-    // grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
-}
-
 #MainContentContainer
 {
     position: relative;
@@ -78,8 +70,6 @@
     top: 0;
     right: 0;
 
-    padding: 21px;
-
     @media #{$break-wide}
     {
         width: 350px;
@@ -88,9 +78,52 @@
 
 .narrowItems
 {
+    padding: 21px;
+
+    .sidepanel-btn-category
+    {
+        border: 1px solid hsla(0, 0%, 100%, .1);
+    }
+
     @media #{$break-wide}
     {
         display: none;
+    }
+}
+
+.alt
+{
+    ul
+    {
+        margin: 0;
+    }
+
+    [class^="sidepanel-btn-"]
+    {
+        text-align: start;
+
+        padding: 20px;
+
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .sidepanel-btn-item
+    {
+        font-size: 0.875rem;
+        line-height: 0.75;
+
+        &:before
+        {
+            content: "\BB";
+            padding-right: 15px;
+        }
+    }
+
+    .sidepanel-category:last-child
+    {
+        border-top: 1px solid hsla(0, 0%, 100%, .05);
     }
 }
 
@@ -103,6 +136,7 @@
     text-align: center;
     font-size: 1.125rem;
     text-decoration: none;
+    text-transform: uppercase;
 
     &:hover
     {
@@ -116,7 +150,8 @@
     {
         .sidepanel-btn-category
         {
-            background-color: hsla(0, 0%, 100%, .05);
+            //border-top: 1px solid rgba(0, 0, 0, .45);
+            border-top: 1px solid hsla(0, 0%, 100%, .05);
         }
     }
 }
@@ -128,7 +163,7 @@
     border-radius: 3px;
     
     outline: 1px solid rgba(0, 0, 0, .25);
-    border: 1px solid hsla(0, 0%, 100%, .1);
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
 
     h3
     {
@@ -180,7 +215,6 @@
     font-size: 1rem;
     border-radius: 0;
     padding: 10px;
-    text-transform: uppercase;
 }
 
 //Icons
