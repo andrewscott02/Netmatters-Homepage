@@ -135,15 +135,15 @@
 
     margin: auto;
 
-    border-top: solid 4px $white;
-    border-bottom: solid 4px $white;
+    // border-top: solid 4px $white;
+    // border-bottom: solid 4px $white;
     position: relative;
 
     line-height: 0;
     cursor: pointer;
 }
 
-.btn-nav:before
+.nav-lines
 {
     display: block;
     content: '';
@@ -154,6 +154,30 @@
     background: $white;
     top: 38%;
     justify-content: center;
+}
+
+.nav-lines::before,
+.nav-lines::after
+{
+    display: block;
+    content: '';
+    position: absolute;
+
+    width: 33px;
+    height: 4px;
+    background: $white;
+
+    justify-content: center;
+}
+
+.nav-lines::before
+{
+    top: -10px;
+}
+
+.nav-lines::after
+{
+    top: 10px;
 }
 
 // .btn-nav:after
