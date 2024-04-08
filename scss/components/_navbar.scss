@@ -135,16 +135,45 @@
 
     margin: auto;
 
-    border-top: solid 4px $white;
-    border-bottom: solid 4px $white;
+    // border-top: solid 4px $white;
+    // border-bottom: solid 4px $white;
     position: relative;
 
     line-height: 0;
     cursor: pointer;
+
+    &.sidepanel-open
+    {
+        .nav-lines::before,
+        .nav-lines::after
+        {    
+            top: 0;
+        }
+    }
+
+    &.sidepanel-open-rotate
+    {
+        .nav-lines
+        {
+            background: $transparent;
+            rotate: 180deg;
+        }
+        
+        .nav-lines::before
+        {    
+            rotate: 45deg;
+        }
+        
+        .nav-lines::after
+        {    
+            rotate: -45deg;
+        }
+    }
 }
 
-.btn-nav:before
+.nav-lines
 {
+    transition: all 0.2s ease;
     display: block;
     content: '';
     position: absolute;
@@ -152,8 +181,33 @@
     width: 33px;
     height: 4px;
     background: $white;
-    top: 38%;
+    top: 45%;
     justify-content: center;
+}
+
+.nav-lines::before,
+.nav-lines::after
+{
+    transition: all 0.2s ease;
+    display: block;
+    content: '';
+    position: absolute;
+
+    width: 33px;
+    height: 4px;
+    background: $white;
+
+    justify-content: center;
+}
+
+.nav-lines::before
+{
+    top: -10px;
+}
+
+.nav-lines::after
+{
+    top: 10px;
 }
 
 // .btn-nav:after
