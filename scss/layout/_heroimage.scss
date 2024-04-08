@@ -68,8 +68,7 @@
         padding: 11px 15px 11px 18px;
         font-weight: 400;
         font-size: 1.25rem;
-        max-width: 50%;
-        margin-bottom: 18px;
+        margin-bottom: 60px;
 
         span
         {
@@ -77,10 +76,17 @@
         }
     }
 
-    @media #{$break-wide}
+    @media #{$break-narrow}
     {
-        text-align: left;
+        [class^="btn-"], [class*=" btn-"]
+        {
+            max-width: 50%;
+            margin-bottom: 18px;
+        }
+    }
 
+    @media #{$break-narrow}
+    {
         h1
         {
             margin-top: 35px !important;
