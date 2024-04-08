@@ -149,7 +149,7 @@ function RefreshCarousel()
 //Slick setup
 $(".slides").slick({
     //fade:true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 300,
     arrows: false,
