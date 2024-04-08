@@ -26,6 +26,7 @@
     text-align: left;
 
     max-width: 720px;
+    height: 100%;
     
     border-top: 0px solid #ccc;
 
@@ -62,6 +63,7 @@
 
     .icon-news
     {
+        border-radius: 50%;
         width: 47px;
         height: 47px;
     }
