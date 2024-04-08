@@ -141,10 +141,39 @@
 
     line-height: 0;
     cursor: pointer;
+
+    &.sidepanel-open
+    {
+        .nav-lines::before,
+        .nav-lines::after
+        {    
+            top: 0;
+        }
+    }
+
+    &.sidepanel-open-rotate
+    {
+        .nav-lines
+        {
+            background: $transparent;
+            rotate: 180deg;
+        }
+        
+        .nav-lines::before
+        {    
+            rotate: 45deg;
+        }
+        
+        .nav-lines::after
+        {    
+            rotate: -45deg;
+        }
+    }
 }
 
 .nav-lines
 {
+    transition: all 0.2s ease;
     display: block;
     content: '';
     position: absolute;
@@ -159,6 +188,7 @@
 .nav-lines::before,
 .nav-lines::after
 {
+    transition: all 0.2s ease;
     display: block;
     content: '';
     position: absolute;

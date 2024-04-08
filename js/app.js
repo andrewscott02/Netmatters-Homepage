@@ -108,6 +108,10 @@ let canClose = false;
 //Opens side menu when button is clicked
 $(".sidepanel-btn").on("click", (event)=>{
     $("#MainContentContainer").toggleClass("sidepanel-open");
+    $(".btn-nav").toggleClass("sidepanel-open");
+    setTimeout(()=>{
+        $(".btn-nav").toggleClass("sidepanel-open-rotate");
+    }, 100)
     setTimeout(()=>{canClose = true}, 100);
 });
 
@@ -116,6 +120,10 @@ $("#MainContentContainer").on("click", (event)=>{
     if (canClose)
     {
         $("#MainContentContainer").removeClass("sidepanel-open");
+        $(".btn-nav").removeClass("sidepanel-open-rotate");
+        setTimeout(()=>{
+            $(".btn-nav").toggleClass("sidepanel-open");
+        }, 150)
         canClose = false;
     }
 });
