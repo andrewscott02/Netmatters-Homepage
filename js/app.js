@@ -16,7 +16,7 @@ function GeneralJavaScriptSetup()
 
 //#region Sticky Navigation
 
-const navThreshold = 250;
+const navThreshold = 100;
 
 let prevScroll = 0;
 let stickyHeaderActive = true;
@@ -69,10 +69,6 @@ function CheckScroll(event)
                 $(".sticky-header").addClass("sticky");
                 AnimateHeader(true, 0.6);
             }
-        }
-        else
-        {
-            $(".sticky-header").removeClass("sticky");
         }
     }
 
