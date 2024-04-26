@@ -5,7 +5,7 @@
                     <div class="flex-container wide-center header-bar">
                         <!-- Logo -->
                         <div class="flex-item-center flex-grow stopgrow-narrow flex-shrink last-on-left">
-                            <a href="#" class="header-title"><img class="header-title" src="Images/nm-logo-black.webp" alt="Netmatters Logo"></a>
+                            <a href="index.php" class="header-title"><img class="header-title" src="Images/nm-logo-black.webp" alt="Netmatters Logo"></a>
                         </div>
                         <!-- Phone button (Mobile Only) -->
                         <div class="flex-item-center mobile-only">
@@ -22,7 +22,7 @@
                         </div>
                         <!-- Contact Button (Wide) -->
                         <div class="flex-item wide-only">
-                            <a class="btn-grey btn-header" href="#">
+                            <a class="btn-grey btn-header" href="contact.php">
                                 <span class="float-left icon-paperplane icon-medium"></span>
                                 Contact
                             </a>
