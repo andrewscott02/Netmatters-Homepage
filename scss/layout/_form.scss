@@ -24,10 +24,16 @@
     }
 }
 
-.required::after
+.required::after,
+.required-info::before
 {
     color: red;
     content: " *"
+}
+
+.required-info
+{
+    background-color: red;
 }
 
 .form
