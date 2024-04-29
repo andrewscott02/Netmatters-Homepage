@@ -33,25 +33,30 @@
 
                         <div id="Offices" class="section">
                             <div class="office">
-                            <img class="header-title" src="Images/nm-logo-black.webp" alt="Netmatters Logo">
-                            <p class="office-name">
-                                <a href="">London Office</a>
-                            </p>
-                            <p class="office-details">
-                                Unit G6
-                                <br>
-                                Pixel Business Centre,
-                                <br>
-                                110 Brooker Road, Waltham Abbey,
-                                <br>
-                                London,
-                                <br>
-                                EN9 1JH
-                            </p>
-                            <p class="office-phone">
-                                <a href="">London Office</a>
-                            </p>
-                            <a class="btn">VIEW MORE</a>
+                                <div class="office-info">
+                                    <img class="header-title" src="Images/Offices/london.jpg" alt="London Office">
+                                    <div class="office-details">
+                                        <p class="office-name">
+                                            <a href="">London Office</a>
+                                        </p>
+                                        <p class="office-address">
+                                            Unit G6
+                                            <br>
+                                            Pixel Business Centre,
+                                            <br>
+                                            110 Brooker Road, Waltham Abbey,
+                                            <br>
+                                            London,
+                                            <br>
+                                            EN9 1JH
+                                        </p>
+                                        <p class="office-phone">
+                                            <a href="">02045 397354</a>
+                                        </p>
+                                        <a class="btn">VIEW MORE</a>
+                                    </div>
+                                </div>
+                                <!-- TODO: Map -->
                             </div>
                         </div>
                     </main>
