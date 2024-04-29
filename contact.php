@@ -57,6 +57,7 @@
                                     </div>
                                 </div>
                                 <!-- TODO: Map -->
+                                <div id="map"></div>
                             </div>
                         </div>
                     </main>
@@ -197,5 +198,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/plugins/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/maps.js"></script>
 </body>
 </html>
