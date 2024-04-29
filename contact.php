@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <!-- TODO: Map -->
-                                <div id="map"></div>
+                                <div class="map"></div>
                             </div>
                         </div>
                     </main>
