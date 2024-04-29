@@ -35,7 +35,7 @@ function CheckScroll(event)
     if (scroll > prevScroll)
     {
         //Show header
-        console.log("scroll down");
+        // console.log("scroll down");
 
         if (scroll > navThreshold)
         {
@@ -57,7 +57,7 @@ function CheckScroll(event)
     else
     {
         //Hide header
-        console.log("scroll up");
+        // console.log("scroll up");
 
         if (scroll > navThreshold)
         {
@@ -169,7 +169,7 @@ function CheckCookiesData()
     }
     else
     {
-        console.log("Cookies data is " + document.cookie);
+        // console.log("Cookies data is " + document.cookie);
         return false;
     }
 }
@@ -177,7 +177,7 @@ function CheckCookiesData()
 /**Opens Cookies Popup */
 function OpenCookies()
 {
-    console.log("Opening Cookies Popup, data is " + document.cookie);
+    // console.log("Opening Cookies Popup, data is " + document.cookie);
 
     $('body').addClass('stop-scrolling');
     $("#CookiesPopup").show();
@@ -192,13 +192,13 @@ $("#AcceptCookies").on("click", ()=>{
 function CloseCookies()
 {
     //Send cookies closed via AJAX
-    console.log("Closing Cookies Popup");
+    // console.log("Closing Cookies Popup");
     SetCookiesData(true);
 
     $('body').removeClass('stop-scrolling');
     $("#CookiesPopup").hide();
 
-    console.log("Cookies data is " + document.cookie);
+    // console.log("Cookies data is " + document.cookie);
 }
 
 /** Sets Cookies Accepted Value

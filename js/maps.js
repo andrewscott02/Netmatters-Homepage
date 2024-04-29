@@ -1,3 +1,6 @@
+// Docs
+// https://leafletjs.com/index.html
+
 let mapElements = document.querySelectorAll(".map")
 
 let mapCoords = [

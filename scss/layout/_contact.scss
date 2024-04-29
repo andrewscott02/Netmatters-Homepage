@@ -8,6 +8,7 @@
 .contact-details.section
 {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 [class^="contact-banner-"], [class*=" contact-banner-"]
@@ -86,11 +87,23 @@
     }
 }
 
+.contact-details
+{
+    p
+    {
+        font-weight: 600;
+        color: $color-secondary;
+        margin: 0 0 25px;
+    }
+}
+
 .contact-details-email
 {
     color: $color-purple !important;
     font-size: 1.625rem;
     font-weight: 600;
+    
+    margin-bottom: 30x !important;
 
     a
     {
@@ -101,6 +114,17 @@
     {
         text-decoration: underline;
     }
+}
+
+.dropdown-btn:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown-hide
+{
+    display: none;
 }
 
 // Form class in flex container
