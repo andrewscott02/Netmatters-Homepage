@@ -1,9 +1,12 @@
-Banner Slider - Implemented
+PHP Features:
+-Database for homepage news
+-Contact us maps (Rather than installing Google Maps - please use a free alternative or replace with responsive images)
 
-Side Menu - Implemented
+JS Features:
+-Out of hours open section
 
-Mobile Menu - Implemented
-
-Sticky Header - Implemented
-
-Cookies Popup - Implemented
+Contact Form
+-Client Side Validation via JavaScript
+-Server Side Validation via PHP with error messages for missing fields/incorrect value for email address etc.
+-Success message on submission
+-Storing successful enquiries into the database
