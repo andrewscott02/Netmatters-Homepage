@@ -22,9 +22,8 @@
                 <div id="Content">
                     <main>
                         <div class="contact-banner">
-                            <div class="contact-banner-primary">
-                                <a href="index.php">Home</a>
-                                <p> / Our Offices</p>
+                            <div class="contact-banner-primary narrow-only">
+                                <p><a href="index.php">Home</a> / &nbsp;Our Offices</p>
                             </div>
                             
                             <div class="contact-banner-secondary">
@@ -32,7 +31,7 @@
                             </div>
                         </div>
 
-                        <div id="Offices">
+                        <div id="Offices" class="section">
                             <div class="office">
                             <img class="header-title" src="Images/nm-logo-black.webp" alt="Netmatters Logo">
                             <p class="office-name">
@@ -58,7 +57,7 @@
                     </main>
 
                     <aside>
-                        <div class="contact-details">
+                        <div class="contact-details section">
                             <p>Email us on:</p>
 
                             <p>
@@ -87,8 +86,8 @@
                             </div>
                         </div>
 
-                        <div id="Contact">
-                            <div class="section">
+                        <div id="Contact" class="section">
+                            <div class="contact-container">
                                 <form action="index.html" method="post">
                                     <fieldset class="flex-container vertical form">
                                         <div class="grid-container">
@@ -121,10 +120,11 @@
                                             </div>
 
                                             <!-- Message -->
+                                            <!-- Default Message - Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email? -->
                                             <div class="flex-item">
                                                 <label for="message" class="required">Message</label>
                                                 <br>
-                                                <input type="text" id="message" name="user_message">
+                                                <textarea type="text" id="message" name="user_message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                             </div>
                                         </div>
     
@@ -144,8 +144,8 @@
                                         </div>
     
                                         <div class="flex-item">
-                                            <p>
-                                                <small>This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</small>
+                                            <p class="recaptcha">
+                                                <span>This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</span>
                                             </p>
                                         </div>
 
