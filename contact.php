@@ -66,7 +66,7 @@
                         <div class="contact-details section">
                             <p>Email us on:</p>
 
-                            <p>
+                            <p class="contact-details-email">
                                 <a href="">sales@netmatters.com</a>
                             </p>
 
