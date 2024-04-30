@@ -1,6 +1,6 @@
 <div id="SignUp">
     <div class="section">
-        <form action="index.html" method="post">
+        <form action="index.php" method="post">
             
             <h2>Email Newsletter Sign-Up</h2>
 

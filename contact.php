@@ -95,7 +95,7 @@
 
                         <div id="Contact" class="section">
                             <div class="contact-container">
-                                <form action="index.html" method="post">
+                                <form action="contact.php" method="post">
                                     <fieldset class="flex-container vertical form">
                                         <div class="grid-container">
                                             <!-- Your Name -->
