@@ -32,33 +32,7 @@
                         </div>
 
                         <div id="Offices" class="section">
-                            <div class="office">
-                                <div class="office-info">
-                                    <img class="header-title" src="Images/Offices/london.jpg" alt="London Office">
-                                    <div class="office-details">
-                                        <p class="office-name">
-                                            <a href="">London Office</a>
-                                        </p>
-                                        <p class="office-address">
-                                            Unit G6
-                                            <br>
-                                            Pixel Business Centre,
-                                            <br>
-                                            110 Brooker Road, Waltham Abbey,
-                                            <br>
-                                            London,
-                                            <br>
-                                            EN9 1JH
-                                        </p>
-                                        <p class="office-phone">
-                                            <a href="">02045 397354</a>
-                                        </p>
-                                        <a class="btn">VIEW MORE</a>
-                                    </div>
-                                </div>
-                                <!-- TODO: Map -->
-                                <div class="map"></div>
-                            </div>
+                            <?php include("includes/getoffices.php"); ?>
                         </div>
                     </main>
 
@@ -201,6 +175,11 @@
     <script src="js/app.js"></script>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <script type="text/javascript">
+        const offices=<?php echo json_encode($offices); ?>;
+    </script>
+    
     <script src="js/maps.js"></script>
     <script src="js/contact.js"></script>
 </body>

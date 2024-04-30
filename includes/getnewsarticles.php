@@ -55,14 +55,14 @@ foreach ($articles as $item)
                     <div class="news-popup">
                         <p>' . $item["tag"] . '</p>
                     </div>
-                    <img src="' . $item["image"] . '" alt="' . $item["name"] . '">
+                    <img src="' . $item["image"] . '" alt="Image of news: ' . $item["name"] . '">
                 </div>
                 <h3 class="flex-item">
                 ' . $item["name"];
 
                 if ($item["read_time"] > 0)
                 {
-                    echo '<span class="read-time">- 4 MINUTE READ</span>';
+                    echo '<span class="read-time">- ' . $item["read_time"] . ' MINUTE READ</span>';
                 }
                 
     echo '       </h3>

@@ -3,18 +3,17 @@
 
 let mapElements = document.querySelectorAll(".map")
 
-let mapCoords = [
-    [51.68221948340496, -0.003204432842098814],
-    [51, 0]
-]
-
 let maps = [];
 let markers = [];
 
 mapElements.forEach((item, index) => {
-    var coords = mapCoords[index];
 
-    var map = L.map(item).setView([coords[0], coords[1]], 13);
+    var coords = [offices[index]["x_coord"], offices[index]["y_coord"]]
+
+    var map = L.map(item, {
+        center: [coords[0], coords[1]],
+        zoom: 17
+    });
     var marker = L.marker([coords[0], coords[1]]).addTo(map);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

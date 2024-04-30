@@ -9,7 +9,7 @@ it - blue
 software - blue desaturated
 */
 
-$initialValues =
+$initialNews =
 [
     [
         "name" => "James & Ella - Website Build and Stock Management System",
@@ -87,6 +87,42 @@ $initialValues =
     // ]
 ];
 
+$initialOffices = 
+[
+    [
+        "name" => "London Office",
+        "address" => "Unit G6 <br> Pixel Business Centre, <br> 110 Brooker Road, Waltham Abbey, <br> London, <br> EN9 1JH",
+        "phone" => "02045 397354",
+        "image" => "https://www.netmatters.co.uk/assets/images/offices/london.jpg",
+        "x_coord" => 51.681706924049394,
+        "y_coord" => -0.003072431170442258
+    ],
+    [
+        "name" => "Cambridge Office",
+        "address" => "Unit 1.31 <br> St John's Innovation Centre, <br> Cowley Road, Milton, <br> Cambridge, <br> Cb4 0WS",
+        "phone" => "01223 37 57 72",
+        "image" => "https://www.netmatters.co.uk/assets/images/offices/cambridge.jpg",
+        "x_coord" => 52.23534356510281,
+        "y_coord" => 0.1544504863609335
+    ],
+    [
+        "name" => "Wymondham Office",
+        "address" => "Unit 15 <br> Penfold Drive, <br> Gateway 11 Business Park, <br> Wymondham, Norfolk, <br> NR18 0WZ",
+        "phone" => "01603 70 40 20",
+        "image" => "https://www.netmatters.co.uk/assets/images/offices/wymondham.jpg",
+        "x_coord" => 52.575984732062736,
+        "y_coord" => 1.1366990688743508
+    ],
+    [
+        "name" => "Great Yarmouth Office",
+        "address" => "Suite F23, <br> Beacon Innovation Centre, <br> Beacon Park, Gorleston, <br> Great Yarmouth, Norfolk, <br> NR31 7RA",
+        "phone" => "01493 60 32 04",
+        "image" => "https://www.netmatters.co.uk/assets/images/offices/yarmouth-2.jpg",
+        "x_coord" => 52.55583958709729,
+        "y_coord" => 1.7129253075019553
+    ]
+];
+
 function AddNews($name, $tag, $description, $imgsrc, $type, $read_time, $poster, $poster_pic, $date)
 {
     global $db;
@@ -124,7 +160,7 @@ function AddNews($name, $tag, $description, $imgsrc, $type, $read_time, $poster,
     return true;
 }
 
-function GetNewsCount()
+function AddOffice($name, $address, $phone, $imgsrc, $x, $y)
 {
     global $db;
 
@@ -134,7 +170,39 @@ function GetNewsCount()
         return false;
     }
 
-    $sql = "SELECT COUNT(*) AS count FROM news";
+    $sql = "INSERT INTO offices(name, address, phone, image, x_coord, y_coord) VALUES(?, ?, ?, ?, ?, ?)";
+        
+    try
+    {
+        $results = $db->prepare($sql);
+        $results->bindValue(1, $name, PDO::PARAM_STR);
+        $results->bindValue(2, $address, PDO::PARAM_STR);
+        $results->bindValue(3, $phone, PDO::PARAM_STR);
+        $results->bindValue(4, $imgsrc, PDO::PARAM_STR);
+        $results->bindValue(5, $x, PDO::PARAM_STR);
+        $results->bindValue(6, $y, PDO::PARAM_STR);
+        $results->execute();
+    }
+    catch (Exception $e)
+    {
+        echo "Error!: " . $e->getMessage() . "<br />";
+        return false;
+    }
+    
+    return true;
+}
+
+function GetTableEntryCount($table)
+{
+    global $db;
+
+    if($db == null)
+    {
+        echo "No database was found";
+        return false;
+    }
+
+    $sql = "SELECT COUNT(*) AS count FROM " . $table;
         
     try
     {
@@ -150,33 +218,56 @@ function GetNewsCount()
     return $count;
 }
 
-function TrySeedDatabase()
+function TrySeedDatabases()
 {
-    $newsCount = GetNewsCount();
+    $newsCount = GetTableEntryCount("news");
 
     if ($newsCount["count"] === 0)
     {
         SeedNewsDatabase();
     }
+
+    $officeCount = GetTableEntryCount("offices");
+
+    if ($officeCount["count"] === 0)
+    {
+        SeedOfficeDatabase();
+    }
 }
 
 function SeedNewsDatabase()
 {
-    global $initialValues;
-    for ($i = 0; $i < count($initialValues); $i++)
+    global $initialNews;
+    for ($i = 0; $i < count($initialNews); $i++)
     {
         AddNews(
-            $initialValues[$i]["name"],
-            $initialValues[$i]["tag"],
-            $initialValues[$i]["description"],
-            $initialValues[$i]["image"],
-            $initialValues[$i]["type"],
-            $initialValues[$i]["read_time"],
-            $initialValues[$i]["poster"],
-            $initialValues[$i]["poster_pic"],
-            $initialValues[$i]["date"]
+            $initialNews[$i]["name"],
+            $initialNews[$i]["tag"],
+            $initialNews[$i]["description"],
+            $initialNews[$i]["image"],
+            $initialNews[$i]["type"],
+            $initialNews[$i]["read_time"],
+            $initialNews[$i]["poster"],
+            $initialNews[$i]["poster_pic"],
+            $initialNews[$i]["date"]
         );
     }
 }
 
-TrySeedDatabase();
+function SeedOfficeDatabase()
+{
+    global $initialOffices;
+    for ($i = 0; $i < count($initialOffices); $i++)
+    {
+        AddOffice(
+            $initialOffices[$i]["name"],
+            $initialOffices[$i]["address"],
+            $initialOffices[$i]["phone"],
+            $initialOffices[$i]["image"],
+            $initialOffices[$i]["x_coord"],
+            $initialOffices[$i]["y_coord"]
+        );
+    }
+}
+
+TrySeedDatabases();
