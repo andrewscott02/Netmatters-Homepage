@@ -112,6 +112,8 @@
     padding-left: 10px;
     padding-right: 10px;
 
+    text-transform: uppercase;
+
     background-color: #67809f;
 
     p
@@ -130,7 +132,7 @@
     }
 }
 
-.news-purple
+.news-web
 {
     .btn,
     .news-popup
@@ -139,7 +141,25 @@
     }
 }
 
-.news-blue
+.news-web
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-purple;
+    }
+}
+
+.news-it
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-blue-sat;
+    }
+}
+
+.news-software
 {
     .btn,
     .news-popup
@@ -148,12 +168,30 @@
     }
 }
 
-.news-red
+.news-telecoms
 {
     .btn,
     .news-popup
     {
         background-color: $colour-card-red;
+    }
+}
+
+.news-digital
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-green;
+    }
+}
+
+.news-bus-dev
+{
+    .btn,
+    .news-popup
+    {
+        background-color: $colour-card-orange;
     }
 }
 

@@ -25,7 +25,7 @@ $initialValues =
     [
         "name" => "Netmatters Achieves 2024 Gold Carbon Charter Award",
         "tag" => "News",
-        "description" => "Netmatters is excited to announce that we have been awarded the Gold Carbon Charter Award for 2024! 
+        "description" => "We’re Gold! Netmatters Achieves 2024 Gold Carbon Charter Award Netmatters is excited to announce that we have been awarded the Gold Carbon Charter Award for 2024! 
 
         This is the third time we have achieved the Carbon Charter Award, achieving Silver in 2019 and progressing to Gold in 2021.",
         "image" => "https://www.netmatters.co.uk/uploads/article/3764/were-gold-netmatters-kIaG.png",
@@ -47,8 +47,18 @@ $initialValues =
         "poster" => "Netmatters",
         "poster_pic" => "https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.webp",
         "date" => "2024-04-17 00:00:00"
+    ],
+    [
+        "name" => "Telemarketer",
+        "tag" => "Careers",
+        "description" => "Salary Range £24,960 - £26,000. Potential OTE at £6k -£8k Hours 40 hours per week, Monday – Friday. Minimum 20 hours a week Part Time Location Wymondham, Norfolk",
+        "image" => "https://www.netmatters.co.uk/uploads/image/generic-ihz8.png",
+        "type" => "telecoms",
+        "read_time" => "0",
+        "poster" => "Rebecca Moore",
+        "poster_pic" => "https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/rebecca-moore-1fh7.webp",
+        "date" => "2024-04-11 00:00:00"
     ]
-
     
     // Templates
 
@@ -79,13 +89,11 @@ $initialValues =
 
 function AddNews($name, $tag, $description, $imgsrc, $type, $read_time, $poster, $poster_pic, $date)
 {
-    include_once("includes/connection.php");
-
     global $db;
 
     if($db == null)
     {
-        echo "AddNews: No database was found";
+        echo "No database was found";
         return false;
     }
 
@@ -118,13 +126,11 @@ function AddNews($name, $tag, $description, $imgsrc, $type, $read_time, $poster,
 
 function GetNewsCount()
 {
-    include_once("includes/connection.php");
-
     global $db;
 
     if($db == null)
     {
-        echo "AddNews: No database was found";
+        echo "No database was found";
         return false;
     }
 
