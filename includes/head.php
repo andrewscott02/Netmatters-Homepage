@@ -11,5 +11,6 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
 <?php
-    include("includes/connection.php");
+    include_once("includes/connection.php");
+    include("includes/seeder.php");
 ?>

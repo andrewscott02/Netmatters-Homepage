@@ -1,5 +1,5 @@
-let originalHeight = $(".dropdown").height();
-let dropdownHeight = $(".dropdown-info").height() + 50;
+let originalHeight = $(".dropdown-btn").height();
+let dropdownHeight = $(".dropdown-btn").height() + $(".dropdown-info").height() + 50;
 
 $(document).ready(()=>{
     $(".dropdown").height(originalHeight);

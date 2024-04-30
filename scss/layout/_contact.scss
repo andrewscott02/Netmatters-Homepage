@@ -118,6 +118,7 @@
 
 .dropdown
 {
+    overflow: hidden;
     transition: all 1s ease;
 
     &.dropdown-extend
@@ -158,12 +159,8 @@
 
 .dropdown-info
 {
-    position: absolute;
-    z-index: -5;
-
     margin-top: 25px;
-
-    width: 90%;
+    margin-bottom: 25px;
 
     p
     {
