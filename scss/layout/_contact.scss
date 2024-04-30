@@ -116,15 +116,64 @@
     }
 }
 
-.dropdown-btn:hover
+.dropdown
+{
+    transition: all 1s ease;
+
+    &.dropdown-extend
+    {
+        height: 600px;
+    }
+}
+
+.dropdown-btn
+{
+    p
+    {
+        display: inline;
+    }
+
+    p:focus
+    {
+        text-decoration: underline;
+    }
+
+    i
+    {
+        font-size: 0.95rem;
+        text-shadow:0px 0px 2px black;
+    }
+}
+
+.dropdown-btn:hover p
 {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.dropdown-hide
+.dropdown-btn:focus p
 {
-    display: none;
+    text-decoration: underline;
+}
+
+.dropdown-info
+{
+    position: absolute;
+    z-index: -5;
+
+    margin-top: 25px;
+
+    width: 90%;
+
+    p
+    {
+        font-weight: inherit;
+
+        strong
+        {
+            font-weight: 600;
+        }
+    }
 }
 
 // Form class in flex container

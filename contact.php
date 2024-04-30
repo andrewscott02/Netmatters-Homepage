@@ -77,6 +77,7 @@
                             <div class="dropdown">
                                 <div class="dropdown-btn">
                                     <p>Out of Hours IT Support</p>
+                                    <i class="fa-solid fa-chevron-down"></i>
                                     <!-- TODO: Add arrow down after IT support -->
                                 </div>
 

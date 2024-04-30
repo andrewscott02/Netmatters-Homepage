@@ -1,6 +1,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Font awesome -->
+<script src="https://kit.fontawesome.com/8dfe57f086.js" crossorigin="anonymous"></script>
+
 <!-- Style Sheets -->
 <link rel="stylesheet" href="js/plugins/slick/slick.css">
 <link rel="stylesheet" href="js/plugins/slick/slick-theme.css">
