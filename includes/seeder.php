@@ -37,7 +37,46 @@ function AddNews($name, $description, $imgsrc, $type, $date)
     return true;
 }
 
-for ($i = 0; $i < count($initialValues); $i++)
+function GetNewsCount()
 {
-    AddNews($initialValues[$i][0], $initialValues[$i][1], $initialValues[$i][2], $initialValues[$i][3], $initialValues[$i][4]);
+    include_once("includes/connection.php");
+
+    global $db;
+
+    if($db == null)
+    {
+        echo "AddNews: No database was found";
+        return false;
+    }
+
+    $sql = "SELECT COUNT(*) AS count FROM news";
+        
+    try
+    {
+        $results = $db->query($sql);
+    }
+    catch (Exception $e)
+    {
+        echo "Error!: " . $e->getMessage() . "<br />";
+        return false;
+    }
+    
+    $count = ($results->fetch(PDO::FETCH_ASSOC));
+    return $count;
 }
+
+function TrySeedDatabase()
+{
+    $newsCount = GetNewsCount();
+
+    if ($newsCount["count"] === 0)
+    {
+        global $initialValues;
+        for ($i = 0; $i < count($initialValues); $i++)
+        {
+            AddNews($initialValues[$i][0], $initialValues[$i][1], $initialValues[$i][2], $initialValues[$i][3], $initialValues[$i][4]);
+        }
+    }
+}
+
+TrySeedDatabase();
