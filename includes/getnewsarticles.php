@@ -11,10 +11,10 @@ function GetNewsArticles()
     }
 
     $sql = "
-            SELECT * FROM news
-            ORDER BY date DESC
-            LIMIT 3
-            ";
+        SELECT * FROM news
+        ORDER BY date DESC
+        LIMIT 3
+    ";
         
     try
     {
@@ -45,6 +45,9 @@ foreach ($articles as $item)
         $shortDescription = substr($shortDescription, 0, $lastword) . "...";
     }
 
+    $sqlDate =  strtotime($item["date"]);
+    $formatDate = date("jS F Y", $sqlDate);
+
     echo '
         <li class="flex-container vertical">
             <a href="#" class="news news-' . $item["type"] . '">
@@ -73,7 +76,7 @@ foreach ($articles as $item)
                             <p>
                             <strong>Posted by ' . $item["poster"] . '</strong>
                             <br>
-                            ' . $item["date"] . '
+                            ' . $formatDate . '
                             </p>
                         </div>
                     </div>
