@@ -2,6 +2,16 @@
 {
     margin-top: 30px;
     padding-bottom: 10px;
+
+    &.grid-container
+    {
+        @media #{$break-wide}
+        {
+            row-gap: 0;
+
+            grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        }
+    }
 }
 
 .office

@@ -40,7 +40,7 @@ foreach ($offices as $item)
                 <img class="header-title" src="' . $item["image"] . '" alt="London Office">
                 <div class="office-details">
                     <p class="office-name">
-                        <a href="">' . $item["name"] . ' Office</a>
+                        <a href="">' . $item["name"] . '</a>
                     </p>
                     <p class="office-address">
                         ' . $item["address"] . '

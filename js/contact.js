@@ -1,5 +1,4 @@
-let originalHeight = $(".dropdown-btn").height();
-let dropdownHeight = $(".dropdown-btn").height() + $(".dropdown-info").height() + 50;
+let originalHeight = $(".dropdown-btn").height() + 30;
 
 $(document).ready(()=>{
     $(".dropdown").height(originalHeight);
@@ -10,11 +9,11 @@ $(".dropdown-btn").on("click", ()=>{
 
     $(".dropdown-info").toggleClass("dropdown-hide");
 
-    let targetHeight = dropdownHeight;
+    let targetHeight = originalHeight;
 
-    if ($(".dropdown-info").hasClass("dropdown-hide"))
+    if (!$(".dropdown-info").hasClass("dropdown-hide"))
     {
-        targetHeight = originalHeight;
+        targetHeight = $(".dropdown-btn").height() + $(".dropdown-info").height() + 50;
     }
 
     $(".dropdown").height(targetHeight);
