@@ -84,7 +84,7 @@ function CheckFormFields(event)
 
 function DisplaySubmitStatus(message, status)
 {
-    $(".form-status").html(message);
+    $(".form-status-message").html(message);
     $(".form-status").removeClass("hidden")
 
     if (status)
@@ -192,3 +192,8 @@ function GetPhoneMessage(input)
 }
 
 //#endregion
+
+$(".close-status").on("click", (event)=>{
+    event.preventDefault();
+    $(".form-status").addClass("hidden");
+})

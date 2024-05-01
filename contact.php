@@ -80,6 +80,7 @@
 
                                                 <div class="form-status hidden">
                                                     <p class="form-status-message">Your message has been sent!</p>
+                                                    <button class="close-status">x</button>
                                                 </div>
 
                                                 <!-- Your Name -->
