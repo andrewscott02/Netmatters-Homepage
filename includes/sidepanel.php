@@ -136,6 +136,19 @@
             </div>
         </div>
         <div class="alt">
+            
+            <div class="sidepanel-category">
+                <a href="#" class="sidepanel-btn-category">SERVICES</a>
+                
+                <ul class="sidepanel-list">
+                    <li><a href="#" class="sidepanel-btn-item">Bespoke Software</a></li>
+                    <li><a href="#" class="sidepanel-btn-item">IT Support</a></li>
+                    <li><a href="#" class="sidepanel-btn-item">Digital Marketing</a></li>
+                    <li><a href="#" class="sidepanel-btn-item">Telecoms Services</a></li>
+                    <li><a href="#" class="sidepanel-btn-item">Web Design</a></li>
+                    <li><a href="#" class="sidepanel-btn-item">Cyber Security</a></li>
+                </ul>
+            </div>
             <div class="sidepanel-category">
                 <a href="#" class="sidepanel-btn-category">OUR WORK</a>
                 
