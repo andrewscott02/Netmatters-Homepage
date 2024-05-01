@@ -111,7 +111,7 @@
                                             </div>
         
                                             <div class="flex-item">
-                                                <input class="checkbox-item checkbox-hide" type="checkbox">
+                                                <input class="checkbox-item checkbox-hide" type="checkbox" id="acceptMarketing" name="user_acceptMarketing">
                                                 <div class="checkbox-field">
                                                     <div class="checkbox-item checkbox-custom">
                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
