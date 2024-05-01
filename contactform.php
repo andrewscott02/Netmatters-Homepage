@@ -1,15 +1,4 @@
-
-<!-- 
-    ?user_name=dgf
-    &company_name=
-    &user_email=olk%40a.com
-    &user_phone_number=6765054678
-    &user_message=Hi%2C+I+am+interested+in+discussing+a+Our+Offices+solution%2C+could+you+please+give+me+a+call+or+send+an+email%3F
-    &user_acceptMarketing=on (will not appear if unchecked)
--->
-
 <?php
-
 session_start();
 
 include_once("includes/connection.php");
