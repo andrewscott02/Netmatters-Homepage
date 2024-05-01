@@ -3,6 +3,8 @@
 <head>
     <?php 
         include("includes/head.php");
+        session_start();
+        include("includes/formstatus.php");
     ?>
 
     <title>Assessment - Contact Us | Netmatters</title>
@@ -73,6 +75,11 @@
                                     <form action="contactform.php" method="post">
                                         <fieldset class="flex-container vertical form">
                                             <div class="grid-container">
+
+                                                <div class="form-status hidden">
+                                                    <p class="form-status-message">Your message has been sent!</p>
+                                                </div>
+
                                                 <!-- Your Name -->
                                                 <div class="flex-item">
                                                     <label for="name" class="required">Your Name</label>
@@ -184,5 +191,34 @@
     
     <script src="js/maps.js"></script>
     <script src="js/contact.js"></script>
+
+    <script type="text/javascript">
+        let status = <?php 
+                        if ($submit_status)
+                        {
+                            echo "'" . $submit_status . "'";
+                        }
+                        else
+                        {
+                            echo "false";
+                        }
+                     ?>;
+
+        let message = <?php 
+                        if ($submit_message)
+                        {
+                            echo "'" . $submit_message . "'";
+                        }
+                        else
+                        {
+                            echo "false";
+                        }
+                     ?>;
+
+        if (status != false && message != false)
+        {
+            DisplaySubmitStatus(message, status);
+        }
+    </script>
 </body>
 </html>

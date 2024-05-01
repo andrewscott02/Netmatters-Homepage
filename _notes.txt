@@ -4,6 +4,7 @@ PHP Features:
 
 JS Features:
 -Phone validation
+-Check error messages on site
 
 Contact Form:
 -Client Side Validation via JavaScript

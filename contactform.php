@@ -10,6 +10,8 @@
 
 <?php
 
+session_start();
+
 include_once("includes/connection.php");
 
 $canSubmit = true;
@@ -21,7 +23,6 @@ $user_name = "";
 if (isset($_POST["user_name"]))
 {
     $user_name = filter_input(INPUT_POST, "user_name", FILTER_SANITIZE_STRING);
-    echo $user_name . "\n";
 }
 else
 {
@@ -33,7 +34,6 @@ $company_name = "";
 if (isset($_POST["company_name"]))
 {
     $company_name = filter_input(INPUT_POST, "company_name", FILTER_SANITIZE_STRING);
-    echo $company_name . "\n";
 }
 
 $user_email = "";
@@ -41,7 +41,6 @@ $user_email = "";
 if (isset($_POST["user_email"]))
 {
     $user_email = filter_input(INPUT_POST, "user_email", FILTER_SANITIZE_STRING);
-    echo $user_email . "\n";
 }
 else
 {
@@ -53,7 +52,6 @@ $user_phone_number = "";
 if (isset($_POST["user_phone_number"]))
 {
     $user_phone_number = filter_input(INPUT_POST, "user_phone_number", FILTER_SANITIZE_STRING);
-    echo $user_phone_number . "\n";
 }
 else
 {
@@ -66,7 +64,6 @@ if (isset($_POST["user_message"]))
 {
     $user_message = filter_input(INPUT_POST, "user_message", FILTER_SANITIZE_STRING);
     // $user_message = $_POST["user_message"];
-    echo $user_message . "\n";
 }
 else
 {
@@ -80,16 +77,6 @@ if (isset($_POST["user_acceptMarketing"]))
     $user_acceptMarketing = true;
 }
 
-if ($user_acceptMarketing === true)
-{
-    echo "accept marketing";
-}
-
-else if ($user_acceptMarketing === false)
-{
-    echo "does not accept marketing";
-}
-
 #endregion
 
 function AddContact($user_name, $company_name, $user_email, $user_phone_number, $user_message, $user_acceptMarketing)
@@ -98,7 +85,6 @@ function AddContact($user_name, $company_name, $user_email, $user_phone_number, 
 
     if($db == null)
     {
-        echo "No database was found";
         return false;
     }
 
@@ -117,14 +103,35 @@ function AddContact($user_name, $company_name, $user_email, $user_phone_number, 
     }
     catch (Exception $e)
     {
-        echo "Error!: " . $e->getMessage() . "<br />";
         return false;
     }
     
     return true;
 }
 
+$submit_status = '';
+$submit_message = '';
+
 if ($canSubmit)
 {
-    AddContact($user_name, $company_name, $user_email, $user_phone_number, $user_message, $user_acceptMarketing);
+    if (AddContact($user_name, $company_name, $user_email, $user_phone_number, $user_message, $user_acceptMarketing) === false)
+    {
+        $submit_message = 'Error adding to database';
+    }
+    else
+    {
+        $submit_status = 'success';
+        $submit_message = 'Your message has been sent!';
+    }
 }
+
+$status = [
+    "sbmt_status" => $submit_status,
+    "sbmt_message" => $submit_message
+];
+
+$_SESSION["submit_status"] = $submit_status;
+$_SESSION["submit_message"] = $submit_message;
+
+header("Location: contact.php#Contact");
+exit();

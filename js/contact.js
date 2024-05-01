@@ -75,14 +75,25 @@ function CheckFormFields(event)
         }
     });
 
-    if (canSubmit)
+    if (!canSubmit)
     {
-        alert("Form submission is in progress");
+        event.preventDefault();
+        DisplaySubmitStatus(message, false);
+    }
+}
+
+function DisplaySubmitStatus(message, status)
+{
+    $(".form-status").html(message);
+    $(".form-status").removeClass("hidden")
+
+    if (status)
+    {
+        $(".form-status").removeClass("form-status-error");
     }
     else
     {
-        event.preventDefault();
-        alert(message);
+        $(".form-status").addClass("form-status-error");
     }
 }
 
@@ -159,12 +170,12 @@ function GetPhoneMessage(input)
 
     if (valid == false)
     {
-        message = "Phone number is not valid. Please include a valid phone number";
+        message = "The telephone format is incorrect.";
     }
 
     if (input === "")
     {
-        message = "Please include a phone number";
+        message = "Please include a telephone number.";
     }
     
     return message;
