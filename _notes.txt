@@ -3,7 +3,7 @@ PHP Features:
 -Contact us maps (Rather than installing Google Maps - please use a free alternative or replace with responsive images)
 
 JS Features:
--Out of hours open section
+-Phone validation
 
 Contact Form:
 -Client Side Validation via JavaScript

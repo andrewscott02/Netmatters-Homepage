@@ -56,6 +56,15 @@ function CheckFormFields(event)
                     canSubmit = false;
                 }
             }
+            else if ($(inputElement).attr("type") === "tel")
+            {
+                let phoneMessage = GetPhoneMessage($(inputElement).val());
+                if(phoneMessage !== "")
+                {
+                    message = phoneMessage;
+                    canSubmit = false;
+                }
+            }
 
             const content = $(inputElement).val();
             if (content == "")
@@ -137,6 +146,25 @@ function GetEmailMessage(input)
     if (input === "")
     {
         message = "Please include an email address";
+    }
+    
+    return message;
+}
+
+function GetPhoneMessage(input)
+{
+    message = "";
+
+    let valid = input.search(/^(\+{1}\d{2,3}\s?[(]{1}\d{1,3}[)]{1}\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}$/) ? false : true;
+
+    if (valid == false)
+    {
+        message = "Phone number is not valid. Please include a valid phone number";
+    }
+
+    if (input === "")
+    {
+        message = "Please include a phone number";
     }
     
     return message;
