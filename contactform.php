@@ -133,5 +133,5 @@ $status = [
 $_SESSION["submit_status"] = $submit_status;
 $_SESSION["submit_message"] = $submit_message;
 
-header("Location: contact.php#Contact");
+header("Location: contact.php");
 exit();

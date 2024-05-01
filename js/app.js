@@ -95,6 +95,12 @@ function AnimateHeader(down, transitionTime)
     }, 200);
 }
 
+function ForceRemoveHeader()
+{   
+    clearTimeout(scrollUpTimeout);
+    $(".sticky-header").removeClass("sticky");
+}
+
 //#endregion
 
 //#region Side Panel

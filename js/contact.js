@@ -95,6 +95,16 @@ function DisplaySubmitStatus(message, status)
     {
         $(".form-status").addClass("form-status-error");
     }
+
+    setTimeout(() => {
+        location.hash = "";
+        location.hash = "#Contact";
+        ForceRemoveHeader();
+    }, 50);
+    
+    setTimeout(() => {
+        ForceRemoveHeader();
+    }, 100);
 }
 
 function ClearFormFields()
