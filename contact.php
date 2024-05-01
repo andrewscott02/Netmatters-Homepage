@@ -70,7 +70,7 @@
 
                             <div id="Contact"">
                                 <div class="contact-container">
-                                    <form action="contact.php" method="post">
+                                    <form action="forms/contactform.php" method="post">
                                         <fieldset class="flex-container vertical form">
                                             <div class="grid-container">
                                                 <!-- Your Name -->
@@ -134,7 +134,7 @@
                                             <div class="flex-item">
                                                 <div class="flex-container space-between">
                                                     <div class="flex-item">
-                                                        <button class="btn-subscribe">Send Enquiry</button>
+                                                        <button class="form-sbmt btn-subscribe">Send Enquiry</button>
                                                     </div>
 
                                                     <div class="flex-item">
