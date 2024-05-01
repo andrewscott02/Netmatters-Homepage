@@ -70,7 +70,7 @@
 
                             <div id="Contact"">
                                 <div class="contact-container">
-                                    <form action="forms/contactform.php" method="post">
+                                    <form action="contactform.php" method="post">
                                         <fieldset class="flex-container vertical form">
                                             <div class="grid-container">
                                                 <!-- Your Name -->

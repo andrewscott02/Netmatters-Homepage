@@ -10,6 +10,8 @@
 
 <?php
 
+include_once("includes/connection.php");
+
 $canSubmit = true;
 
 #region Get Inputs
@@ -89,3 +91,40 @@ else if ($user_acceptMarketing === false)
 }
 
 #endregion
+
+function AddContact($user_name, $company_name, $user_email, $user_phone_number, $user_message, $user_acceptMarketing)
+{
+    global $db;
+
+    if($db == null)
+    {
+        echo "No database was found";
+        return false;
+    }
+
+    $sql = "INSERT INTO contacts(user_name, company_name, user_email, user_phone_number, user_message, user_acceptMarketing) VALUES(?, ?, ?, ?, ?, ?)";
+        
+    try
+    {
+        $results = $db->prepare($sql);
+        $results->bindValue(1, $user_name, PDO::PARAM_STR);
+        $results->bindValue(2, $company_name, PDO::PARAM_STR);
+        $results->bindValue(3, $user_email, PDO::PARAM_STR);
+        $results->bindValue(4, $user_phone_number, PDO::PARAM_STR);
+        $results->bindValue(5, $user_message, PDO::PARAM_STR);
+        $results->bindValue(6, $user_acceptMarketing, PDO::PARAM_INT);
+        $results->execute();
+    }
+    catch (Exception $e)
+    {
+        echo "Error!: " . $e->getMessage() . "<br />";
+        return false;
+    }
+    
+    return true;
+}
+
+if ($canSubmit)
+{
+    AddContact($user_name, $company_name, $user_email, $user_phone_number, $user_message, $user_acceptMarketing);
+}
