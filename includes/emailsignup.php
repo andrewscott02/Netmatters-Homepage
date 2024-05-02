@@ -7,15 +7,15 @@
             <fieldset class="vertical form">
                 <div class="grid-container">
                     <div class="flex-item">
-                        <label for="name" class="required">Your Name</label>
+                        <label for="signup_name" class="required">Your Name</label>
                         <br>
-                        <input type="text" id="signup_name" name="user_name">
+                        <input type="text" id="signup_name" name="signup_user_name">
                     </div>
 
                     <div class="flex-item">
-                        <label for="email" class="required">Your Email</label>
+                        <label for="signup_email" class="required">Your Email</label>
                         <br>
-                        <input type="email" id="signup_email" name="user_email">
+                        <input type="email" id="signup_email" name="signup_user_email">
                     </div>
                 </div>
 
