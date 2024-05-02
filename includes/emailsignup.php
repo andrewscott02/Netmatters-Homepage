@@ -9,13 +9,13 @@
                     <div class="flex-item">
                         <label for="name" class="required">Your Name</label>
                         <br>
-                        <input type="text" id="name" name="user_name">
+                        <input type="text" id="signup_name" name="user_name">
                     </div>
 
                     <div class="flex-item">
                         <label for="email" class="required">Your Email</label>
                         <br>
-                        <input type="email" id="email" name="user_email">
+                        <input type="email" id="signup_email" name="user_email">
                     </div>
                 </div>
 

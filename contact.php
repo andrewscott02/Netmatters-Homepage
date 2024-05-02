@@ -120,7 +120,7 @@
                                                 <div class="flex-item">
                                                     <label for="message" class="required">Message</label>
                                                     <br>
-                                                    <textarea type="text" id="message" name="user_message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                                    <textarea id="message" name="user_message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                                 </div>
                                             </div>
         
@@ -130,7 +130,7 @@
                                                     <div class="checkbox-item checkbox-custom">
                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                                                             <title></title>
-                                                            <g id="icomoon-ignore">
+                                                            <g>
                                                             </g>
                                                             <path d="M432 64l-240 240-112-112-80 80 192 192 320-320z"></path>
                                                         </svg>
@@ -192,14 +192,14 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     
-    <script type="text/javascript">
+    <script>
         const offices=<?php echo json_encode($offices); ?>;
     </script>
     
     <script src="js/maps.js"></script>
     <script src="js/contact.js"></script>
 
-    <script type="text/javascript">
+    <script>
         let status = <?php 
                         if ($submit_status)
                         {
