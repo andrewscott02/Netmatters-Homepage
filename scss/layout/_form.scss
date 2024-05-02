@@ -58,7 +58,7 @@
 .required::after
 {
     color: red;
-    content: " *"
+    content: " *";
 }
 
 .required-info
@@ -69,7 +69,7 @@
 .required-info::before
 {
     color: red;
-    content: "* "
+    content: "* ";
 }
 
 .form
