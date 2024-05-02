@@ -4,7 +4,7 @@
             
             <h2>Email Newsletter Sign-Up</h2>
 
-            <fieldset class="flex-container vertical form">
+            <fieldset class="vertical form">
                 <div class="grid-container">
                     <div class="flex-item">
                         <label for="name" class="required">Your Name</label>

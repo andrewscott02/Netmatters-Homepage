@@ -1,3 +1,0 @@
-Styling:
--Stying for all breakpoints
--Check for mobile, mobile landscape, and full breakpoints

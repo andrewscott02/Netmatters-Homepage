@@ -79,7 +79,7 @@
                             <div id="Contact"">
                                 <div class="contact-container">
                                     <form action="contactform.php" method="post">
-                                        <fieldset class="flex-container vertical form">
+                                        <fieldset class="vertical form">
                                             <div class="grid-container">
 
                                                 <div class="form-status hidden">
