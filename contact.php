@@ -76,7 +76,7 @@
                                 </div>
                             </div>
 
-                            <div id="Contact"">
+                            <div id="Contact">
                                 <div class="contact-container">
                                     <form action="contactform.php" method="post">
                                         <fieldset class="vertical form">

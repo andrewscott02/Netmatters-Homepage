@@ -16,7 +16,7 @@
     opacity: 0;
     background-color: rgba(1, 0, 0, 0.5);
 
-    left: 0;
+    // left: 0;
     //top: 50%;
 
     &:hover
@@ -52,7 +52,14 @@
 
     @media #{$break-wide}
     {
+        margin-top: -5px !important;
+        width: 876px !important;
         height: 75px !important;
+    }
+
+    @media #{$break-full}
+    {
+        width: 708px !important;
     }
 }
 

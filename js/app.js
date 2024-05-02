@@ -2,6 +2,7 @@ $(document).ready(()=>{
     //Functions here called on page load
     GeneralJavaScriptSetup();
     CheckCookiesData();
+    RefreshCheckboxSize();
 });
 
 //#region Enabling/Disabling JavaScript Elements
@@ -145,7 +146,10 @@ $(window).resize(function(){
 //Refreshes carousel size
 function RefreshCarousel()
 {
-    $('.slides')[0].slick.refresh();
+    $( ".slides" ).each(function( index )
+    {
+        $('.slides')[index].slick.refresh();
+    });
 }
 
 //Slick setup
