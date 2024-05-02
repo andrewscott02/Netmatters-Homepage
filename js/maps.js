@@ -18,9 +18,8 @@ mapElements.forEach((item, index) => {
     
     var addressString = offices[index]["address"].replaceAll(",", "");
 
-    //Removes name of office from address (ie. removes london from london address)
-    var replaceString = offices[index]["name"].replace(" Office", "");
-    var addressString = addressString.replaceAll(replaceString, "");
+    //Removes London from london office address
+    var addressString = addressString.replaceAll("London", "");
     var addressString = addressString.replaceAll("<br>  <br>", "<br>"); //Replaces double break with single break
 
     var marker = L.marker([coords[0], coords[1]], {
