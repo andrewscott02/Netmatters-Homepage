@@ -1,13 +1,3 @@
-JS Features:
--Phone validation
--Check error messages on site
-
-Contact Form:
--Client Side Validation via JavaScript
--Server Side Validation via PHP with error messages for missing fields/incorrect value for email address etc.
--Success message on submission
--Storing successful enquiries into the database
-
 Styling:
 -Stying for all breakpoints
 -Check for mobile, mobile landscape, and full breakpoints

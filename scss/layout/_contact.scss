@@ -181,6 +181,11 @@
     }
 }
 
+.contact-aside
+{
+    padding-top: 30px;
+}
+
 .contact-aside.grid-container
 {
     grid-gap: 0;
@@ -190,7 +195,7 @@
         grid-gap: 30px;
         row-gap: 0;
 
-        grid-template-columns: minmax(200px, 2fr) minmax(100px, 1fr);
+        grid-template-columns: minmax(200px, 2.1fr) minmax(100px, 1fr);
 
         & > div:nth-child(1)
         {

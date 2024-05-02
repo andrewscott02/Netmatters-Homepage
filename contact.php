@@ -64,7 +64,11 @@
                                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
 
                                         <p>
-                                            <strong>Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00 Sunday 10:00 - 18:00</strong>
+                                            <strong>
+                                                Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00
+                                                <br>
+                                                Sunday 10:00 - 18:00
+                                            </strong>
                                         </p>
 
                                         <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>

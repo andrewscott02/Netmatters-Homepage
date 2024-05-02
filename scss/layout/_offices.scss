@@ -7,8 +7,6 @@
     {
         @media #{$break-wide}
         {
-            row-gap: 0;
-
             grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
         }
     }
@@ -16,8 +14,6 @@
 
 .office
 {
-    margin-bottom: 30px;
-
     img
     {
         width: 100%;
