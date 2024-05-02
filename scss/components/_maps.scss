@@ -5,3 +5,17 @@
 
     border-radius: 0 0 20px 20px;
 }
+
+.leaflet-marker-pane
+{
+    filter: hue-rotate(155deg) saturate(1.5) brightness(85%);
+}
+
+.leaflet-popup-content
+{
+    width: 145px !important;
+    margin: 12px !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    line-height: 1rem !important;
+}

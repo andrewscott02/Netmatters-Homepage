@@ -14,7 +14,18 @@ mapElements.forEach((item, index) => {
         center: [coords[0], coords[1]],
         zoom: 17
     });
-    var marker = L.marker([coords[0], coords[1]]).addTo(map);
+
+    
+    var addressString = offices[index]["address"].replaceAll(",", "");
+
+    //Removes name of office from address (ie. removes london from london address)
+    var replaceString = offices[index]["name"].replace(" Office", "");
+    var addressString = addressString.replaceAll(replaceString, "");
+    var addressString = addressString.replaceAll("<br>  <br>", "<br>"); //Replaces double break with single break
+
+    var marker = L.marker([coords[0], coords[1]], {
+        title: offices[index]["name"], //Adds title on hover
+    }).addTo(map).bindPopup(addressString); //Adds address on click
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
