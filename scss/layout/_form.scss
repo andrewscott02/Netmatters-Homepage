@@ -109,6 +109,11 @@
     }
 }
 
+.form-invalid
+{
+    border-color: #d64541 !important;
+}
+
 textarea
 {
     min-height: 100px;

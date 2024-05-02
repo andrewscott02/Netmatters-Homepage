@@ -221,7 +221,7 @@
         & > div:nth-child(#{$i})
         {
             grid-column: 1 / 3;
-            grid-row: $i / calc($i + 1);
+            grid-row:  calc($i / calc($i + 1));
         }
     }
 

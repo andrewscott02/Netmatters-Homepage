@@ -1,7 +1,3 @@
-PHP Features:
--Database for homepage news
--Contact us maps (Rather than installing Google Maps - please use a free alternative or replace with responsive images)
-
 JS Features:
 -Phone validation
 -Check error messages on site

@@ -39,11 +39,15 @@ $("input").on("keypress", (event)=>{
 function CheckFormFields(event)
 {
     let canSubmit = true;
-    let message = "Please fill out all required form fields";
+    let message = "Error";
+
+    let invalidFields = [];
 
     $(event.target).closest('fieldset').find(">:first-child").children().each((index, element)=>{
         inputElement = $(element).find(">:last-child");
         labelElement = $(inputElement).prev().prev();
+
+        $(inputElement).removeClass("form-invalid");
 
         if ($(labelElement).hasClass("required"))
         {
@@ -52,7 +56,7 @@ function CheckFormFields(event)
                 let emailMessage = GetEmailMessage($(inputElement).val());
                 if(emailMessage !== "")
                 {
-                    message = emailMessage;
+                    $(inputElement).addClass("form-invalid");
                     canSubmit = false;
                 }
             }
@@ -61,6 +65,7 @@ function CheckFormFields(event)
                 let phoneMessage = GetPhoneMessage($(inputElement).val());
                 if(phoneMessage !== "")
                 {
+                    $(inputElement).addClass("form-invalid");
                     message = phoneMessage;
                     canSubmit = false;
                 }
@@ -70,6 +75,7 @@ function CheckFormFields(event)
             if (content == "")
             {
                 // alert("success: " + $(element) + " => " + content);
+                $(inputElement).addClass("form-invalid");
                 canSubmit = false
             }
         }
@@ -78,7 +84,10 @@ function CheckFormFields(event)
     if (!canSubmit)
     {
         event.preventDefault();
-        DisplaySubmitStatus(message, false);
+        if (message !== "Error")
+        {
+            DisplaySubmitStatus(message, false);
+        }
     }
 }
 
@@ -185,7 +194,7 @@ function GetPhoneMessage(input)
 
     if (input === "")
     {
-        message = "Please include a telephone number.";
+        message = "Error";
     }
     
     return message;
